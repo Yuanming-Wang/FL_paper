@@ -35,14 +35,11 @@ Accuracy figures refer to the recorded final round, with 800 communication round
 
 Adap-CTA adapts how much of the local model receives a control correction. Clients select correction coverage through the cost-based decision rule, train with the selected correction, and return their updates for aggregation. The multi-stage cost formulation connects the learning decision to accuracy, privacy risk, and energy expenditure.
 
-```mermaid
-flowchart LR
-    A[Global model and server controls] --> B[Client correction-coverage decision]
-    B --> C[Local training with selected correction]
-    C --> D[Model and control aggregation]
-    D --> A
-    D -. Accuracy and cost feedback .-> B
-```
+<p align="center">
+  <img src="assets/adapcta_overview.svg" alt="Adap-CTA overview: the server broadcasts the global model and control, cost-aware decisions select client-specific correction coverage, and client updates return for aggregation." width="100%">
+</p>
+
+**One adaptive federated round.** The server coordinates the global state; correction coverage balances model-loss, privacy, and energy costs; each client applies the selected control correction before returning its update. Teal blocks indicate corrected parameter blocks. The [vector figure](assets/adapcta_overview.svg) can be regenerated with `python scripts/plot_method_overview.py`.
 
 For the standard correction step, a client's gradient has the form
 
@@ -234,6 +231,7 @@ cd ..
 FL_paper/
 ├── README.md
 ├── requirements.txt
+├── assets/                       # Method overview in SVG and PNG
 ├── formal/                       # Lean source, pinned Lake project, and proof audit
 ├── safe_FL/
 │   ├── system/                   # Federated training and attack implementations
@@ -252,10 +250,13 @@ FL_paper/
         ├── common/               # Shared reference batch and RNG state
         ├── controls/             # Validated attack profiles
         ├── reconstructions/      # Per-method, per-attack tensors, grids, and scores
+        ├── recovery/             # SCAFFOLD/FedPVR control-state recovery records
         ├── figures/
         ├── summary.csv
         └── verification.json
 ```
+
+Control-state recovery records are grouped by method under [`results/attacks/recovery`](results/attacks/recovery): `SCAFFOLD/` and `FedPVR/`. Each contains `curves.h5`, `round_metrics.jsonl`, `training.log`, and `setup.log`.
 
 ## Acknowledgements
 
