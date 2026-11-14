@@ -16,6 +16,14 @@
 
 </div>
 
+<p align="center">
+  <img src="assets/adapcta_promo.png" alt="Adap-CTA research spotlight with client-specific correction coverage and four verified headline results." width="100%">
+</p>
+
+<p align="center">
+  <a href="assets/adapcta_promo.png">High-resolution graphic</a> · <a href="assets/adapcta_promo.svg">Vector graphic</a>
+</p>
+
 **Adap-CTA** is an adaptive correction term addition strategy for federated learning. It makes correction coverage a client decision and optimizes the cumulative trade-off among model accuracy loss, privacy risk, and energy cost. This repository provides the method implementation, training artifacts, gradient inversion experiments, and a reproducible Lean formalization.
 
 ## Highlights
@@ -257,6 +265,8 @@ FL_paper/
 ```
 
 Control-state recovery records are grouped by method under [`results/attacks/recovery`](results/attacks/recovery): `SCAFFOLD/` and `FedPVR/`. Each contains `curves.h5`, `round_metrics.jsonl`, `training.log`, and `setup.log`.
+
+The promotional graphic can be regenerated from the recorded training results and proof audit with `python scripts/plot_promo.py`.
 
 ## Acknowledgements
 
