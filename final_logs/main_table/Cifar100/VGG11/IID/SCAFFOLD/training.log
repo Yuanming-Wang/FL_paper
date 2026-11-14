@@ -1,0 +1,176 @@
+{"job": {"dataset": "Cifar100", "model": "VGG11", "classes": 100, "clients": 100, "join_ratio": 0.1, "alpha": 2.0, "noise": 0.0, "target": 0.4, "data_root": "/data/safe_FL_20261021/cta_extension", "server": 19, "algorithm": "SCAFFOLD", "id": "20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680", "log": "vgg11_cifar100/IID_N_100_jr_0.1/SCAFFOLD_relocated_from_server8_lr0p01_recover0_1792627942445578015.txt", "queue_phase": "image", "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680/checkpoint_2446d34f8b83.pt", "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680/curves.h5"}, "deployment_sha256": "163ee76f00427db41e8d1ff2cee235ded6d9fd7eb88e856447fbe6a69e1e3d1f"}
+==================================================
+Algorithm: SCAFFOLD
+Local batch size: 64
+Local epochs: 5
+Local learing rate: 0.01
+Local learing rate decay: False
+Total number of clients: 100
+Clients join in each round: 0.1
+Clients randomly join: False
+Client drop rate: 0.0
+Client select regarding time: False
+Running times: 1
+Dataset: Cifar100
+Number of classes: 100
+Backbone: VGG11
+Using device: cuda
+Auto break: False
+Global rounds: 800
+Cuda device id: 0
+DLG attack: False
+Total number of new clients: 0
+Fine tuning epoches on new clients: 0
+==================================================
+RUNTIME_PROVENANCE source_sha256=2f5d43617387e7048b1750bedc39b7071709d69cd64e8a860f88c37b60236a04 data_sha256=820e314ea9f82f0f7c23ef742f8aed2c5dbee05f25b739217ec1d8fac0ccdd74
+VGG11
+
+============= Running time: 0th =============
+Creating server and clients ...
+57.864288330078125 MB
+
+Join ratio / total clients: 0.1 / 100
+Finished creating server and clients.
+RESUMED from round 680; 120 rounds remain
+ROUND 681/800 accuracy=0.431200 test_loss=5.176984 cost=11.601461
+ROUND 682/800 accuracy=0.430467 test_loss=5.177991 cost=11.601461
+ROUND 683/800 accuracy=0.430867 test_loss=5.178999 cost=11.601461
+ROUND 684/800 accuracy=0.430600 test_loss=5.184757 cost=11.601461
+ROUND 685/800 accuracy=0.430800 test_loss=5.188599 cost=11.601461
+ROUND 686/800 accuracy=0.430200 test_loss=5.187216 cost=11.601461
+ROUND 687/800 accuracy=0.431133 test_loss=5.185901 cost=11.601461
+ROUND 688/800 accuracy=0.430267 test_loss=5.187644 cost=11.601461
+ROUND 689/800 accuracy=0.431467 test_loss=5.186070 cost=11.601461
+ROUND 690/800 accuracy=0.432000 test_loss=5.185901 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+ROUND 691/800 accuracy=0.431867 test_loss=5.183556 cost=11.601461
+ROUND 692/800 accuracy=0.432467 test_loss=5.189446 cost=11.601461
+ROUND 693/800 accuracy=0.433067 test_loss=5.190289 cost=11.601461
+ROUND 694/800 accuracy=0.433133 test_loss=5.195244 cost=11.601461
+ROUND 695/800 accuracy=0.432800 test_loss=5.190134 cost=11.601461
+ROUND 696/800 accuracy=0.432933 test_loss=5.186630 cost=11.601461
+ROUND 697/800 accuracy=0.433600 test_loss=5.188451 cost=11.601461
+ROUND 698/800 accuracy=0.433133 test_loss=5.192528 cost=11.601461
+ROUND 699/800 accuracy=0.433267 test_loss=5.194530 cost=11.601461
+ROUND 700/800 accuracy=0.431933 test_loss=5.198239 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+ROUND 701/800 accuracy=0.432600 test_loss=5.199037 cost=11.601461
+ROUND 702/800 accuracy=0.433467 test_loss=5.204357 cost=11.601461
+ROUND 703/800 accuracy=0.431867 test_loss=5.201668 cost=11.601461
+ROUND 704/800 accuracy=0.431800 test_loss=5.201545 cost=11.601461
+ROUND 705/800 accuracy=0.432667 test_loss=5.202436 cost=11.601461
+ROUND 706/800 accuracy=0.432800 test_loss=5.201810 cost=11.601461
+ROUND 707/800 accuracy=0.433200 test_loss=5.196763 cost=11.601461
+ROUND 708/800 accuracy=0.433600 test_loss=5.192548 cost=11.601461
+ROUND 709/800 accuracy=0.433133 test_loss=5.199954 cost=11.601461
+ROUND 710/800 accuracy=0.432133 test_loss=5.201579 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+ROUND 711/800 accuracy=0.432800 test_loss=5.205769 cost=11.601461
+ROUND 712/800 accuracy=0.432467 test_loss=5.209691 cost=11.601461
+ROUND 713/800 accuracy=0.432733 test_loss=5.209867 cost=11.601461
+ROUND 714/800 accuracy=0.433200 test_loss=5.215689 cost=11.601461
+ROUND 715/800 accuracy=0.432467 test_loss=5.221950 cost=11.601461
+ROUND 716/800 accuracy=0.432267 test_loss=5.221161 cost=11.601461
+ROUND 717/800 accuracy=0.432133 test_loss=5.216842 cost=11.601461
+ROUND 718/800 accuracy=0.431733 test_loss=5.217156 cost=11.601461
+ROUND 719/800 accuracy=0.431400 test_loss=5.218412 cost=11.601461
+ROUND 720/800 accuracy=0.430667 test_loss=5.221489 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+ROUND 721/800 accuracy=0.431467 test_loss=5.220999 cost=11.601461
+ROUND 722/800 accuracy=0.431200 test_loss=5.219064 cost=11.601461
+ROUND 723/800 accuracy=0.431133 test_loss=5.223831 cost=11.601461
+ROUND 724/800 accuracy=0.431867 test_loss=5.224754 cost=11.601461
+ROUND 725/800 accuracy=0.431067 test_loss=5.225199 cost=11.601461
+ROUND 726/800 accuracy=0.431867 test_loss=5.227120 cost=11.601461
+ROUND 727/800 accuracy=0.432600 test_loss=5.227550 cost=11.601461
+ROUND 728/800 accuracy=0.432867 test_loss=5.227549 cost=11.601461
+ROUND 729/800 accuracy=0.432667 test_loss=5.221309 cost=11.601461
+ROUND 730/800 accuracy=0.433000 test_loss=5.226155 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+ROUND 731/800 accuracy=0.432867 test_loss=5.224950 cost=11.601461
+ROUND 732/800 accuracy=0.432000 test_loss=5.228288 cost=11.601461
+ROUND 733/800 accuracy=0.432800 test_loss=5.228986 cost=11.601461
+ROUND 734/800 accuracy=0.432267 test_loss=5.227340 cost=11.601461
+ROUND 735/800 accuracy=0.432333 test_loss=5.227437 cost=11.601461
+ROUND 736/800 accuracy=0.434200 test_loss=5.224982 cost=11.601461
+ROUND 737/800 accuracy=0.433867 test_loss=5.225246 cost=11.601461
+ROUND 738/800 accuracy=0.435000 test_loss=5.228293 cost=11.601461
+ROUND 739/800 accuracy=0.433867 test_loss=5.229147 cost=11.601461
+ROUND 740/800 accuracy=0.433467 test_loss=5.232728 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+ROUND 741/800 accuracy=0.433067 test_loss=5.232306 cost=11.601461
+ROUND 742/800 accuracy=0.433267 test_loss=5.231084 cost=11.601461
+ROUND 743/800 accuracy=0.433333 test_loss=5.233370 cost=11.601461
+ROUND 744/800 accuracy=0.433933 test_loss=5.230442 cost=11.601461
+ROUND 745/800 accuracy=0.434333 test_loss=5.236317 cost=11.601461
+ROUND 746/800 accuracy=0.434000 test_loss=5.238932 cost=11.601461
+ROUND 747/800 accuracy=0.433867 test_loss=5.242588 cost=11.601461
+ROUND 748/800 accuracy=0.433667 test_loss=5.236824 cost=11.601461
+ROUND 749/800 accuracy=0.434467 test_loss=5.239507 cost=11.601461
+ROUND 750/800 accuracy=0.433867 test_loss=5.243169 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+ROUND 751/800 accuracy=0.433800 test_loss=5.245193 cost=11.601461
+ROUND 752/800 accuracy=0.434133 test_loss=5.245833 cost=11.601461
+ROUND 753/800 accuracy=0.433200 test_loss=5.249351 cost=11.601461
+ROUND 754/800 accuracy=0.432800 test_loss=5.252919 cost=11.601461
+ROUND 755/800 accuracy=0.433200 test_loss=5.253781 cost=11.601461
+ROUND 756/800 accuracy=0.432400 test_loss=5.254755 cost=11.601461
+ROUND 757/800 accuracy=0.432933 test_loss=5.254921 cost=11.601461
+ROUND 758/800 accuracy=0.432733 test_loss=5.256047 cost=11.601461
+ROUND 759/800 accuracy=0.433133 test_loss=5.255639 cost=11.601461
+ROUND 760/800 accuracy=0.433467 test_loss=5.258213 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+ROUND 761/800 accuracy=0.433867 test_loss=5.260439 cost=11.601461
+ROUND 762/800 accuracy=0.434267 test_loss=5.263227 cost=11.601461
+ROUND 763/800 accuracy=0.433667 test_loss=5.263532 cost=11.601461
+ROUND 764/800 accuracy=0.434000 test_loss=5.266167 cost=11.601461
+ROUND 765/800 accuracy=0.433667 test_loss=5.270722 cost=11.601461
+ROUND 766/800 accuracy=0.433667 test_loss=5.269822 cost=11.601461
+ROUND 767/800 accuracy=0.434400 test_loss=5.269065 cost=11.601461
+ROUND 768/800 accuracy=0.434133 test_loss=5.266461 cost=11.601461
+ROUND 769/800 accuracy=0.434333 test_loss=5.266952 cost=11.601461
+ROUND 770/800 accuracy=0.433800 test_loss=5.269031 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+ROUND 771/800 accuracy=0.434733 test_loss=5.269573 cost=11.601461
+ROUND 772/800 accuracy=0.434267 test_loss=5.265999 cost=11.601461
+ROUND 773/800 accuracy=0.432733 test_loss=5.270495 cost=11.601461
+ROUND 774/800 accuracy=0.433000 test_loss=5.272300 cost=11.601461
+ROUND 775/800 accuracy=0.432400 test_loss=5.275485 cost=11.601461
+ROUND 776/800 accuracy=0.432933 test_loss=5.276385 cost=11.601461
+ROUND 777/800 accuracy=0.432400 test_loss=5.277238 cost=11.601461
+ROUND 778/800 accuracy=0.433533 test_loss=5.281033 cost=11.601461
+ROUND 779/800 accuracy=0.433800 test_loss=5.283781 cost=11.601461
+ROUND 780/800 accuracy=0.434267 test_loss=5.284899 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+ROUND 781/800 accuracy=0.433067 test_loss=5.282434 cost=11.601461
+ROUND 782/800 accuracy=0.433600 test_loss=5.282500 cost=11.601461
+ROUND 783/800 accuracy=0.433400 test_loss=5.290496 cost=11.601461
+ROUND 784/800 accuracy=0.433800 test_loss=5.288681 cost=11.601461
+ROUND 785/800 accuracy=0.433267 test_loss=5.288801 cost=11.601461
+ROUND 786/800 accuracy=0.432800 test_loss=5.285102 cost=11.601461
+ROUND 787/800 accuracy=0.432533 test_loss=5.280946 cost=11.601461
+ROUND 788/800 accuracy=0.433667 test_loss=5.285028 cost=11.601461
+ROUND 789/800 accuracy=0.434133 test_loss=5.288952 cost=11.601461
+ROUND 790/800 accuracy=0.434867 test_loss=5.290215 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+ROUND 791/800 accuracy=0.434667 test_loss=5.292258 cost=11.601461
+ROUND 792/800 accuracy=0.435400 test_loss=5.295899 cost=11.601461
+ROUND 793/800 accuracy=0.435133 test_loss=5.298892 cost=11.601461
+ROUND 794/800 accuracy=0.434933 test_loss=5.298914 cost=11.601461
+ROUND 795/800 accuracy=0.435067 test_loss=5.301969 cost=11.601461
+ROUND 796/800 accuracy=0.435467 test_loss=5.303550 cost=11.601461
+ROUND 797/800 accuracy=0.435800 test_loss=5.307126 cost=11.601461
+ROUND 798/800 accuracy=0.435133 test_loss=5.312041 cost=11.601461
+ROUND 799/800 accuracy=0.434333 test_loss=5.316173 cost=11.601461
+ROUND 800/800 accuracy=0.434467 test_loss=5.315644 cost=11.601461
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+
+Best accuracy.
+0.438
+
+Average time cost per round.
+7.330505895614624
+File path: ../results/Cifar100_VGG11_SCAFFOLD_20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680_0.h5
+
+Average time cost: 895.11s.
+All done!

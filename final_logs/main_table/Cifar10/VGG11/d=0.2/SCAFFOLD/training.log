@@ -1,0 +1,77 @@
+{"job": {"dataset": "Cifar10", "model": "VGG11", "classes": 10, "clients": 100, "join_ratio": 0.1, "alpha": 0.2, "noise": 0.0, "target": 0.7, "data_root": "/data/safe_FL_20261021/cta_extension", "server": 10, "algorithm": "SCAFFOLD", "id": "20261022_required_Cifar10_VGG11_d0.2_SCAFFOLD_seed0_lr0p01", "log": "vgg11_cifar10/NonIID_0.2_N_100_jr_0.1/SCAFFOLD_required_lr0p01_recover770_1792629195068069185.txt", "queue_phase": "image", "resume_state": "/root/safe_FL_20261021_lr0p01/state/checkpoints/archive/20261022_required_Cifar10_VGG11_d0.2_SCAFFOLD_seed0_lr0p01_round780_1792629195068069185/20261022_required_Cifar10_VGG11_d0.2_SCAFFOLD_seed0_lr0p01_latest.pt", "resume_curves": "/root/safe_FL_20261021_lr0p01/state/resume/20261022_required_Cifar10_VGG11_d0.2_SCAFFOLD_seed0_lr0p01_round770_1792629195068069185.h5"}, "deployment_sha256": "163ee76f00427db41e8d1ff2cee235ded6d9fd7eb88e856447fbe6a69e1e3d1f"}
+==================================================
+Algorithm: SCAFFOLD
+Local batch size: 64
+Local epochs: 5
+Local learing rate: 0.01
+Local learing rate decay: False
+Total number of clients: 100
+Clients join in each round: 0.1
+Clients randomly join: False
+Client drop rate: 0.0
+Client select regarding time: False
+Running times: 1
+Dataset: Cifar10
+Number of classes: 10
+Backbone: VGG11
+Using device: cuda
+Auto break: False
+Global rounds: 800
+Cuda device id: 0
+DLG attack: False
+Total number of new clients: 0
+Fine tuning epoches on new clients: 0
+==================================================
+RUNTIME_PROVENANCE source_sha256=2f5d43617387e7048b1750bedc39b7071709d69cd64e8a860f88c37b60236a04 data_sha256=f5c026bf7a8bd3807ecc1429ecc02ad13d3deb730b41597855d093cca4e8eb51
+VGG11
+
+============= Running time: 0th =============
+Creating server and clients ...
+57.68782043457031 MB
+
+Join ratio / total clients: 0.1 / 100
+Finished creating server and clients.
+RESUMED from round 770; 30 rounds remain
+ROUND 771/800 accuracy=0.791982 test_loss=0.964753 cost=11.776394
+ROUND 772/800 accuracy=0.788924 test_loss=0.981180 cost=11.513994
+ROUND 773/800 accuracy=0.793578 test_loss=0.950844 cost=11.251594
+ROUND 774/800 accuracy=0.793910 test_loss=0.964227 cost=11.601461
+ROUND 775/800 accuracy=0.783074 test_loss=1.019339 cost=10.376928
+ROUND 776/800 accuracy=0.787262 test_loss=0.993892 cost=10.551861
+ROUND 777/800 accuracy=0.792847 test_loss=0.958278 cost=11.076661
+ROUND 778/800 accuracy=0.785933 test_loss=0.982174 cost=14.312928
+ROUND 779/800 accuracy=0.783406 test_loss=0.990861 cost=12.388661
+ROUND 780/800 accuracy=0.795971 test_loss=0.920750 cost=10.814261
+File path: ../results/Cifar10_VGG11_SCAFFOLD_20261022_required_Cifar10_VGG11_d0.2_SCAFFOLD_seed0_lr0p01_0.h5
+ROUND 781/800 accuracy=0.797633 test_loss=0.918784 cost=10.901728
+ROUND 782/800 accuracy=0.794376 test_loss=0.941432 cost=9.502261
+ROUND 783/800 accuracy=0.772171 test_loss=1.081974 cost=11.951328
+ROUND 784/800 accuracy=0.790786 test_loss=0.948823 cost=10.376928
+ROUND 785/800 accuracy=0.795174 test_loss=0.935699 cost=11.513994
+ROUND 786/800 accuracy=0.794043 test_loss=0.929323 cost=12.738528
+ROUND 787/800 accuracy=0.792847 test_loss=0.950272 cost=10.726794
+ROUND 788/800 accuracy=0.791982 test_loss=0.955618 cost=9.939594
+ROUND 789/800 accuracy=0.797899 test_loss=0.943787 cost=10.726794
+ROUND 790/800 accuracy=0.798631 test_loss=0.931453 cost=9.239861
+File path: ../results/Cifar10_VGG11_SCAFFOLD_20261022_required_Cifar10_VGG11_d0.2_SCAFFOLD_seed0_lr0p01_0.h5
+ROUND 791/800 accuracy=0.796038 test_loss=0.950925 cost=11.076661
+ROUND 792/800 accuracy=0.794509 test_loss=0.967888 cost=10.289461
+ROUND 793/800 accuracy=0.799894 test_loss=0.931123 cost=11.251594
+ROUND 794/800 accuracy=0.800625 test_loss=0.931519 cost=11.251594
+ROUND 795/800 accuracy=0.803284 test_loss=0.912438 cost=10.376928
+ROUND 796/800 accuracy=0.796104 test_loss=0.979822 cost=11.426528
+ROUND 797/800 accuracy=0.802087 test_loss=0.938268 cost=9.677194
+ROUND 798/800 accuracy=0.795174 test_loss=1.001130 cost=9.677194
+ROUND 799/800 accuracy=0.797700 test_loss=0.955602 cost=11.251594
+ROUND 800/800 accuracy=0.799428 test_loss=0.952152 cost=10.551861
+File path: ../results/Cifar10_VGG11_SCAFFOLD_20261022_required_Cifar10_VGG11_d0.2_SCAFFOLD_seed0_lr0p01_0.h5
+
+Best accuracy.
+0.80328413774764
+
+Average time cost per round.
+7.302133337656657
+File path: ../results/Cifar10_VGG11_SCAFFOLD_20261022_required_Cifar10_VGG11_d0.2_SCAFFOLD_seed0_lr0p01_0.h5
+
+Average time cost: 237.02s.
+All done!

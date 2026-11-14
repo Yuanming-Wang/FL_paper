@@ -1,0 +1,12 @@
+{
+  "algorithm": "Adap-CTA",
+  "input_sha256": "238d747953201121a60c45cb9b54d8dd2b72b7e158fb4ffbe0a31471a58dfeb6",
+  "bundle_sha256": "cb48d34a591aaa9484e681f243e708103743c36549b531d6b6b97ca0eac3e33e",
+  "round_completed": 800,
+  "batch_size": 64,
+  "local_epochs": 5,
+  "learning_rate": 0.01,
+  "num_batches": 4,
+  "identical_reference_pixels_and_labels": true,
+  "client_training_class": "exp_client"
+}

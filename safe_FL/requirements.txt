@@ -1,0 +1,19 @@
+# Install a matching torch/torchvision build for the host accelerator.
+torch
+torchvision
+numpy
+scipy
+scikit-learn
+matplotlib
+h5py
+sympy
+ujson
+Pillow
+tqdm
+pycryptodome
+# Optional perceptual scores and legacy visualization/memory helpers:
+# piq
+# opencv-python
+# calmsize
+# Optional acceleration for homomorphic-encryption arithmetic:
+# gmpy2

@@ -1,0 +1,9 @@
+﻿{
+    "best_accuracy":  0.35840639901553606,
+    "control":  "warmup=100; fixed_decision_l=6; balance_control=true",
+    "source_h5":  "safe_FL\\logs\\retrain_server1\\Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5",
+    "old_backup":  "curves.old_bad_20261101.h5",
+    "rounds_completed":  800,
+    "final_accuracy":  0.26325864396930387,
+    "protocol":  "Shakespeare/LSTM/Adap-CTA d=0.2; 800 rounds; seed=0; N=100; jr=0.1; batch=64; local_epochs=5; lr=0.01"
+}

@@ -1,0 +1,304 @@
+{
+  "diagnostic_only": true,
+  "observation": "exact_gradient_no_correction",
+  "attack": "gi_nas",
+  "samples": [
+    29
+  ],
+  "batch_size": 1,
+  "config": {
+    "search_size": 32,
+    "iterations": 6000,
+    "learning_rate": 0.001,
+    "tv_weight": 0.0,
+    "seed": 0,
+    "report_every": 100,
+    "learning_rate_decay": true,
+    "verbose": true,
+    "batchnorm_mode": "running"
+  },
+  "stats": {
+    "method": "GI-NAS",
+    "best_model_index": 24,
+    "best_search_metric": 0.3301730751991272,
+    "searched_candidates": 32,
+    "failed_candidates": 0,
+    "iterations": 6000,
+    "batchnorm_mode": "running",
+    "loss_history": [
+      {
+        "iteration": 1,
+        "gradient_loss": 0.3301730751991272
+      },
+      {
+        "iteration": 100,
+        "gradient_loss": 0.1518804430961609
+      },
+      {
+        "iteration": 200,
+        "gradient_loss": 0.11019569635391235
+      },
+      {
+        "iteration": 300,
+        "gradient_loss": 0.053669512271881104
+      },
+      {
+        "iteration": 400,
+        "gradient_loss": 0.057947754859924316
+      },
+      {
+        "iteration": 500,
+        "gradient_loss": 0.03697782754898071
+      },
+      {
+        "iteration": 600,
+        "gradient_loss": 0.05164480209350586
+      },
+      {
+        "iteration": 700,
+        "gradient_loss": 0.03803640604019165
+      },
+      {
+        "iteration": 800,
+        "gradient_loss": 0.052315592765808105
+      },
+      {
+        "iteration": 900,
+        "gradient_loss": 0.03604990243911743
+      },
+      {
+        "iteration": 1000,
+        "gradient_loss": 0.039640843868255615
+      },
+      {
+        "iteration": 1100,
+        "gradient_loss": 0.03492313623428345
+      },
+      {
+        "iteration": 1200,
+        "gradient_loss": 0.04457664489746094
+      },
+      {
+        "iteration": 1300,
+        "gradient_loss": 0.03627169132232666
+      },
+      {
+        "iteration": 1400,
+        "gradient_loss": 0.02718949317932129
+      },
+      {
+        "iteration": 1500,
+        "gradient_loss": 0.03756284713745117
+      },
+      {
+        "iteration": 1600,
+        "gradient_loss": 0.03816783428192139
+      },
+      {
+        "iteration": 1700,
+        "gradient_loss": 0.04403036832809448
+      },
+      {
+        "iteration": 1800,
+        "gradient_loss": 0.04281109571456909
+      },
+      {
+        "iteration": 1900,
+        "gradient_loss": 0.024516940116882324
+      },
+      {
+        "iteration": 2000,
+        "gradient_loss": 0.024286389350891113
+      },
+      {
+        "iteration": 2100,
+        "gradient_loss": 0.019347786903381348
+      },
+      {
+        "iteration": 2200,
+        "gradient_loss": 0.024710237979888916
+      },
+      {
+        "iteration": 2300,
+        "gradient_loss": 0.018112897872924805
+      },
+      {
+        "iteration": 2400,
+        "gradient_loss": 0.019677042961120605
+      },
+      {
+        "iteration": 2500,
+        "gradient_loss": 0.01664525270462036
+      },
+      {
+        "iteration": 2600,
+        "gradient_loss": 0.022196948528289795
+      },
+      {
+        "iteration": 2700,
+        "gradient_loss": 0.016126513481140137
+      },
+      {
+        "iteration": 2800,
+        "gradient_loss": 0.016148507595062256
+      },
+      {
+        "iteration": 2900,
+        "gradient_loss": 0.018362462520599365
+      },
+      {
+        "iteration": 3000,
+        "gradient_loss": 0.017417550086975098
+      },
+      {
+        "iteration": 3100,
+        "gradient_loss": 0.016845643520355225
+      },
+      {
+        "iteration": 3200,
+        "gradient_loss": 0.015793025493621826
+      },
+      {
+        "iteration": 3300,
+        "gradient_loss": 0.016731321811676025
+      },
+      {
+        "iteration": 3400,
+        "gradient_loss": 0.015621960163116455
+      },
+      {
+        "iteration": 3500,
+        "gradient_loss": 0.019502103328704834
+      },
+      {
+        "iteration": 3600,
+        "gradient_loss": 0.016334116458892822
+      },
+      {
+        "iteration": 3700,
+        "gradient_loss": 0.02036970853805542
+      },
+      {
+        "iteration": 3800,
+        "gradient_loss": 0.016809284687042236
+      },
+      {
+        "iteration": 3900,
+        "gradient_loss": 0.015433788299560547
+      },
+      {
+        "iteration": 4000,
+        "gradient_loss": 0.01543349027633667
+      },
+      {
+        "iteration": 4100,
+        "gradient_loss": 0.014804184436798096
+      },
+      {
+        "iteration": 4200,
+        "gradient_loss": 0.01491457223892212
+      },
+      {
+        "iteration": 4300,
+        "gradient_loss": 0.01538771390914917
+      },
+      {
+        "iteration": 4400,
+        "gradient_loss": 0.01555722951889038
+      },
+      {
+        "iteration": 4500,
+        "gradient_loss": 0.01541966199874878
+      },
+      {
+        "iteration": 4600,
+        "gradient_loss": 0.015402078628540039
+      },
+      {
+        "iteration": 4700,
+        "gradient_loss": 0.015271604061126709
+      },
+      {
+        "iteration": 4800,
+        "gradient_loss": 0.016202270984649658
+      },
+      {
+        "iteration": 4900,
+        "gradient_loss": 0.0152052640914917
+      },
+      {
+        "iteration": 5000,
+        "gradient_loss": 0.01533210277557373
+      },
+      {
+        "iteration": 5100,
+        "gradient_loss": 0.015644729137420654
+      },
+      {
+        "iteration": 5200,
+        "gradient_loss": 0.015310704708099365
+      },
+      {
+        "iteration": 5300,
+        "gradient_loss": 0.014857828617095947
+      },
+      {
+        "iteration": 5400,
+        "gradient_loss": 0.01564168930053711
+      },
+      {
+        "iteration": 5500,
+        "gradient_loss": 0.01609480381011963
+      },
+      {
+        "iteration": 5600,
+        "gradient_loss": 0.015127003192901611
+      },
+      {
+        "iteration": 5700,
+        "gradient_loss": 0.015717387199401855
+      },
+      {
+        "iteration": 5800,
+        "gradient_loss": 0.015507936477661133
+      },
+      {
+        "iteration": 5900,
+        "gradient_loss": 0.015316486358642578
+      },
+      {
+        "iteration": 6000,
+        "gradient_loss": 0.01565861701965332
+      }
+    ],
+    "elapsed_seconds": 378.9971302339982
+  },
+  "metrics": {
+    "matching": "minimum batch MSE",
+    "reconstruction_assignment": [
+      0
+    ],
+    "mse_per_image": [
+      0.0022280269768089056
+    ],
+    "mse_mean": 0.0022280269768089056,
+    "psnr_db_per_image": [
+      26.520795550565136
+    ],
+    "psnr_db_mean": 26.520795550565136,
+    "recognition_rate": 0.0,
+    "classifier_confidence_mean": 0.7404769062995911,
+    "ssim_per_image": [
+      0.9393431544303894
+    ],
+    "ssim_mean": 0.9393431544303894,
+    "fsim_mean": null,
+    "lpips_mean": null,
+    "perceptual_metric_backend": null,
+    "perceptual_metric_error": "ModuleNotFoundError: No module named 'piq'"
+  },
+  "logical_private_images": 1,
+  "control_note": "generator has a fixed zero-noise padding sample; victim loss has exactly one candidate",
+  "bundle_sha256": "cd2f0a64913fcf8870c72302f9e0af8c0602ffeea4b178d7e28b49ea7d62227e",
+  "passed": true
+}

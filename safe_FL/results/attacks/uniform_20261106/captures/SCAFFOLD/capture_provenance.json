@@ -1,0 +1,12 @@
+{
+  "algorithm": "SCAFFOLD",
+  "input_sha256": "10af6725a044e5d22a205bbe8f57b4f3bfc10c24e92fc83b3dcc11dd2ef71bc7",
+  "bundle_sha256": "c9a9efeb70ff42865683b9d314504ca4695c93467dce2c0213478ab402198655",
+  "round_completed": 800,
+  "batch_size": 64,
+  "local_epochs": 5,
+  "learning_rate": 0.01,
+  "num_batches": 4,
+  "identical_reference_pixels_and_labels": true,
+  "client_training_class": "clientSCAFFOLD"
+}

@@ -1,0 +1,8 @@
+{
+  "source": "safe_FL\\logs\\hefedavg_fix_server2\\Cifar10_VGG11_HEFedAvg_retrain_HEFedAvgfix_Cifar10_VGG11_d05_s2_0.h5",
+  "protocol": "800 rounds; seed=0; N=100; jr=0.1; batch=64; local_epochs=5; lr=0.01",
+  "rounds_completed": 800,
+  "best_accuracy": 0.7046421920723597,
+  "final_accuracy": 0.7030460228784251,
+  "old_backup": "curves.old_bad_20261101.h5"
+}

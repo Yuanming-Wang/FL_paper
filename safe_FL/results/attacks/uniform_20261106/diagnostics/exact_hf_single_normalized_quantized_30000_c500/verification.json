@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "implementation_source_sha256": "1a9b1e2623127839556b6068a5a463e91c947f019e861b9df9142dea204cf786",
+  "report_sha256": "b959dab63a016cd43bfc0c22b98bf7b6285b3d1d9ab333e5833691b61373d7ee",
+  "replay_errors": {
+    "mse_mean": 0.0,
+    "psnr_db_mean": 0.0,
+    "ssim_mean": 2.384185791015625e-07
+  },
+  "artifact_sha256": {
+    "reconstructed.pt": "f5f531cc8297bed72506b42b1ced4a115038e1f5cf9ba60ae8a9a10f7fd2e15c",
+    "original_grid.png": "b82e58c618ce8cd4bac369c77ca11669e4756544951f429132db9169ee53bd61",
+    "reconstructed_grid.png": "9c80a8dcca417958a245ef17df281334b79f0139d058839782686bc57df7a2be"
+  }
+}

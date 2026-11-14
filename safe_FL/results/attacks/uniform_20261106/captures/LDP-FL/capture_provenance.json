@@ -1,0 +1,12 @@
+{
+  "algorithm": "LDP-FL",
+  "input_sha256": "d8592b38c8e1a0a8f88a0144adb7a95519a02fea50458390ee204fb2ab0f31e1",
+  "bundle_sha256": "9bb7af09dac0abfa840a66158cf9aa8bb7fedb673c196a3f57beb165360b5699",
+  "round_completed": 800,
+  "batch_size": 64,
+  "local_epochs": 5,
+  "learning_rate": 0.01,
+  "num_batches": 4,
+  "identical_reference_pixels_and_labels": true,
+  "client_training_class": "clientLDP"
+}

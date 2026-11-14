@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'skimage'
+Traceback (most recent call last):
+  File "/data/attack_benchmark_20261106/recovery_queue.py", line 37, in <module>
+    subprocess.run(['/opt/conda/bin/python', '-c', probe], env=env, check=True)
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/opt/conda/bin/python', '-c', 'import torch,numpy,torchvision,skimage,sklearn,PIL,json; assert torch.cuda.is_available(); print(json.dumps(dict(torch=torch.__version__,numpy=numpy.__version__)),flush=True)']' returned non-zero exit status 1.
+{"torch": "2.4.0+metax3.0.0.3", "numpy": "1.26.4"}
+PASS: Adap-CTA gi_nas

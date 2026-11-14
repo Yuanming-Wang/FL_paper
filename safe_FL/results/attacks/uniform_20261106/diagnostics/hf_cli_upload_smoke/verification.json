@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "scope": "CLI wiring and output schema smoke check only; not a formal quality result",
+  "report_sha256": "f32336a39d38bf640983823892b6a093e318207567ee8dd6cd421fff298d46da"
+}

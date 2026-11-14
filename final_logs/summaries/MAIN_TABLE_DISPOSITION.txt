@@ -1,0 +1,413 @@
+﻿final_logs/main_table 逐结果处置清单
+
+本清单不删除任何训练数据。“排除”指不用于当前正式方法比较，不代表文件损坏。
+
+[EXCLUDE_FORMAL] 72 组 — 退出当前正式主表 / 按正确实现或协议重跑；原始记录保留作诊断
+
+final_logs/main_table/Cifar10/resnet/d=0.2/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/resnet/d=0.2/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar10/resnet/d=0.2/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar10/resnet/d=0.2/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/resnet/d=0.5/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/resnet/d=0.5/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar10/resnet/d=0.5/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar10/resnet/d=0.5/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/resnet/d=0.8/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/resnet/d=0.8/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar10/resnet/d=0.8/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar10/resnet/d=0.8/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/resnet/IID/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/resnet/IID/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar10/resnet/IID/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar10/resnet/IID/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/VGG11/d=0.2/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/VGG11/d=0.2/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar10/VGG11/d=0.2/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar10/VGG11/d=0.2/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/VGG11/d=0.5/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/VGG11/d=0.5/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar10/VGG11/d=0.5/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar10/VGG11/d=0.5/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/VGG11/d=0.8/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/VGG11/d=0.8/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar10/VGG11/d=0.8/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar10/VGG11/d=0.8/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/VGG11/IID/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar10/VGG11/IID/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar10/VGG11/IID/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar10/VGG11/IID/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/resnet/d=0.2/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/resnet/d=0.2/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar100/resnet/d=0.2/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar100/resnet/d=0.2/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/resnet/d=0.5/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/resnet/d=0.5/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar100/resnet/d=0.5/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar100/resnet/d=0.5/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/resnet/d=0.8/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/resnet/d=0.8/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar100/resnet/d=0.8/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar100/resnet/d=0.8/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/resnet/IID/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/resnet/IID/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar100/resnet/IID/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar100/resnet/IID/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/VGG11/d=0.2/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/VGG11/d=0.2/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar100/VGG11/d=0.2/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar100/VGG11/d=0.2/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/VGG11/d=0.5/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/VGG11/d=0.5/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar100/VGG11/d=0.5/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar100/VGG11/d=0.5/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/VGG11/d=0.8/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/VGG11/d=0.8/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar100/VGG11/d=0.8/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar100/VGG11/d=0.8/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/VGG11/IID/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Cifar100/VGG11/IID/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Cifar100/VGG11/IID/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Cifar100/VGG11/IID/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Shakespeare/lstm/d=0.2/Adap-CTA/curves.h5
+  原因：固定六张量选层且为 original_v1；与当前自适应主比较协议不一致
+final_logs/main_table/Shakespeare/lstm/d=0.2/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Shakespeare/lstm/d=0.2/DPFedAvg/curves.h5
+  原因：噪声配置为 0；不能用于非零噪声 DP 基线比较
+final_logs/main_table/Shakespeare/lstm/d=0.2/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Shakespeare/lstm/d=0.2/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Shakespeare/Transformer/d=0.2/AdapLDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+final_logs/main_table/Shakespeare/Transformer/d=0.2/FedCEO/curves.h5
+  原因：FedCEO 兼容运行系统性后期退化；不能作为官方方法正式结果
+final_logs/main_table/Shakespeare/Transformer/d=0.2/LDP-FL/curves.h5
+  原因：baseline 专属噪声配置为 0；不能用于非零噪声隐私基线比较，兼容实现也待核验
+
+[ISOLATE_TRAINING] 1 组 — 训练退化待定位：先隔离复核，尚未仅凭曲线判定为实现错误
+
+final_logs/main_table/Shakespeare/lstm/d=0.2/FedPVR/curves.h5
+  原因：准确率连续 537 轮停在 18.9885%；先隔离诊断，不单凭平台期断定文件或算法无效
+
+[KEEP_LIMITED] 17 组 — 有条件保留：全校正实例，不能证明动态选层收益
+
+final_logs/main_table/Cifar10/resnet/d=0.2/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar10/resnet/d=0.5/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar10/resnet/d=0.8/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar10/resnet/IID/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar10/VGG11/d=0.2/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar10/VGG11/d=0.5/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar10/VGG11/d=0.8/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar10/VGG11/IID/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar100/resnet/d=0.2/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar100/resnet/d=0.5/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar100/resnet/d=0.8/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar100/resnet/IID/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar100/VGG11/d=0.2/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar100/VGG11/d=0.5/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar100/VGG11/d=0.8/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Cifar100/VGG11/IID/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+final_logs/main_table/Shakespeare/Transformer/d=0.2/Adap-CTA/curves.h5
+  原因：完整训练可保留，但始终全选；仅支持全校正实例表现，不支持动态选层收益
+
+[REVIEW] 19 组 — 待核验：暂不判报废，也不能当成隐私保证或加密已启用的证据
+
+final_logs/main_table/Cifar10/resnet/d=0.2/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar10/resnet/d=0.5/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar10/resnet/d=0.8/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar10/resnet/IID/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar10/VGG11/d=0.2/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar10/VGG11/d=0.5/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar10/VGG11/d=0.8/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar10/VGG11/IID/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar100/resnet/d=0.2/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar100/resnet/d=0.5/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar100/resnet/d=0.8/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar100/resnet/IID/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar100/VGG11/d=0.2/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar100/VGG11/d=0.5/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar100/VGG11/d=0.8/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Cifar100/VGG11/IID/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Shakespeare/lstm/d=0.2/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+final_logs/main_table/Shakespeare/Transformer/d=0.2/DPFedAvg/curves.h5
+  原因：记录了非零噪声，可保留；仍需核验裁剪、实际加噪及隐私预算，不能自动认证 DP 保证
+final_logs/main_table/Shakespeare/Transformer/d=0.2/HEFedAvg/curves.h5
+  原因：当前代码加密聚合块被注释；先核对运行快照，不能当作启用同态加密的证据
+
+[KEEP] 71 组 — 本次未发现直接排除依据，继续保留
+
+final_logs/main_table/Cifar10/resnet/d=0.2/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/d=0.2/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/d=0.2/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/d=0.2/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/d=0.5/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/d=0.5/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/d=0.5/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/d=0.5/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/d=0.8/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/d=0.8/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/d=0.8/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/d=0.8/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/IID/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/IID/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/IID/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/resnet/IID/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.2/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.2/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.2/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.2/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.5/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.5/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.5/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.5/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.8/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.8/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.8/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/d=0.8/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/IID/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/IID/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/IID/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar10/VGG11/IID/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.2/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.2/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.2/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.2/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.5/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.5/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.5/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.5/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.8/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.8/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.8/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/d=0.8/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/IID/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/IID/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/IID/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/resnet/IID/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.2/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.2/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.2/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.2/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.5/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.5/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.5/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.5/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.8/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.8/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.8/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/d=0.8/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/IID/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/IID/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/IID/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Cifar100/VGG11/IID/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Shakespeare/lstm/d=0.2/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Shakespeare/lstm/d=0.2/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Shakespeare/lstm/d=0.2/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Shakespeare/Transformer/d=0.2/FedAvg/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Shakespeare/Transformer/d=0.2/FedMut/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Shakespeare/Transformer/d=0.2/FedPVR/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+final_logs/main_table/Shakespeare/Transformer/d=0.2/SCAFFOLD/curves.h5
+  原因：本次未发现直接排除依据；不等于已认证官方算法等价性
+
+[单独的溯源问题] 以下 H5 的 source_sha256 未出现在同目录 training.log 中。
+这说明配套日志不足以匹配当前 H5，需要找回对应新日志；此标记本身不判定 H5 无效。
+final_logs/main_table/Cifar10/resnet/d=0.2/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar10/resnet/d=0.2/HEFedAvg/curves.h5
+final_logs/main_table/Cifar10/resnet/d=0.5/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar10/resnet/d=0.5/HEFedAvg/curves.h5
+final_logs/main_table/Cifar10/resnet/d=0.8/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar10/resnet/d=0.8/HEFedAvg/curves.h5
+final_logs/main_table/Cifar10/resnet/IID/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar10/resnet/IID/HEFedAvg/curves.h5
+final_logs/main_table/Cifar10/VGG11/d=0.2/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar10/VGG11/d=0.2/HEFedAvg/curves.h5
+final_logs/main_table/Cifar10/VGG11/d=0.5/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar10/VGG11/d=0.5/HEFedAvg/curves.h5
+final_logs/main_table/Cifar10/VGG11/d=0.8/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar10/VGG11/d=0.8/HEFedAvg/curves.h5
+final_logs/main_table/Cifar10/VGG11/IID/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar10/VGG11/IID/HEFedAvg/curves.h5
+final_logs/main_table/Cifar100/resnet/d=0.2/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar100/resnet/d=0.2/HEFedAvg/curves.h5
+final_logs/main_table/Cifar100/resnet/d=0.5/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar100/resnet/d=0.5/HEFedAvg/curves.h5
+final_logs/main_table/Cifar100/resnet/d=0.8/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar100/resnet/d=0.8/HEFedAvg/curves.h5
+final_logs/main_table/Cifar100/resnet/IID/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar100/resnet/IID/HEFedAvg/curves.h5
+final_logs/main_table/Cifar100/VGG11/d=0.2/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar100/VGG11/d=0.2/HEFedAvg/curves.h5
+final_logs/main_table/Cifar100/VGG11/d=0.5/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar100/VGG11/d=0.5/HEFedAvg/curves.h5
+final_logs/main_table/Cifar100/VGG11/d=0.8/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar100/VGG11/d=0.8/HEFedAvg/curves.h5
+final_logs/main_table/Cifar100/VGG11/IID/AdapLDP-FL/curves.h5
+final_logs/main_table/Cifar100/VGG11/IID/HEFedAvg/curves.h5

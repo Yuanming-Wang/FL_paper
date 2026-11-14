@@ -1,0 +1,31 @@
+{
+  "diagnostic_only": true,
+  "production_source_unchanged": true,
+  "source_sha256": "1a9b1e2623127839556b6068a5a463e91c947f019e861b9df9142dea204cf786",
+  "results": [
+    {
+      "mode": "all_gradients",
+      "seconds": 5.677583799999411,
+      "bitwise_equal": true,
+      "max_pixel_difference": 0.0
+    },
+    {
+      "mode": "input_only",
+      "seconds": 4.035359299999982,
+      "bitwise_equal": true,
+      "max_pixel_difference": 0.0
+    },
+    {
+      "mode": "input_only",
+      "seconds": 3.9756085999979405,
+      "bitwise_equal": true,
+      "max_pixel_difference": 0.0
+    },
+    {
+      "mode": "all_gradients",
+      "seconds": 4.925244799997017,
+      "bitwise_equal": true,
+      "max_pixel_difference": 0.0
+    }
+  ]
+}

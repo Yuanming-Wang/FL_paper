@@ -1,0 +1,154 @@
+{"job": {"dataset": "Cifar100", "model": "resnet", "classes": 100, "clients": 100, "join_ratio": 0.1, "alpha": 2.0, "noise": 0.0, "target": 0.35, "data_root": "/data/safe_FL_20261021/cta_extension", "server": 14, "algorithm": "FedMut", "id": "20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01", "log": "resnet_cifar100/IID_N_100_jr_0.1/FedMut_required_lr0p01_recover700_1792665011012959995.txt", "queue_phase": "image", "resume_state": "/root/safe_FL_20261021_lr0p01/state/checkpoints/archive/20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_round700_1792665011012959995/20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_latest.pt", "resume_curves": "/root/safe_FL_20261021_lr0p01/state/resume/20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_round700_1792665011012959995.h5"}, "deployment_sha256": "507c8e1ddd3f88cf75f3c2549799efc0df8aa39fbf5e801bbd9c58f92753b4b5"}
+==================================================
+Algorithm: FedMut
+Local batch size: 64
+Local epochs: 5
+Local learing rate: 0.01
+Local learing rate decay: False
+Total number of clients: 100
+Clients join in each round: 0.1
+Clients randomly join: False
+Client drop rate: 0.0
+Client select regarding time: False
+Running times: 1
+Dataset: Cifar100
+Number of classes: 100
+Backbone: resnet
+Using device: cuda
+Auto break: False
+Global rounds: 800
+Cuda device id: 0
+DLG attack: False
+Total number of new clients: 0
+Fine tuning epoches on new clients: 0
+==================================================
+RUNTIME_PROVENANCE source_sha256=fc242f13e870ce77808d8e4c704768d2e814d84a8486309f809623abe36255fd data_sha256=820e314ea9f82f0f7c23ef742f8aed2c5dbee05f25b739217ec1d8fac0ccdd74
+resnet
+
+============= Running time: 0th =============
+Creating server and clients ...
+52.032257080078125 MB
+
+Join ratio / total clients: 0.1 / 100
+Finished creating server and clients.
+RESUMED from round 700; 100 rounds remain
+ROUND 701/800 accuracy=0.255533 test_loss=4.778140 cost=17.967333
+ROUND 702/800 accuracy=0.255000 test_loss=4.776924 cost=17.972667
+ROUND 703/800 accuracy=0.255133 test_loss=4.779235 cost=17.971333
+ROUND 704/800 accuracy=0.255800 test_loss=4.784016 cost=17.964667
+ROUND 705/800 accuracy=0.254600 test_loss=4.786596 cost=17.976667
+ROUND 706/800 accuracy=0.255267 test_loss=4.786469 cost=17.970000
+ROUND 707/800 accuracy=0.254200 test_loss=4.785952 cost=17.980667
+ROUND 708/800 accuracy=0.255133 test_loss=4.783481 cost=17.971333
+ROUND 709/800 accuracy=0.255000 test_loss=4.784503 cost=17.972667
+ROUND 710/800 accuracy=0.254400 test_loss=4.785664 cost=17.978667
+File path: ../results/Cifar100_resnet_FedMut_20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_0.h5
+ROUND 711/800 accuracy=0.254333 test_loss=4.785212 cost=17.979333
+ROUND 712/800 accuracy=0.253333 test_loss=4.787724 cost=17.989333
+ROUND 713/800 accuracy=0.255467 test_loss=4.788595 cost=17.968000
+ROUND 714/800 accuracy=0.254933 test_loss=4.787384 cost=17.973333
+ROUND 715/800 accuracy=0.254333 test_loss=4.788880 cost=17.979333
+ROUND 716/800 accuracy=0.254867 test_loss=4.790310 cost=17.974000
+ROUND 717/800 accuracy=0.255133 test_loss=4.791599 cost=17.971333
+ROUND 718/800 accuracy=0.254533 test_loss=4.791528 cost=17.977333
+ROUND 719/800 accuracy=0.255267 test_loss=4.791782 cost=17.970000
+ROUND 720/800 accuracy=0.253667 test_loss=4.792575 cost=17.986000
+File path: ../results/Cifar100_resnet_FedMut_20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_0.h5
+ROUND 721/800 accuracy=0.253333 test_loss=4.794625 cost=17.989333
+ROUND 722/800 accuracy=0.254800 test_loss=4.798716 cost=17.974667
+ROUND 723/800 accuracy=0.253867 test_loss=4.800387 cost=17.984000
+ROUND 724/800 accuracy=0.254467 test_loss=4.797706 cost=17.978000
+ROUND 725/800 accuracy=0.253933 test_loss=4.797058 cost=17.983333
+ROUND 726/800 accuracy=0.253667 test_loss=4.797833 cost=17.986000
+ROUND 727/800 accuracy=0.254400 test_loss=4.795229 cost=17.978667
+ROUND 728/800 accuracy=0.254000 test_loss=4.797587 cost=17.982667
+ROUND 729/800 accuracy=0.255667 test_loss=4.799986 cost=17.966000
+ROUND 730/800 accuracy=0.256133 test_loss=4.799723 cost=17.961333
+File path: ../results/Cifar100_resnet_FedMut_20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_0.h5
+ROUND 731/800 accuracy=0.254067 test_loss=4.799838 cost=17.982000
+ROUND 732/800 accuracy=0.255800 test_loss=4.800404 cost=17.964667
+ROUND 733/800 accuracy=0.254600 test_loss=4.801158 cost=17.976667
+ROUND 734/800 accuracy=0.253333 test_loss=4.802306 cost=17.989333
+ROUND 735/800 accuracy=0.252667 test_loss=4.805096 cost=17.996000
+ROUND 736/800 accuracy=0.253000 test_loss=4.808566 cost=17.992667
+ROUND 737/800 accuracy=0.252800 test_loss=4.806486 cost=17.994667
+ROUND 738/800 accuracy=0.253400 test_loss=4.807407 cost=17.988667
+ROUND 739/800 accuracy=0.252800 test_loss=4.808111 cost=17.994667
+ROUND 740/800 accuracy=0.252600 test_loss=4.809830 cost=17.996667
+File path: ../results/Cifar100_resnet_FedMut_20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_0.h5
+ROUND 741/800 accuracy=0.254333 test_loss=4.811798 cost=17.979333
+ROUND 742/800 accuracy=0.255267 test_loss=4.812892 cost=17.970000
+ROUND 743/800 accuracy=0.255600 test_loss=4.813967 cost=17.966667
+ROUND 744/800 accuracy=0.253600 test_loss=4.811703 cost=17.986667
+ROUND 745/800 accuracy=0.253200 test_loss=4.812684 cost=17.990667
+ROUND 746/800 accuracy=0.253467 test_loss=4.813924 cost=17.988000
+ROUND 747/800 accuracy=0.253667 test_loss=4.813193 cost=17.986000
+ROUND 748/800 accuracy=0.253667 test_loss=4.817001 cost=17.986000
+ROUND 749/800 accuracy=0.254267 test_loss=4.816838 cost=17.980000
+ROUND 750/800 accuracy=0.253867 test_loss=4.819032 cost=17.984000
+File path: ../results/Cifar100_resnet_FedMut_20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_0.h5
+ROUND 751/800 accuracy=0.252467 test_loss=4.821906 cost=17.998000
+ROUND 752/800 accuracy=0.254133 test_loss=4.823348 cost=17.981333
+ROUND 753/800 accuracy=0.254000 test_loss=4.821538 cost=17.982667
+ROUND 754/800 accuracy=0.255400 test_loss=4.823865 cost=17.968667
+ROUND 755/800 accuracy=0.256133 test_loss=4.823439 cost=17.961333
+ROUND 756/800 accuracy=0.253800 test_loss=4.822894 cost=17.984667
+ROUND 757/800 accuracy=0.254200 test_loss=4.820714 cost=17.980667
+ROUND 758/800 accuracy=0.254400 test_loss=4.818542 cost=17.978667
+ROUND 759/800 accuracy=0.254600 test_loss=4.823117 cost=17.976667
+ROUND 760/800 accuracy=0.253867 test_loss=4.823309 cost=17.984000
+File path: ../results/Cifar100_resnet_FedMut_20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_0.h5
+ROUND 761/800 accuracy=0.255200 test_loss=4.824423 cost=17.970667
+ROUND 762/800 accuracy=0.254733 test_loss=4.827356 cost=17.975333
+ROUND 763/800 accuracy=0.254600 test_loss=4.829215 cost=17.976667
+ROUND 764/800 accuracy=0.254933 test_loss=4.828274 cost=17.973333
+ROUND 765/800 accuracy=0.254133 test_loss=4.829823 cost=17.981333
+ROUND 766/800 accuracy=0.255333 test_loss=4.831058 cost=17.969333
+ROUND 767/800 accuracy=0.254933 test_loss=4.829175 cost=17.973333
+ROUND 768/800 accuracy=0.255267 test_loss=4.830154 cost=17.970000
+ROUND 769/800 accuracy=0.254133 test_loss=4.831644 cost=17.981333
+ROUND 770/800 accuracy=0.253800 test_loss=4.833203 cost=17.984667
+File path: ../results/Cifar100_resnet_FedMut_20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_0.h5
+ROUND 771/800 accuracy=0.253933 test_loss=4.834339 cost=17.983333
+ROUND 772/800 accuracy=0.254267 test_loss=4.833898 cost=17.980000
+ROUND 773/800 accuracy=0.254800 test_loss=4.833044 cost=17.974667
+ROUND 774/800 accuracy=0.253600 test_loss=4.835788 cost=17.986667
+ROUND 775/800 accuracy=0.253667 test_loss=4.836916 cost=17.986000
+ROUND 776/800 accuracy=0.254400 test_loss=4.836225 cost=17.978667
+ROUND 777/800 accuracy=0.254600 test_loss=4.835309 cost=17.976667
+ROUND 778/800 accuracy=0.254267 test_loss=4.837604 cost=17.980000
+ROUND 779/800 accuracy=0.253733 test_loss=4.836668 cost=17.985333
+ROUND 780/800 accuracy=0.255067 test_loss=4.836738 cost=17.972000
+File path: ../results/Cifar100_resnet_FedMut_20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_0.h5
+ROUND 781/800 accuracy=0.253733 test_loss=4.837503 cost=17.985333
+ROUND 782/800 accuracy=0.254867 test_loss=4.837309 cost=17.974000
+ROUND 783/800 accuracy=0.254667 test_loss=4.839925 cost=17.976000
+ROUND 784/800 accuracy=0.254133 test_loss=4.840152 cost=17.981333
+ROUND 785/800 accuracy=0.254400 test_loss=4.839274 cost=17.978667
+ROUND 786/800 accuracy=0.254733 test_loss=4.838408 cost=17.975333
+ROUND 787/800 accuracy=0.255067 test_loss=4.840585 cost=17.972000
+ROUND 788/800 accuracy=0.254867 test_loss=4.842985 cost=17.974000
+ROUND 789/800 accuracy=0.253400 test_loss=4.844632 cost=17.988667
+ROUND 790/800 accuracy=0.253667 test_loss=4.844595 cost=17.986000
+File path: ../results/Cifar100_resnet_FedMut_20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_0.h5
+ROUND 791/800 accuracy=0.253267 test_loss=4.846724 cost=17.990000
+ROUND 792/800 accuracy=0.254467 test_loss=4.850254 cost=17.978000
+ROUND 793/800 accuracy=0.254467 test_loss=4.850144 cost=17.978000
+ROUND 794/800 accuracy=0.254467 test_loss=4.849905 cost=17.978000
+ROUND 795/800 accuracy=0.254400 test_loss=4.851920 cost=17.978667
+ROUND 796/800 accuracy=0.253467 test_loss=4.851215 cost=17.988000
+ROUND 797/800 accuracy=0.253067 test_loss=4.852098 cost=17.992000
+ROUND 798/800 accuracy=0.253000 test_loss=4.852339 cost=17.992667
+ROUND 799/800 accuracy=0.253667 test_loss=4.853090 cost=17.986000
+ROUND 800/800 accuracy=0.252467 test_loss=4.854844 cost=17.998000
+File path: ../results/Cifar100_resnet_FedMut_20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_0.h5
+
+Best global accuracy.
+0.2604666666666667
+
+Average time cost per round.
+6.295551722049713
+File path: ../results/Cifar100_resnet_FedMut_20261022_required_Cifar100_resnet_IID_FedMut_seed0_lr0p01_0.h5
+
+Average time cost: 637.53s.
+All done!

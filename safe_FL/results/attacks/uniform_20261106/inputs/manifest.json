@@ -1,0 +1,117 @@
+{
+  "expected_methods": [
+    "FedAvg",
+    "DPFedAvg",
+    "HEFedAvg",
+    "LDP-FL",
+    "AdapLDP-FL",
+    "SCAFFOLD",
+    "FedPVR",
+    "Adap-CTA"
+  ],
+  "inputs": [
+    {
+      "algorithm": "FedAvg",
+      "file": "FedAvg.pt",
+      "sha256": "9275388f42c7f9259b566df943d1b672b99b79d9e7814c1629b864ddaa062c33",
+      "bytes": 44798912,
+      "ready": true,
+      "missing": [],
+      "source_sha256": "2f5d43617387e7048b1750bedc39b7071709d69cd64e8a860f88c37b60236a04",
+      "lineage": "verified historical round-800 model"
+    },
+    {
+      "algorithm": "DPFedAvg",
+      "file": "DPFedAvg.pt",
+      "sha256": "e0d67735770241a417b74038831881a054c82ef8d8f139bc3c5b91f80986e548",
+      "bytes": 44804476,
+      "ready": true,
+      "missing": [],
+      "source_sha256": "f6f5181924f60e672ca0bc878427fcb80894b0141b7e97402e6eaa0b13307368",
+      "lineage": "verified historical round-800 model"
+    },
+    {
+      "algorithm": "HEFedAvg",
+      "file": "HEFedAvg.pt",
+      "sha256": "2f5280022896099dcf0337d1b956a6adb20c147d1a9e743c8d6fb7a04b732e50",
+      "bytes": 44804476,
+      "ready": true,
+      "missing": [],
+      "source_sha256": "2f5d43617387e7048b1750bedc39b7071709d69cd64e8a860f88c37b60236a04",
+      "lineage": "verified historical round-800 model"
+    },
+    {
+      "algorithm": "LDP-FL",
+      "file": "LDP-FL.pt",
+      "sha256": "d8592b38c8e1a0a8f88a0144adb7a95519a02fea50458390ee204fb2ab0f31e1",
+      "bytes": 44798912,
+      "ready": true,
+      "missing": [],
+      "source_sha256": "5785c15b1c78b170cb478d780bdd7e462e6119c4c1fabca3ca6eb5feb8c2cdc7",
+      "lineage": "verified historical round-800 model"
+    },
+    {
+      "algorithm": "AdapLDP-FL",
+      "file": "AdapLDP-FL.pt",
+      "sha256": "f56f3f1877a28fbd72d9c278b53588fa32d7ced28cdea08e45e39de0a84b7a1c",
+      "bytes": 44804792,
+      "ready": true,
+      "missing": [],
+      "source_sha256": "f6f5181924f60e672ca0bc878427fcb80894b0141b7e97402e6eaa0b13307368",
+      "lineage": "verified historical round-800 model"
+    },
+    {
+      "algorithm": "SCAFFOLD",
+      "file": "SCAFFOLD.pt",
+      "sha256": "10af6725a044e5d22a205bbe8f57b4f3bfc10c24e92fc83b3dcc11dd2ef71bc7",
+      "bytes": 134288768,
+      "ready": true,
+      "missing": [],
+      "source_sha256": "975ed20ed9f9062e189171b0e28d9d917e665eef0bba9a2b6e91b0b7ad10200e",
+      "controls": {
+        "client_id": 2,
+        "server_control_tensors": 62,
+        "client_control_tensors": 62
+      },
+      "full_checkpoint_backup": "../backups/SCAFFOLD_round800.pt.gz",
+      "lineage": "new training replica; actual saved server/client controls"
+    },
+    {
+      "algorithm": "FedPVR",
+      "file": "FedPVR.pt",
+      "sha256": "b5ce18156d81f0e051ca64e738d9af5b943fce1967db636e3e87f5967fd06b6a",
+      "bytes": 134282828,
+      "ready": true,
+      "missing": [],
+      "source_sha256": "975ed20ed9f9062e189171b0e28d9d917e665eef0bba9a2b6e91b0b7ad10200e",
+      "controls": {
+        "client_id": 2,
+        "server_control_tensors": 62,
+        "client_control_tensors": 62
+      },
+      "full_checkpoint_backup": "../backups/FedPVR_round800.pt.gz",
+      "lineage": "new training replica; actual saved server/client controls"
+    },
+    {
+      "algorithm": "Adap-CTA",
+      "file": "Adap-CTA.pt",
+      "sha256": "238d747953201121a60c45cb9b54d8dd2b72b7e158fb4ffbe0a31471a58dfeb6",
+      "bytes": 134288384,
+      "ready": true,
+      "missing": [],
+      "source_sha256": "eaac705c5cee8cfd5a9c114b39a86bd350efc95f397a68b024e500210a8352eb",
+      "controls": {
+        "client_id": 2,
+        "server_control_tensors": 62,
+        "client_control_tensors": 62
+      },
+      "lineage": "verified historical round-800 model"
+    }
+  ],
+  "created": 1793991579.3171737,
+  "client_id": 2,
+  "batch_size": 64,
+  "local_epochs": 5,
+  "local_learning_rate": 0.01,
+  "common_rng_source": "../common/rng_state.pt"
+}

@@ -1,0 +1,42 @@
+{
+  "algorithm": "LDP-FL",
+  "bundle_sha256": "9bb7af09dac0abfa840a66158cf9aa8bb7fedb673c196a3f57beb165360b5699",
+  "jobs": [
+    {
+      "attack": "geiping",
+      "started": 1794009515.8880122,
+      "finished": 1794009515.8882072,
+      "verified": true,
+      "metrics_sha256": "23f8c7707dbaa2fcf03677308b73bb451e5e40336bde121a2030d1f2b76bfc53"
+    },
+    {
+      "attack": "gi_nas",
+      "started": 1794009515.888507,
+      "command": [
+        "/opt/conda/bin/python",
+        "-u",
+        "/data/attack_benchmark_20261106/safe_FL/system/run_gi_nas.py",
+        "--bundle",
+        "/data/attack_benchmark_20261106/captures/LDP-FL/gradient_bundle.pt",
+        "--device",
+        "cuda",
+        "--seed",
+        "0",
+        "--allow-observed-update",
+        "--batchnorm-mode",
+        "batch",
+        "--output-dir",
+        "/data/attack_benchmark_20261106/results/LDP-FL/gi_nas",
+        "--search-size",
+        "5000",
+        "--iterations",
+        "30000",
+        "--lr",
+        "0.001",
+        "--report-every",
+        "1000"
+      ],
+      "pid": 34608
+    }
+  ]
+}

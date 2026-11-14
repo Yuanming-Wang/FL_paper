@@ -1,0 +1,12 @@
+{
+  "algorithm": "FedPVR",
+  "input_sha256": "b5ce18156d81f0e051ca64e738d9af5b943fce1967db636e3e87f5967fd06b6a",
+  "bundle_sha256": "a457888a2b18d289f96a4a062d9037e129657d495b7974cc4bfb37e78deeac0a",
+  "round_completed": 800,
+  "batch_size": 64,
+  "local_epochs": 5,
+  "learning_rate": 0.01,
+  "num_batches": 4,
+  "identical_reference_pixels_and_labels": true,
+  "client_training_class": "clientS_SCAFFOLD"
+}

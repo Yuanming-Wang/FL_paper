@@ -1,0 +1,15 @@
+{
+  "hf": {
+    "VmHWM": "17811792 kB",
+    "VmRSS": "17811792 kB"
+  },
+  "gi": {
+    "VmHWM": "17909308 kB",
+    "VmRSS": "17833464 kB"
+  },
+  "memory_current": 33635123200,
+  "memory_limit": 34359738368,
+  "stopped_diagnostic_pid": 13162,
+  "reason": "C500 concurrent diagnostic memory exceeded safe headroom; preserve full GI job",
+  "time": 1793990229.921649
+}

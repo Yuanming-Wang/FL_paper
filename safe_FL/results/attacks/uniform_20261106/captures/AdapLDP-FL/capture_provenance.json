@@ -1,0 +1,12 @@
+{
+  "algorithm": "AdapLDP-FL",
+  "input_sha256": "f56f3f1877a28fbd72d9c278b53588fa32d7ced28cdea08e45e39de0a84b7a1c",
+  "bundle_sha256": "601c9f0c082a4273adbf90ab759a895e1911adf3fbc36300a37e5079f3b71c6f",
+  "round_completed": 800,
+  "batch_size": 64,
+  "local_epochs": 5,
+  "learning_rate": 0.01,
+  "num_batches": 4,
+  "identical_reference_pixels_and_labels": true,
+  "client_training_class": "clientAdapLDP"
+}

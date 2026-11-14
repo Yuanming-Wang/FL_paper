@@ -1,0 +1,12 @@
+{
+  "algorithm": "HEFedAvg",
+  "input_sha256": "2f5280022896099dcf0337d1b956a6adb20c147d1a9e743c8d6fb7a04b732e50",
+  "bundle_sha256": "1cf55fe466f27b9d70d38586733c5c2a385eec6609e85bfb5ac469a9ed7afd04",
+  "round_completed": 800,
+  "batch_size": 64,
+  "local_epochs": 5,
+  "learning_rate": 0.01,
+  "num_batches": 4,
+  "identical_reference_pixels_and_labels": true,
+  "client_training_class": "clientHEAVG"
+}

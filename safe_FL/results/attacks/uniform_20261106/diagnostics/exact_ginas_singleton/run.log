@@ -1,0 +1,66 @@
+/opt/conda/lib/python3.10/site-packages/torch/autograd/graph.py:768: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /workspace/framework/mcPytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:136.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+GI-NAS searched 32 candidates; selected 3, cosine loss 0.312678
+GI-NAS iteration 1/6000: loss 0.312684
+GI-NAS iteration 100/6000: loss 0.096748
+GI-NAS iteration 200/6000: loss 0.054671
+GI-NAS iteration 300/6000: loss 0.071732
+GI-NAS iteration 400/6000: loss 0.044624
+GI-NAS iteration 500/6000: loss 0.041836
+GI-NAS iteration 600/6000: loss 0.037437
+GI-NAS iteration 700/6000: loss 0.042155
+GI-NAS iteration 800/6000: loss 0.040166
+GI-NAS iteration 900/6000: loss 0.035836
+GI-NAS iteration 1000/6000: loss 0.040766
+GI-NAS iteration 1100/6000: loss 0.045635
+GI-NAS iteration 1200/6000: loss 0.053661
+GI-NAS iteration 1300/6000: loss 0.041508
+GI-NAS iteration 1400/6000: loss 0.051768
+GI-NAS iteration 1500/6000: loss 0.034375
+GI-NAS iteration 1600/6000: loss 0.039025
+GI-NAS iteration 1700/6000: loss 0.047850
+GI-NAS iteration 1800/6000: loss 0.034262
+GI-NAS iteration 1900/6000: loss 0.030689
+GI-NAS iteration 2000/6000: loss 0.023242
+GI-NAS iteration 2100/6000: loss 0.029129
+GI-NAS iteration 2200/6000: loss 0.032024
+GI-NAS iteration 2300/6000: loss 0.028775
+GI-NAS iteration 2400/6000: loss 0.021052
+GI-NAS iteration 2500/6000: loss 0.019797
+GI-NAS iteration 2600/6000: loss 0.024534
+GI-NAS iteration 2700/6000: loss 0.020102
+GI-NAS iteration 2800/6000: loss 0.018915
+GI-NAS iteration 2900/6000: loss 0.019333
+GI-NAS iteration 3000/6000: loss 0.019201
+GI-NAS iteration 3100/6000: loss 0.017663
+GI-NAS iteration 3200/6000: loss 0.021350
+GI-NAS iteration 3300/6000: loss 0.020415
+GI-NAS iteration 3400/6000: loss 0.020518
+GI-NAS iteration 3500/6000: loss 0.017008
+GI-NAS iteration 3600/6000: loss 0.021488
+GI-NAS iteration 3700/6000: loss 0.019122
+GI-NAS iteration 3800/6000: loss 0.016541
+GI-NAS iteration 3900/6000: loss 0.016710
+GI-NAS iteration 4000/6000: loss 0.015872
+GI-NAS iteration 4100/6000: loss 0.015590
+GI-NAS iteration 4200/6000: loss 0.018627
+GI-NAS iteration 4300/6000: loss 0.018452
+GI-NAS iteration 4400/6000: loss 0.018768
+GI-NAS iteration 4500/6000: loss 0.015803
+GI-NAS iteration 4600/6000: loss 0.014985
+GI-NAS iteration 4700/6000: loss 0.014241
+GI-NAS iteration 4800/6000: loss 0.015714
+GI-NAS iteration 4900/6000: loss 0.013219
+GI-NAS iteration 5000/6000: loss 0.013782
+GI-NAS iteration 5100/6000: loss 0.013834
+GI-NAS iteration 5200/6000: loss 0.012701
+GI-NAS iteration 5300/6000: loss 0.012406
+GI-NAS iteration 5400/6000: loss 0.014189
+GI-NAS iteration 5500/6000: loss 0.012343
+GI-NAS iteration 5600/6000: loss 0.012579
+GI-NAS iteration 5700/6000: loss 0.012624
+GI-NAS iteration 5800/6000: loss 0.012703
+GI-NAS iteration 5900/6000: loss 0.012715
+GI-NAS iteration 6000/6000: loss 0.012617
+Exact-gradient control: {'mse_mean': 0.020259017124772072, 'psnr_db_mean': 19.970622836073172, 'ssim_mean': 0.6274973452091217}
+CONTROL_PASSED False

@@ -1,0 +1,466 @@
+{
+  "diagnostic_only": true,
+  "observation": "exact_gradient_no_correction",
+  "attack": "hf_gradinv",
+  "samples": [
+    29
+  ],
+  "batch_size": 1,
+  "config": {
+    "iterations": 3000,
+    "stages": 4,
+    "learning_rate": 0.1,
+    "restarts": 1,
+    "tv_weight": 0.0001,
+    "gradient_dropout": 0.1,
+    "signed_gradients": false,
+    "seed": 0,
+    "report_every": 100,
+    "batchnorm_mode": "running"
+  },
+  "stats": {
+    "method": "HF-GradInv",
+    "elapsed_seconds": 189.41887169999973,
+    "batch_size": 1,
+    "restarts": 1,
+    "best_objective": 0.01602271758019924,
+    "auxiliary_data_used": false,
+    "label_inference": {
+      "inference_mode": "final_classifier_negative_mass",
+      "class_probability": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "inferred_labels": [
+        7
+      ]
+    },
+    "loss_history": [
+      {
+        "stage": 1.0,
+        "iteration": 1.0,
+        "gradient_loss": 0.16474050283432007,
+        "objective": 0.1647883802652359
+      },
+      {
+        "stage": 1.0,
+        "iteration": 100.0,
+        "gradient_loss": 0.014048993587493896,
+        "objective": 0.014102601446211338
+      },
+      {
+        "stage": 1.0,
+        "iteration": 200.0,
+        "gradient_loss": 0.010637462139129639,
+        "objective": 0.010691586881875992
+      },
+      {
+        "stage": 1.0,
+        "iteration": 300.0,
+        "gradient_loss": 0.010407626628875732,
+        "objective": 0.010462264530360699
+      },
+      {
+        "stage": 1.0,
+        "iteration": 400.0,
+        "gradient_loss": 0.0025856494903564453,
+        "objective": 0.002640803111717105
+      },
+      {
+        "stage": 1.0,
+        "iteration": 500.0,
+        "gradient_loss": 0.0033145546913146973,
+        "objective": 0.003370140213519335
+      },
+      {
+        "stage": 1.0,
+        "iteration": 600.0,
+        "gradient_loss": 0.0025871992111206055,
+        "objective": 0.002643128391355276
+      },
+      {
+        "stage": 1.0,
+        "iteration": 700.0,
+        "gradient_loss": 0.0025617480278015137,
+        "objective": 0.0026178709231317043
+      },
+      {
+        "stage": 1.0,
+        "iteration": 750.0,
+        "gradient_loss": 0.001655876636505127,
+        "objective": 0.0017120747361332178
+      },
+      {
+        "stage": 2.0,
+        "iteration": 1.0,
+        "gradient_loss": 0.018232524394989014,
+        "objective": 0.01828872412443161
+      },
+      {
+        "stage": 2.0,
+        "iteration": 100.0,
+        "gradient_loss": 0.02232038974761963,
+        "objective": 0.02238037809729576
+      },
+      {
+        "stage": 2.0,
+        "iteration": 200.0,
+        "gradient_loss": 0.02321094274520874,
+        "objective": 0.023272739723324776
+      },
+      {
+        "stage": 2.0,
+        "iteration": 300.0,
+        "gradient_loss": 0.010689020156860352,
+        "objective": 0.01075237151235342
+      },
+      {
+        "stage": 2.0,
+        "iteration": 400.0,
+        "gradient_loss": 0.008791625499725342,
+        "objective": 0.008855405263602734
+      },
+      {
+        "stage": 2.0,
+        "iteration": 500.0,
+        "gradient_loss": 0.0072321295738220215,
+        "objective": 0.0072962259873747826
+      },
+      {
+        "stage": 2.0,
+        "iteration": 600.0,
+        "gradient_loss": 0.007696807384490967,
+        "objective": 0.0077612875029444695
+      },
+      {
+        "stage": 2.0,
+        "iteration": 700.0,
+        "gradient_loss": 0.007440924644470215,
+        "objective": 0.0075057982467114925
+      },
+      {
+        "stage": 2.0,
+        "iteration": 750.0,
+        "gradient_loss": 0.00632476806640625,
+        "objective": 0.006389775779098272
+      },
+      {
+        "stage": 3.0,
+        "iteration": 1.0,
+        "gradient_loss": 0.023906409740447998,
+        "objective": 0.023971419781446457
+      },
+      {
+        "stage": 3.0,
+        "iteration": 100.0,
+        "gradient_loss": 0.03233957290649414,
+        "objective": 0.03240789473056793
+      },
+      {
+        "stage": 3.0,
+        "iteration": 200.0,
+        "gradient_loss": 0.021785736083984375,
+        "objective": 0.021854715421795845
+      },
+      {
+        "stage": 3.0,
+        "iteration": 300.0,
+        "gradient_loss": 0.01856917142868042,
+        "objective": 0.018639041110873222
+      },
+      {
+        "stage": 3.0,
+        "iteration": 400.0,
+        "gradient_loss": 0.018794715404510498,
+        "objective": 0.018864810466766357
+      },
+      {
+        "stage": 3.0,
+        "iteration": 500.0,
+        "gradient_loss": 0.01834118366241455,
+        "objective": 0.018411369994282722
+      },
+      {
+        "stage": 3.0,
+        "iteration": 600.0,
+        "gradient_loss": 0.01651233434677124,
+        "objective": 0.016582662239670753
+      },
+      {
+        "stage": 3.0,
+        "iteration": 700.0,
+        "gradient_loss": 0.01714843511581421,
+        "objective": 0.017219077795743942
+      },
+      {
+        "stage": 3.0,
+        "iteration": 750.0,
+        "gradient_loss": 0.016205430030822754,
+        "objective": 0.016276314854621887
+      },
+      {
+        "stage": 4.0,
+        "iteration": 1.0,
+        "gradient_loss": 0.03126448392868042,
+        "objective": 0.03133537620306015
+      },
+      {
+        "stage": 4.0,
+        "iteration": 100.0,
+        "gradient_loss": 0.025628983974456787,
+        "objective": 0.025700287893414497
+      },
+      {
+        "stage": 4.0,
+        "iteration": 200.0,
+        "gradient_loss": 0.021935224533081055,
+        "objective": 0.022006506100296974
+      },
+      {
+        "stage": 4.0,
+        "iteration": 300.0,
+        "gradient_loss": 0.02317333221435547,
+        "objective": 0.023243390023708344
+      },
+      {
+        "stage": 4.0,
+        "iteration": 400.0,
+        "gradient_loss": 0.019891679286956787,
+        "objective": 0.019961068406701088
+      },
+      {
+        "stage": 4.0,
+        "iteration": 500.0,
+        "gradient_loss": 0.01919645071029663,
+        "objective": 0.019265038892626762
+      },
+      {
+        "stage": 4.0,
+        "iteration": 600.0,
+        "gradient_loss": 0.018809258937835693,
+        "objective": 0.01887720637023449
+      },
+      {
+        "stage": 4.0,
+        "iteration": 700.0,
+        "gradient_loss": 0.013758957386016846,
+        "objective": 0.013826712965965271
+      },
+      {
+        "stage": 4.0,
+        "iteration": 750.0,
+        "gradient_loss": 0.015955030918121338,
+        "objective": 0.01602271758019924
+      }
+    ],
+    "stages": [
+      [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ],
+      [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ],
+      [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
+    ],
+    "iterations": 3000,
+    "gradient_tensors_used": 117000,
+    "batchnorm_mode": "running"
+  },
+  "metrics": {
+    "matching": "minimum batch MSE",
+    "reconstruction_assignment": [
+      0
+    ],
+    "mse_per_image": [
+      0.10717695951461792
+    ],
+    "mse_mean": 0.10717695951461792,
+    "psnr_db_per_image": [
+      9.698985675457529
+    ],
+    "psnr_db_mean": 9.698985675457529,
+    "recognition_rate": 0.0,
+    "classifier_confidence_mean": 0.7579653263092041,
+    "ssim_per_image": [
+      0.24764275550842285
+    ],
+    "ssim_mean": 0.24764275550842285,
+    "fsim_mean": null,
+    "lpips_mean": null,
+    "perceptual_metric_backend": null,
+    "perceptual_metric_error": "ModuleNotFoundError: No module named 'piq'"
+  },
+  "logical_private_images": 1,
+  "hardware": {
+    "torch_version": "2.5.1",
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "control_note": "distinct-image gradient control",
+  "bundle_sha256": "cb48d34a591aaa9484e681f243e708103743c36549b531d6b6b97ca0eac3e33e",
+  "passed": false
+}

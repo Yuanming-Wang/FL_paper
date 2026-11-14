@@ -1,0 +1,922 @@
+==================================================
+Algorithm: Adap-CTA
+Local batch size: 64
+Local epochs: 5
+Local learing rate: 0.01
+Local learing rate decay: False
+Total number of clients: 100
+Clients join in each round: 0.1
+Clients randomly join: False
+Client drop rate: 0.0
+Client select regarding time: False
+Running times: 1
+Dataset: Shakespeare
+Number of classes: 80
+Backbone: lstm
+Using device: cuda
+Auto break: False
+Global rounds: 800
+Cuda device id: 0
+DLG attack: False
+Total number of new clients: 0
+Fine tuning epoches on new clients: 0
+==================================================
+RUNTIME_PROVENANCE source_sha256=1c6032e703767cd50c24f190b09541295cff7b31ff0b22dea0fa502c97003777 data_sha256=30ae304ac6f216d577a5d9eea2e7826d62b0502d2a7bd3a7809c1f2f40a36714
+lstm
+
+============= Running time: 0th =============
+Creating server and clients ...
+0.1265869140625 MB
+
+Join ratio / total clients: 0.1 / 100
+Finished creating server and clients.
+ROUND 1/800 accuracy=0.088516 test_loss=4.069423 cost=19.699867
+ROUND 2/800 accuracy=0.088516 test_loss=3.675829 cost=20.564236
+ROUND 3/800 accuracy=0.189885 test_loss=3.445982 cost=22.079625
+ROUND 4/800 accuracy=0.088516 test_loss=3.374510 cost=19.467768
+ROUND 5/800 accuracy=0.088516 test_loss=3.395376 cost=19.867939
+ROUND 6/800 accuracy=0.189885 test_loss=3.258651 cost=19.310443
+ROUND 7/800 accuracy=0.189885 test_loss=3.258122 cost=19.278430
+ROUND 8/800 accuracy=0.058487 test_loss=3.378342 cost=19.583985
+ROUND 9/800 accuracy=0.189885 test_loss=3.206971 cost=20.470939
+ROUND 10/800 accuracy=0.045907 test_loss=3.337693 cost=19.533703
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 11/800 accuracy=0.051086 test_loss=3.260565 cost=18.217376
+ROUND 12/800 accuracy=0.076450 test_loss=3.307407 cost=18.772085
+ROUND 13/800 accuracy=0.063050 test_loss=3.301816 cost=21.002976
+ROUND 14/800 accuracy=0.047446 test_loss=3.316703 cost=19.630368
+ROUND 15/800 accuracy=0.068759 test_loss=3.316113 cost=21.714219
+ROUND 16/800 accuracy=0.063050 test_loss=3.304752 cost=20.522771
+ROUND 17/800 accuracy=0.059563 test_loss=3.341356 cost=20.685692
+ROUND 18/800 accuracy=0.060128 test_loss=3.269881 cost=19.975752
+ROUND 19/800 accuracy=0.058487 test_loss=3.229706 cost=19.752057
+ROUND 20/800 accuracy=0.189885 test_loss=3.221178 cost=17.613719
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 21/800 accuracy=0.058487 test_loss=3.333939 cost=18.095350
+ROUND 22/800 accuracy=0.184091 test_loss=3.290529 cost=19.880602
+ROUND 23/800 accuracy=0.189885 test_loss=3.260036 cost=19.526536
+ROUND 24/800 accuracy=0.116939 test_loss=3.264455 cost=18.087070
+ROUND 25/800 accuracy=0.058487 test_loss=3.237612 cost=20.840522
+ROUND 26/800 accuracy=0.189954 test_loss=3.177551 cost=17.965186
+ROUND 27/800 accuracy=0.201166 test_loss=3.182120 cost=21.334552
+ROUND 28/800 accuracy=0.088516 test_loss=3.235499 cost=18.635413
+ROUND 29/800 accuracy=0.189902 test_loss=3.148533 cost=18.806057
+ROUND 30/800 accuracy=0.198192 test_loss=3.172313 cost=21.884513
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 31/800 accuracy=0.189885 test_loss=3.139723 cost=20.679028
+ROUND 32/800 accuracy=0.060589 test_loss=3.286167 cost=18.674584
+ROUND 33/800 accuracy=0.101232 test_loss=3.219733 cost=19.372622
+ROUND 34/800 accuracy=0.190381 test_loss=3.193902 cost=17.712807
+ROUND 35/800 accuracy=0.110051 test_loss=3.250039 cost=19.124362
+ROUND 36/800 accuracy=0.044523 test_loss=3.293576 cost=20.483946
+ROUND 37/800 accuracy=0.088516 test_loss=3.192248 cost=20.956403
+ROUND 38/800 accuracy=0.212138 test_loss=3.165573 cost=17.631292
+ROUND 39/800 accuracy=0.211044 test_loss=3.136456 cost=18.098425
+ROUND 40/800 accuracy=0.182109 test_loss=3.203736 cost=19.244148
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 41/800 accuracy=0.212925 test_loss=3.150411 cost=19.784352
+ROUND 42/800 accuracy=0.094994 test_loss=3.200540 cost=18.314527
+ROUND 43/800 accuracy=0.223931 test_loss=3.097699 cost=21.290974
+ROUND 44/800 accuracy=0.213865 test_loss=3.122886 cost=17.862135
+ROUND 45/800 accuracy=0.213950 test_loss=3.072253 cost=19.325906
+ROUND 46/800 accuracy=0.145841 test_loss=3.248067 cost=17.485922
+ROUND 47/800 accuracy=0.224888 test_loss=3.118092 cost=19.320565
+ROUND 48/800 accuracy=0.207934 test_loss=3.099437 cost=21.546990
+ROUND 49/800 accuracy=0.222410 test_loss=3.124025 cost=18.633044
+ROUND 50/800 accuracy=0.219710 test_loss=3.063947 cost=18.259878
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 51/800 accuracy=0.196893 test_loss=3.188710 cost=19.272382
+ROUND 52/800 accuracy=0.232716 test_loss=3.089495 cost=18.730068
+ROUND 53/800 accuracy=0.217454 test_loss=3.126389 cost=17.778223
+ROUND 54/800 accuracy=0.070177 test_loss=3.152705 cost=18.546687
+ROUND 55/800 accuracy=0.240801 test_loss=3.114630 cost=16.960505
+ROUND 56/800 accuracy=0.230443 test_loss=3.054742 cost=21.970173
+ROUND 57/800 accuracy=0.215933 test_loss=3.098749 cost=19.258059
+ROUND 58/800 accuracy=0.221265 test_loss=3.089718 cost=17.091832
+ROUND 59/800 accuracy=0.092293 test_loss=3.170520 cost=18.965798
+ROUND 60/800 accuracy=0.231229 test_loss=3.054761 cost=18.184699
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 61/800 accuracy=0.241433 test_loss=3.064005 cost=16.666058
+ROUND 62/800 accuracy=0.213659 test_loss=3.142419 cost=17.752139
+ROUND 63/800 accuracy=0.206515 test_loss=3.168440 cost=18.447847
+ROUND 64/800 accuracy=0.245313 test_loss=3.044950 cost=20.036716
+ROUND 65/800 accuracy=0.227435 test_loss=3.042625 cost=20.151465
+ROUND 66/800 accuracy=0.198687 test_loss=3.095743 cost=20.887133
+ROUND 67/800 accuracy=0.088516 test_loss=3.237966 cost=19.507785
+ROUND 68/800 accuracy=0.214189 test_loss=3.102056 cost=20.756125
+ROUND 69/800 accuracy=0.207182 test_loss=3.129348 cost=17.920959
+ROUND 70/800 accuracy=0.193013 test_loss=3.111688 cost=21.256010
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 71/800 accuracy=0.232460 test_loss=3.034254 cost=17.700191
+ROUND 72/800 accuracy=0.238220 test_loss=3.076388 cost=17.338464
+ROUND 73/800 accuracy=0.224478 test_loss=3.162698 cost=15.787158
+ROUND 74/800 accuracy=0.096635 test_loss=3.177070 cost=17.785901
+ROUND 75/800 accuracy=0.088516 test_loss=3.193744 cost=18.891522
+ROUND 76/800 accuracy=0.238408 test_loss=3.042974 cost=19.297420
+ROUND 77/800 accuracy=0.088516 test_loss=3.150435 cost=20.892376
+ROUND 78/800 accuracy=0.229845 test_loss=3.100770 cost=18.190539
+ROUND 79/800 accuracy=0.239382 test_loss=3.024282 cost=19.335699
+ROUND 80/800 accuracy=0.238613 test_loss=3.036597 cost=17.038406
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 81/800 accuracy=0.091302 test_loss=3.171350 cost=20.560387
+ROUND 82/800 accuracy=0.238391 test_loss=3.061177 cost=18.697335
+ROUND 83/800 accuracy=0.239587 test_loss=2.986799 cost=17.468852
+ROUND 84/800 accuracy=0.198534 test_loss=3.042487 cost=20.376453
+ROUND 85/800 accuracy=0.138902 test_loss=3.109435 cost=19.540160
+ROUND 86/800 accuracy=0.088516 test_loss=3.223021 cost=19.795908
+ROUND 87/800 accuracy=0.236613 test_loss=2.996663 cost=18.843165
+ROUND 88/800 accuracy=0.250594 test_loss=3.031560 cost=18.631327
+ROUND 89/800 accuracy=0.241279 test_loss=2.995759 cost=17.684031
+ROUND 90/800 accuracy=0.233537 test_loss=3.041835 cost=19.186063
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 91/800 accuracy=0.089832 test_loss=3.072755 cost=19.462611
+ROUND 92/800 accuracy=0.210686 test_loss=3.088227 cost=17.885922
+ROUND 93/800 accuracy=0.088585 test_loss=3.109761 cost=18.098500
+ROUND 94/800 accuracy=0.235007 test_loss=2.994322 cost=18.379026
+ROUND 95/800 accuracy=0.230443 test_loss=3.041099 cost=17.984472
+ROUND 96/800 accuracy=0.224393 test_loss=3.078433 cost=17.676818
+ROUND 97/800 accuracy=0.212617 test_loss=3.043431 cost=19.219186
+ROUND 98/800 accuracy=0.241262 test_loss=3.012617 cost=16.675771
+ROUND 99/800 accuracy=0.222632 test_loss=3.030355 cost=21.071864
+ROUND 100/800 accuracy=0.204481 test_loss=3.030130 cost=17.027571
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 101/800 accuracy=0.240254 test_loss=2.949105 cost=18.134473
+ROUND 102/800 accuracy=0.213147 test_loss=3.028211 cost=16.524740
+ROUND 103/800 accuracy=0.242527 test_loss=2.959254 cost=15.974830
+ROUND 104/800 accuracy=0.246167 test_loss=3.004309 cost=17.835235
+ROUND 105/800 accuracy=0.201918 test_loss=3.066712 cost=18.069642
+ROUND 106/800 accuracy=0.210019 test_loss=3.007742 cost=19.341206
+ROUND 107/800 accuracy=0.240578 test_loss=2.981896 cost=17.867113
+ROUND 108/800 accuracy=0.227743 test_loss=3.006082 cost=18.875845
+ROUND 109/800 accuracy=0.093114 test_loss=3.044826 cost=20.766366
+ROUND 110/800 accuracy=0.258200 test_loss=2.973634 cost=19.051482
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 111/800 accuracy=0.249705 test_loss=3.021064 cost=18.272057
+ROUND 112/800 accuracy=0.243467 test_loss=2.903768 cost=20.943554
+ROUND 113/800 accuracy=0.251107 test_loss=2.914730 cost=18.562172
+ROUND 114/800 accuracy=0.256473 test_loss=2.922288 cost=18.764614
+ROUND 115/800 accuracy=0.257328 test_loss=2.927592 cost=17.707621
+ROUND 116/800 accuracy=0.242800 test_loss=2.931981 cost=17.460730
+ROUND 117/800 accuracy=0.258388 test_loss=2.869235 cost=18.177229
+ROUND 118/800 accuracy=0.238596 test_loss=2.967279 cost=18.295113
+ROUND 119/800 accuracy=0.244783 test_loss=2.932013 cost=17.849079
+ROUND 120/800 accuracy=0.255243 test_loss=2.854644 cost=17.808507
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 121/800 accuracy=0.255311 test_loss=2.859251 cost=19.664615
+ROUND 122/800 accuracy=0.261874 test_loss=2.854245 cost=19.871101
+ROUND 123/800 accuracy=0.248902 test_loss=2.882656 cost=17.871916
+ROUND 124/800 accuracy=0.253260 test_loss=2.850562 cost=20.397429
+ROUND 125/800 accuracy=0.248389 test_loss=2.840036 cost=19.757846
+ROUND 126/800 accuracy=0.261310 test_loss=2.842154 cost=18.652218
+ROUND 127/800 accuracy=0.249107 test_loss=2.878258 cost=16.669352
+ROUND 128/800 accuracy=0.253072 test_loss=2.905098 cost=18.830640
+ROUND 129/800 accuracy=0.268728 test_loss=2.893966 cost=16.633211
+ROUND 130/800 accuracy=0.247859 test_loss=2.856410 cost=18.122444
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 131/800 accuracy=0.254986 test_loss=2.834732 cost=20.388170
+ROUND 132/800 accuracy=0.261173 test_loss=2.830325 cost=18.493517
+ROUND 133/800 accuracy=0.258063 test_loss=2.922476 cost=17.132029
+ROUND 134/800 accuracy=0.258678 test_loss=2.819368 cost=20.007106
+ROUND 135/800 accuracy=0.265412 test_loss=2.849058 cost=19.771694
+ROUND 136/800 accuracy=0.272796 test_loss=2.852828 cost=18.513354
+ROUND 137/800 accuracy=0.274744 test_loss=2.855576 cost=17.861600
+ROUND 138/800 accuracy=0.264694 test_loss=2.807148 cost=18.594367
+ROUND 139/800 accuracy=0.265617 test_loss=2.804986 cost=19.153380
+ROUND 140/800 accuracy=0.257140 test_loss=2.794619 cost=17.733511
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 141/800 accuracy=0.261857 test_loss=2.795454 cost=16.974035
+ROUND 142/800 accuracy=0.246851 test_loss=2.813110 cost=20.013331
+ROUND 143/800 accuracy=0.264472 test_loss=2.787297 cost=17.388073
+ROUND 144/800 accuracy=0.265669 test_loss=2.792947 cost=18.792714
+ROUND 145/800 accuracy=0.268933 test_loss=2.798873 cost=17.543550
+ROUND 146/800 accuracy=0.271343 test_loss=2.782651 cost=18.023666
+ROUND 147/800 accuracy=0.242971 test_loss=2.811166 cost=19.299807
+ROUND 148/800 accuracy=0.271052 test_loss=2.781468 cost=22.484475
+ROUND 149/800 accuracy=0.265583 test_loss=2.774847 cost=20.274200
+ROUND 150/800 accuracy=0.277633 test_loss=2.789669 cost=18.000787
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 151/800 accuracy=0.277872 test_loss=2.768285 cost=15.477318
+ROUND 152/800 accuracy=0.275547 test_loss=2.778312 cost=17.653481
+ROUND 153/800 accuracy=0.271309 test_loss=2.768222 cost=17.919964
+ROUND 154/800 accuracy=0.261191 test_loss=2.767710 cost=16.412458
+ROUND 155/800 accuracy=0.258353 test_loss=2.795210 cost=17.977486
+ROUND 156/800 accuracy=0.255431 test_loss=2.864478 cost=18.126763
+ROUND 157/800 accuracy=0.274436 test_loss=2.751656 cost=17.224403
+ROUND 158/800 accuracy=0.281598 test_loss=2.784063 cost=17.929121
+ROUND 159/800 accuracy=0.273086 test_loss=2.763859 cost=19.126711
+ROUND 160/800 accuracy=0.290793 test_loss=2.778677 cost=17.989235
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 161/800 accuracy=0.277342 test_loss=2.749786 cost=20.620810
+ROUND 162/800 accuracy=0.260712 test_loss=2.778034 cost=18.730231
+ROUND 163/800 accuracy=0.273992 test_loss=2.774671 cost=18.293301
+ROUND 164/800 accuracy=0.267754 test_loss=2.750184 cost=19.644235
+ROUND 165/800 accuracy=0.291425 test_loss=2.745533 cost=16.622330
+ROUND 166/800 accuracy=0.297441 test_loss=2.806060 cost=15.985922
+ROUND 167/800 accuracy=0.282435 test_loss=2.735663 cost=21.066089
+ROUND 168/800 accuracy=0.278470 test_loss=2.755569 cost=19.256952
+ROUND 169/800 accuracy=0.289357 test_loss=2.736685 cost=16.979154
+ROUND 170/800 accuracy=0.290707 test_loss=2.724328 cost=17.325806
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 171/800 accuracy=0.289477 test_loss=2.722281 cost=18.314528
+ROUND 172/800 accuracy=0.296912 test_loss=2.747037 cost=19.344652
+ROUND 173/800 accuracy=0.285563 test_loss=2.725708 cost=16.528889
+ROUND 174/800 accuracy=0.282213 test_loss=2.767129 cost=16.914538
+ROUND 175/800 accuracy=0.271463 test_loss=2.784641 cost=17.566275
+ROUND 176/800 accuracy=0.284623 test_loss=2.742617 cost=17.194569
+ROUND 177/800 accuracy=0.283563 test_loss=2.729064 cost=18.797845
+ROUND 178/800 accuracy=0.270232 test_loss=2.734694 cost=17.218427
+ROUND 179/800 accuracy=0.281444 test_loss=2.720536 cost=16.562075
+ROUND 180/800 accuracy=0.289408 test_loss=2.727687 cost=16.154290
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 181/800 accuracy=0.287973 test_loss=2.734411 cost=20.322419
+ROUND 182/800 accuracy=0.278914 test_loss=2.734378 cost=17.651825
+ROUND 183/800 accuracy=0.278128 test_loss=2.735105 cost=16.059004
+ROUND 184/800 accuracy=0.295972 test_loss=2.716625 cost=19.129957
+ROUND 185/800 accuracy=0.273719 test_loss=2.771419 cost=17.607742
+ROUND 186/800 accuracy=0.290348 test_loss=2.715161 cost=16.817176
+ROUND 187/800 accuracy=0.294656 test_loss=2.700947 cost=17.254311
+ROUND 188/800 accuracy=0.268437 test_loss=2.802626 cost=16.828199
+ROUND 189/800 accuracy=0.281034 test_loss=2.716677 cost=18.390956
+ROUND 190/800 accuracy=0.248748 test_loss=2.850673 cost=16.672941
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 191/800 accuracy=0.264284 test_loss=2.730465 cost=17.982206
+ROUND 192/800 accuracy=0.290622 test_loss=2.726581 cost=16.886472
+ROUND 193/800 accuracy=0.223008 test_loss=2.899016 cost=18.450987
+ROUND 194/800 accuracy=0.285050 test_loss=2.721597 cost=17.854580
+ROUND 195/800 accuracy=0.291647 test_loss=2.720435 cost=17.948675
+ROUND 196/800 accuracy=0.243518 test_loss=2.803497 cost=17.037374
+ROUND 197/800 accuracy=0.249415 test_loss=2.795044 cost=19.491482
+ROUND 198/800 accuracy=0.285956 test_loss=2.755668 cost=17.125214
+ROUND 199/800 accuracy=0.290212 test_loss=2.738284 cost=18.979466
+ROUND 200/800 accuracy=0.294177 test_loss=2.698131 cost=16.778892
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 201/800 accuracy=0.297083 test_loss=2.711449 cost=17.558181
+ROUND 202/800 accuracy=0.263395 test_loss=2.790598 cost=17.959080
+ROUND 203/800 accuracy=0.266421 test_loss=2.767759 cost=18.345006
+ROUND 204/800 accuracy=0.279649 test_loss=2.701673 cost=16.612035
+ROUND 205/800 accuracy=0.291340 test_loss=2.708388 cost=20.512845
+ROUND 206/800 accuracy=0.271958 test_loss=2.733897 cost=16.088690
+ROUND 207/800 accuracy=0.279222 test_loss=2.743062 cost=16.056069
+ROUND 208/800 accuracy=0.284708 test_loss=2.703511 cost=16.969619
+ROUND 209/800 accuracy=0.306944 test_loss=2.668818 cost=18.660076
+ROUND 210/800 accuracy=0.260302 test_loss=2.781329 cost=15.909127
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 211/800 accuracy=0.279068 test_loss=2.717965 cost=18.490646
+ROUND 212/800 accuracy=0.264267 test_loss=2.760071 cost=16.813878
+ROUND 213/800 accuracy=0.296980 test_loss=2.676127 cost=19.632091
+ROUND 214/800 accuracy=0.279171 test_loss=2.745157 cost=15.712435
+ROUND 215/800 accuracy=0.299885 test_loss=2.670854 cost=21.659914
+ROUND 216/800 accuracy=0.275496 test_loss=2.723989 cost=18.238244
+ROUND 217/800 accuracy=0.294262 test_loss=2.676833 cost=20.419591
+ROUND 218/800 accuracy=0.301270 test_loss=2.665135 cost=16.091699
+ROUND 219/800 accuracy=0.300484 test_loss=2.655870 cost=15.515312
+ROUND 220/800 accuracy=0.298997 test_loss=2.665537 cost=16.714687
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 221/800 accuracy=0.306722 test_loss=2.644658 cost=16.597417
+ROUND 222/800 accuracy=0.280760 test_loss=2.663497 cost=18.545756
+ROUND 223/800 accuracy=0.308004 test_loss=2.649910 cost=21.586733
+ROUND 224/800 accuracy=0.286161 test_loss=2.669778 cost=16.827036
+ROUND 225/800 accuracy=0.276282 test_loss=2.702888 cost=18.486491
+ROUND 226/800 accuracy=0.274812 test_loss=2.738320 cost=16.596376
+ROUND 227/800 accuracy=0.297988 test_loss=2.681355 cost=15.548269
+ROUND 228/800 accuracy=0.235468 test_loss=2.791633 cost=18.230350
+ROUND 229/800 accuracy=0.282521 test_loss=2.667625 cost=18.216018
+ROUND 230/800 accuracy=0.267754 test_loss=2.697609 cost=18.323671
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 231/800 accuracy=0.295066 test_loss=2.657455 cost=16.697973
+ROUND 232/800 accuracy=0.271035 test_loss=2.762893 cost=17.714610
+ROUND 233/800 accuracy=0.296433 test_loss=2.684058 cost=16.996433
+ROUND 234/800 accuracy=0.293681 test_loss=2.665897 cost=21.433833
+ROUND 235/800 accuracy=0.288964 test_loss=2.703673 cost=16.542897
+ROUND 236/800 accuracy=0.303765 test_loss=2.634340 cost=16.346865
+ROUND 237/800 accuracy=0.292912 test_loss=2.698825 cost=14.982767
+ROUND 238/800 accuracy=0.302278 test_loss=2.650143 cost=18.002435
+ROUND 239/800 accuracy=0.296877 test_loss=2.669271 cost=17.688287
+ROUND 240/800 accuracy=0.299988 test_loss=2.641616 cost=20.994605
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 241/800 accuracy=0.307354 test_loss=2.645046 cost=21.577221
+ROUND 242/800 accuracy=0.297322 test_loss=2.689981 cost=16.411300
+ROUND 243/800 accuracy=0.296570 test_loss=2.673056 cost=17.123121
+ROUND 244/800 accuracy=0.294314 test_loss=2.662058 cost=17.489828
+ROUND 245/800 accuracy=0.300740 test_loss=2.628714 cost=15.304659
+ROUND 246/800 accuracy=0.307765 test_loss=2.628148 cost=16.562981
+ROUND 247/800 accuracy=0.293715 test_loss=2.675707 cost=18.752347
+ROUND 248/800 accuracy=0.307337 test_loss=2.637364 cost=18.087903
+ROUND 249/800 accuracy=0.301390 test_loss=2.641624 cost=18.339463
+ROUND 250/800 accuracy=0.313405 test_loss=2.645693 cost=17.194873
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 251/800 accuracy=0.308944 test_loss=2.657189 cost=18.472008
+ROUND 252/800 accuracy=0.306004 test_loss=2.625688 cost=16.988759
+ROUND 253/800 accuracy=0.304346 test_loss=2.628117 cost=17.861703
+ROUND 254/800 accuracy=0.268677 test_loss=2.724712 cost=18.586558
+ROUND 255/800 accuracy=0.298091 test_loss=2.622109 cost=19.596972
+ROUND 256/800 accuracy=0.299065 test_loss=2.654390 cost=19.010984
+ROUND 257/800 accuracy=0.258678 test_loss=2.809108 cost=18.422430
+ROUND 258/800 accuracy=0.096088 test_loss=4.046176 cost=19.816234
+ROUND 259/800 accuracy=0.290417 test_loss=2.670398 cost=16.976561
+ROUND 260/800 accuracy=0.280965 test_loss=2.695114 cost=18.031486
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 261/800 accuracy=0.312721 test_loss=2.636025 cost=16.441385
+ROUND 262/800 accuracy=0.253875 test_loss=2.766265 cost=17.926224
+ROUND 263/800 accuracy=0.309457 test_loss=2.608493 cost=17.258364
+ROUND 264/800 accuracy=0.317079 test_loss=2.609377 cost=16.805976
+ROUND 265/800 accuracy=0.306346 test_loss=2.609349 cost=18.714079
+ROUND 266/800 accuracy=0.301355 test_loss=2.640327 cost=18.227757
+ROUND 267/800 accuracy=0.298723 test_loss=2.656045 cost=19.838754
+ROUND 268/800 accuracy=0.285648 test_loss=2.660990 cost=19.777421
+ROUND 269/800 accuracy=0.289238 test_loss=2.657988 cost=16.452125
+ROUND 270/800 accuracy=0.250970 test_loss=2.740373 cost=18.107344
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 271/800 accuracy=0.296125 test_loss=2.642201 cost=17.095551
+ROUND 272/800 accuracy=0.306380 test_loss=2.608021 cost=16.760903
+ROUND 273/800 accuracy=0.296877 test_loss=2.646406 cost=17.728304
+ROUND 274/800 accuracy=0.301885 test_loss=2.644041 cost=18.214455
+ROUND 275/800 accuracy=0.312157 test_loss=2.627612 cost=16.743152
+ROUND 276/800 accuracy=0.277222 test_loss=2.683283 cost=18.445077
+ROUND 277/800 accuracy=0.304927 test_loss=2.615476 cost=16.767428
+ROUND 278/800 accuracy=0.301868 test_loss=2.645468 cost=15.237355
+ROUND 279/800 accuracy=0.310448 test_loss=2.630674 cost=15.951898
+ROUND 280/800 accuracy=0.308790 test_loss=2.641544 cost=20.498410
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 281/800 accuracy=0.306431 test_loss=2.620322 cost=16.960476
+ROUND 282/800 accuracy=0.316550 test_loss=2.595892 cost=19.276327
+ROUND 283/800 accuracy=0.296125 test_loss=2.629418 cost=18.135995
+ROUND 284/800 accuracy=0.310773 test_loss=2.642510 cost=18.101570
+ROUND 285/800 accuracy=0.309798 test_loss=2.604639 cost=17.006840
+ROUND 286/800 accuracy=0.304210 test_loss=2.624324 cost=17.783036
+ROUND 287/800 accuracy=0.313405 test_loss=2.593753 cost=17.242894
+ROUND 288/800 accuracy=0.298621 test_loss=2.662476 cost=16.622406
+ROUND 289/800 accuracy=0.311337 test_loss=2.607937 cost=20.264855
+ROUND 290/800 accuracy=0.233195 test_loss=2.786029 cost=17.884924
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 291/800 accuracy=0.313969 test_loss=2.585581 cost=17.781486
+ROUND 292/800 accuracy=0.275684 test_loss=2.711143 cost=18.620527
+ROUND 293/800 accuracy=0.308294 test_loss=2.589649 cost=19.350875
+ROUND 294/800 accuracy=0.300962 test_loss=2.663333 cost=17.959572
+ROUND 295/800 accuracy=0.276915 test_loss=2.690191 cost=16.719415
+ROUND 296/800 accuracy=0.259789 test_loss=2.723298 cost=17.330859
+ROUND 297/800 accuracy=0.295903 test_loss=2.711151 cost=15.953284
+ROUND 298/800 accuracy=0.302227 test_loss=2.662523 cost=16.522316
+ROUND 299/800 accuracy=0.305714 test_loss=2.628591 cost=19.088560
+ROUND 300/800 accuracy=0.279632 test_loss=2.680714 cost=17.572616
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 301/800 accuracy=0.307132 test_loss=2.609853 cost=17.481694
+ROUND 302/800 accuracy=0.312157 test_loss=2.605676 cost=15.870779
+ROUND 303/800 accuracy=0.293972 test_loss=2.611474 cost=20.822668
+ROUND 304/800 accuracy=0.271018 test_loss=2.696953 cost=16.778381
+ROUND 305/800 accuracy=0.312106 test_loss=2.608884 cost=16.359500
+ROUND 306/800 accuracy=0.306688 test_loss=2.621656 cost=18.430541
+ROUND 307/800 accuracy=0.309422 test_loss=2.609004 cost=18.451215
+ROUND 308/800 accuracy=0.293921 test_loss=2.651140 cost=18.734289
+ROUND 309/800 accuracy=0.302637 test_loss=2.690017 cost=17.278539
+ROUND 310/800 accuracy=0.300569 test_loss=2.635599 cost=19.300073
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 311/800 accuracy=0.306431 test_loss=2.636071 cost=15.831994
+ROUND 312/800 accuracy=0.281444 test_loss=2.698777 cost=18.274807
+ROUND 313/800 accuracy=0.315712 test_loss=2.595202 cost=17.627994
+ROUND 314/800 accuracy=0.313610 test_loss=2.595115 cost=17.617003
+ROUND 315/800 accuracy=0.308568 test_loss=2.599097 cost=17.187218
+ROUND 316/800 accuracy=0.310465 test_loss=2.639821 cost=16.736062
+ROUND 317/800 accuracy=0.312550 test_loss=2.586337 cost=20.484819
+ROUND 318/800 accuracy=0.313644 test_loss=2.622362 cost=17.136456
+ROUND 319/800 accuracy=0.310175 test_loss=2.644060 cost=16.434838
+ROUND 320/800 accuracy=0.309200 test_loss=2.602814 cost=16.508607
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 321/800 accuracy=0.299321 test_loss=2.615567 cost=17.231662
+ROUND 322/800 accuracy=0.299321 test_loss=2.682345 cost=16.879511
+ROUND 323/800 accuracy=0.315524 test_loss=2.596719 cost=18.238134
+ROUND 324/800 accuracy=0.312020 test_loss=2.576226 cost=19.609742
+ROUND 325/800 accuracy=0.307918 test_loss=2.609764 cost=18.634327
+ROUND 326/800 accuracy=0.305679 test_loss=2.657349 cost=18.120488
+ROUND 327/800 accuracy=0.264951 test_loss=2.723295 cost=18.903937
+ROUND 328/800 accuracy=0.314601 test_loss=2.609709 cost=18.119309
+ROUND 329/800 accuracy=0.315216 test_loss=2.584294 cost=16.304384
+ROUND 330/800 accuracy=0.307508 test_loss=2.600034 cost=19.182662
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 331/800 accuracy=0.305765 test_loss=2.643292 cost=17.375316
+ROUND 332/800 accuracy=0.302124 test_loss=2.598124 cost=17.571789
+ROUND 333/800 accuracy=0.315798 test_loss=2.611136 cost=16.730757
+ROUND 334/800 accuracy=0.281512 test_loss=2.732697 cost=17.033593
+ROUND 335/800 accuracy=0.311405 test_loss=2.595611 cost=17.014785
+ROUND 336/800 accuracy=0.284435 test_loss=2.638477 cost=19.517440
+ROUND 337/800 accuracy=0.294126 test_loss=2.661793 cost=17.635770
+ROUND 338/800 accuracy=0.312909 test_loss=2.606236 cost=16.623584
+ROUND 339/800 accuracy=0.309610 test_loss=2.590882 cost=17.560956
+ROUND 340/800 accuracy=0.324224 test_loss=2.589191 cost=19.111549
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 341/800 accuracy=0.321592 test_loss=2.589767 cost=19.417989
+ROUND 342/800 accuracy=0.315131 test_loss=2.580650 cost=18.025973
+ROUND 343/800 accuracy=0.287460 test_loss=2.654731 cost=19.439167
+ROUND 344/800 accuracy=0.293613 test_loss=2.648737 cost=15.960180
+ROUND 345/800 accuracy=0.309337 test_loss=2.604433 cost=18.956285
+ROUND 346/800 accuracy=0.293169 test_loss=2.642556 cost=18.693788
+ROUND 347/800 accuracy=0.306261 test_loss=2.596183 cost=17.898585
+ROUND 348/800 accuracy=0.320019 test_loss=2.580180 cost=16.904634
+ROUND 349/800 accuracy=0.303423 test_loss=2.609421 cost=19.423595
+ROUND 350/800 accuracy=0.274283 test_loss=2.712913 cost=16.809764
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 351/800 accuracy=0.308739 test_loss=2.580445 cost=17.329570
+ROUND 352/800 accuracy=0.312448 test_loss=2.595954 cost=15.883881
+ROUND 353/800 accuracy=0.317165 test_loss=2.574188 cost=16.500992
+ROUND 354/800 accuracy=0.312003 test_loss=2.580286 cost=16.264485
+ROUND 355/800 accuracy=0.322600 test_loss=2.567569 cost=18.887683
+ROUND 356/800 accuracy=0.302637 test_loss=2.671294 cost=18.871218
+ROUND 357/800 accuracy=0.324224 test_loss=2.574628 cost=18.871446
+ROUND 358/800 accuracy=0.306449 test_loss=2.626946 cost=16.960305
+ROUND 359/800 accuracy=0.299202 test_loss=2.625669 cost=16.728643
+ROUND 360/800 accuracy=0.311815 test_loss=2.602830 cost=17.722987
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 361/800 accuracy=0.278504 test_loss=2.677564 cost=19.808846
+ROUND 362/800 accuracy=0.290143 test_loss=2.711569 cost=16.210968
+ROUND 363/800 accuracy=0.307765 test_loss=2.644794 cost=16.426923
+ROUND 364/800 accuracy=0.312995 test_loss=2.590410 cost=17.447081
+ROUND 365/800 accuracy=0.320908 test_loss=2.567275 cost=18.680508
+ROUND 366/800 accuracy=0.297048 test_loss=2.612277 cost=16.670144
+ROUND 367/800 accuracy=0.312721 test_loss=2.590592 cost=16.897580
+ROUND 368/800 accuracy=0.242869 test_loss=2.787055 cost=16.835780
+ROUND 369/800 accuracy=0.320942 test_loss=2.579630 cost=19.040320
+ROUND 370/800 accuracy=0.302603 test_loss=2.621051 cost=19.367772
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 371/800 accuracy=0.323301 test_loss=2.563163 cost=17.616136
+ROUND 372/800 accuracy=0.302210 test_loss=2.616611 cost=17.210781
+ROUND 373/800 accuracy=0.307525 test_loss=2.613981 cost=17.485766
+ROUND 374/800 accuracy=0.288144 test_loss=2.677930 cost=18.848082
+ROUND 375/800 accuracy=0.292485 test_loss=2.636933 cost=17.027911
+ROUND 376/800 accuracy=0.308773 test_loss=2.591450 cost=16.865030
+ROUND 377/800 accuracy=0.317250 test_loss=2.589428 cost=17.500564
+ROUND 378/800 accuracy=0.294963 test_loss=2.650453 cost=17.627395
+ROUND 379/800 accuracy=0.296621 test_loss=2.623721 cost=18.139042
+ROUND 380/800 accuracy=0.298467 test_loss=2.624550 cost=17.832460
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 381/800 accuracy=0.310892 test_loss=2.606311 cost=18.244435
+ROUND 382/800 accuracy=0.313354 test_loss=2.622589 cost=16.563116
+ROUND 383/800 accuracy=0.239878 test_loss=2.786534 cost=17.033762
+ROUND 384/800 accuracy=0.306397 test_loss=2.630510 cost=15.592234
+ROUND 385/800 accuracy=0.281188 test_loss=2.677967 cost=16.332540
+ROUND 386/800 accuracy=0.262062 test_loss=2.739738 cost=19.020859
+ROUND 387/800 accuracy=0.297424 test_loss=2.643364 cost=17.042544
+ROUND 388/800 accuracy=0.313371 test_loss=2.606074 cost=17.995556
+ROUND 389/800 accuracy=0.317387 test_loss=2.576312 cost=19.067867
+ROUND 390/800 accuracy=0.306825 test_loss=2.594268 cost=17.964975
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 391/800 accuracy=0.313012 test_loss=2.601644 cost=16.054316
+ROUND 392/800 accuracy=0.322207 test_loss=2.585639 cost=18.363389
+ROUND 393/800 accuracy=0.269617 test_loss=2.743260 cost=18.681202
+ROUND 394/800 accuracy=0.282247 test_loss=2.677245 cost=17.698531
+ROUND 395/800 accuracy=0.224752 test_loss=2.968737 cost=17.905328
+ROUND 396/800 accuracy=0.280504 test_loss=2.710252 cost=17.163729
+ROUND 397/800 accuracy=0.303372 test_loss=2.645326 cost=17.087111
+ROUND 398/800 accuracy=0.239963 test_loss=2.853258 cost=16.496678
+ROUND 399/800 accuracy=0.273565 test_loss=2.743001 cost=18.361601
+ROUND 400/800 accuracy=0.172965 test_loss=3.071423 cost=19.351593
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 401/800 accuracy=0.219385 test_loss=2.887450 cost=16.470360
+ROUND 402/800 accuracy=0.302090 test_loss=2.630645 cost=17.075919
+ROUND 403/800 accuracy=0.312567 test_loss=2.606755 cost=17.419340
+ROUND 404/800 accuracy=0.304158 test_loss=2.597368 cost=18.503857
+ROUND 405/800 accuracy=0.297681 test_loss=2.617649 cost=20.921637
+ROUND 406/800 accuracy=0.326189 test_loss=2.567189 cost=17.219094
+ROUND 407/800 accuracy=0.287614 test_loss=2.649107 cost=16.892543
+ROUND 408/800 accuracy=0.317473 test_loss=2.591011 cost=17.834486
+ROUND 409/800 accuracy=0.320840 test_loss=2.608694 cost=18.393069
+ROUND 410/800 accuracy=0.322993 test_loss=2.586152 cost=19.347950
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 411/800 accuracy=0.320583 test_loss=2.565401 cost=18.483670
+ROUND 412/800 accuracy=0.306449 test_loss=2.614637 cost=18.392917
+ROUND 413/800 accuracy=0.317831 test_loss=2.561047 cost=21.560489
+ROUND 414/800 accuracy=0.302347 test_loss=2.632046 cost=16.617161
+ROUND 415/800 accuracy=0.322395 test_loss=2.574679 cost=18.449546
+ROUND 416/800 accuracy=0.297647 test_loss=2.648920 cost=17.744623
+ROUND 417/800 accuracy=0.277940 test_loss=2.690231 cost=17.877659
+ROUND 418/800 accuracy=0.312721 test_loss=2.580654 cost=18.610311
+ROUND 419/800 accuracy=0.327044 test_loss=2.549815 cost=16.922426
+ROUND 420/800 accuracy=0.309696 test_loss=2.606297 cost=17.496074
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 421/800 accuracy=0.327830 test_loss=2.551025 cost=19.395623
+ROUND 422/800 accuracy=0.316874 test_loss=2.584556 cost=17.376270
+ROUND 423/800 accuracy=0.281136 test_loss=2.712784 cost=16.989333
+ROUND 424/800 accuracy=0.295835 test_loss=2.627007 cost=16.946391
+ROUND 425/800 accuracy=0.298399 test_loss=2.659725 cost=18.865584
+ROUND 426/800 accuracy=0.297356 test_loss=2.625572 cost=16.763108
+ROUND 427/800 accuracy=0.299082 test_loss=2.658680 cost=16.345675
+ROUND 428/800 accuracy=0.321506 test_loss=2.553781 cost=18.786574
+ROUND 429/800 accuracy=0.290246 test_loss=2.629174 cost=16.898236
+ROUND 430/800 accuracy=0.334290 test_loss=2.574604 cost=17.538252
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 431/800 accuracy=0.318395 test_loss=2.568378 cost=18.017339
+ROUND 432/800 accuracy=0.318122 test_loss=2.574953 cost=17.876012
+ROUND 433/800 accuracy=0.310004 test_loss=2.613526 cost=16.572605
+ROUND 434/800 accuracy=0.319865 test_loss=2.570894 cost=17.450404
+ROUND 435/800 accuracy=0.279513 test_loss=2.751148 cost=17.253676
+ROUND 436/800 accuracy=0.307525 test_loss=2.583986 cost=17.125613
+ROUND 437/800 accuracy=0.307201 test_loss=2.611677 cost=17.977222
+ROUND 438/800 accuracy=0.304261 test_loss=2.610779 cost=17.702490
+ROUND 439/800 accuracy=0.319387 test_loss=2.579509 cost=16.286691
+ROUND 440/800 accuracy=0.315866 test_loss=2.573785 cost=18.402788
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 441/800 accuracy=0.314704 test_loss=2.583268 cost=17.213897
+ROUND 442/800 accuracy=0.275479 test_loss=2.687106 cost=18.254421
+ROUND 443/800 accuracy=0.320088 test_loss=2.552020 cost=17.160059
+ROUND 444/800 accuracy=0.315917 test_loss=2.568421 cost=18.034118
+ROUND 445/800 accuracy=0.272300 test_loss=2.759420 cost=15.941210
+ROUND 446/800 accuracy=0.320754 test_loss=2.571084 cost=17.569571
+ROUND 447/800 accuracy=0.317729 test_loss=2.579068 cost=15.879089
+ROUND 448/800 accuracy=0.314174 test_loss=2.597255 cost=18.251636
+ROUND 449/800 accuracy=0.331368 test_loss=2.568851 cost=17.063263
+ROUND 450/800 accuracy=0.299578 test_loss=2.647574 cost=15.980565
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 451/800 accuracy=0.322002 test_loss=2.559792 cost=16.468630
+ROUND 452/800 accuracy=0.289682 test_loss=2.634365 cost=17.808262
+ROUND 453/800 accuracy=0.308312 test_loss=2.620228 cost=16.645549
+ROUND 454/800 accuracy=0.323044 test_loss=2.548220 cost=17.994860
+ROUND 455/800 accuracy=0.281341 test_loss=2.719096 cost=16.331002
+ROUND 456/800 accuracy=0.294228 test_loss=2.638579 cost=18.186980
+ROUND 457/800 accuracy=0.319233 test_loss=2.539463 cost=19.185466
+ROUND 458/800 accuracy=0.331778 test_loss=2.540726 cost=15.554519
+ROUND 459/800 accuracy=0.332701 test_loss=2.522381 cost=17.858277
+ROUND 460/800 accuracy=0.318378 test_loss=2.578114 cost=17.993499
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 461/800 accuracy=0.306893 test_loss=2.610155 cost=19.548968
+ROUND 462/800 accuracy=0.289443 test_loss=2.696367 cost=17.554546
+ROUND 463/800 accuracy=0.336974 test_loss=2.530424 cost=16.070804
+ROUND 464/800 accuracy=0.329505 test_loss=2.536208 cost=15.873377
+ROUND 465/800 accuracy=0.318464 test_loss=2.563195 cost=16.928190
+ROUND 466/800 accuracy=0.330479 test_loss=2.534627 cost=17.696417
+ROUND 467/800 accuracy=0.333521 test_loss=2.547316 cost=18.842497
+ROUND 468/800 accuracy=0.320224 test_loss=2.569412 cost=16.646473
+ROUND 469/800 accuracy=0.310516 test_loss=2.621118 cost=17.711966
+ROUND 470/800 accuracy=0.330855 test_loss=2.523636 cost=18.068817
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 471/800 accuracy=0.294314 test_loss=2.673627 cost=16.857558
+ROUND 472/800 accuracy=0.326651 test_loss=2.555272 cost=18.519037
+ROUND 473/800 accuracy=0.323284 test_loss=2.553062 cost=19.401069
+ROUND 474/800 accuracy=0.313012 test_loss=2.636150 cost=17.110766
+ROUND 475/800 accuracy=0.297920 test_loss=2.625814 cost=19.622691
+ROUND 476/800 accuracy=0.311969 test_loss=2.586054 cost=17.529366
+ROUND 477/800 accuracy=0.320139 test_loss=2.566455 cost=17.031492
+ROUND 478/800 accuracy=0.338991 test_loss=2.540353 cost=18.531695
+ROUND 479/800 accuracy=0.324976 test_loss=2.572292 cost=17.519352
+ROUND 480/800 accuracy=0.320993 test_loss=2.583259 cost=19.359944
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 481/800 accuracy=0.324275 test_loss=2.556678 cost=16.253817
+ROUND 482/800 accuracy=0.333761 test_loss=2.546418 cost=18.583994
+ROUND 483/800 accuracy=0.299116 test_loss=2.673495 cost=16.241289
+ROUND 484/800 accuracy=0.303270 test_loss=2.639389 cost=18.288649
+ROUND 485/800 accuracy=0.311320 test_loss=2.600326 cost=17.783967
+ROUND 486/800 accuracy=0.282418 test_loss=2.732206 cost=18.129006
+ROUND 487/800 accuracy=0.320310 test_loss=2.573954 cost=18.798538
+ROUND 488/800 accuracy=0.339674 test_loss=2.514420 cost=17.084243
+ROUND 489/800 accuracy=0.282726 test_loss=2.717229 cost=15.772926
+ROUND 490/800 accuracy=0.291545 test_loss=2.691396 cost=17.429479
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 491/800 accuracy=0.318464 test_loss=2.580099 cost=16.223890
+ROUND 492/800 accuracy=0.296518 test_loss=2.620404 cost=18.780341
+ROUND 493/800 accuracy=0.303458 test_loss=2.598931 cost=17.998646
+ROUND 494/800 accuracy=0.274624 test_loss=2.735773 cost=16.734315
+ROUND 495/800 accuracy=0.321113 test_loss=2.564972 cost=18.822519
+ROUND 496/800 accuracy=0.239792 test_loss=2.879460 cost=20.195966
+ROUND 497/800 accuracy=0.317302 test_loss=2.573728 cost=19.020701
+ROUND 498/800 accuracy=0.335436 test_loss=2.523935 cost=17.638849
+ROUND 499/800 accuracy=0.285512 test_loss=2.699922 cost=16.121227
+ROUND 500/800 accuracy=0.316909 test_loss=2.565840 cost=17.279887
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 501/800 accuracy=0.321147 test_loss=2.571524 cost=16.941374
+ROUND 502/800 accuracy=0.252235 test_loss=2.818041 cost=16.269918
+ROUND 503/800 accuracy=0.325352 test_loss=2.566558 cost=16.867315
+ROUND 504/800 accuracy=0.305047 test_loss=2.587697 cost=18.054781
+ROUND 505/800 accuracy=0.295954 test_loss=2.655680 cost=17.265332
+ROUND 506/800 accuracy=0.342990 test_loss=2.511187 cost=19.187998
+ROUND 507/800 accuracy=0.316242 test_loss=2.582296 cost=16.142064
+ROUND 508/800 accuracy=0.274898 test_loss=2.683924 cost=17.740010
+ROUND 509/800 accuracy=0.320258 test_loss=2.561788 cost=17.566524
+ROUND 510/800 accuracy=0.305936 test_loss=2.590628 cost=17.645723
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 511/800 accuracy=0.283050 test_loss=2.749691 cost=17.178279
+ROUND 512/800 accuracy=0.313319 test_loss=2.606748 cost=16.587468
+ROUND 513/800 accuracy=0.302774 test_loss=2.646837 cost=15.516420
+ROUND 514/800 accuracy=0.325010 test_loss=2.567163 cost=16.838720
+ROUND 515/800 accuracy=0.270608 test_loss=2.727573 cost=17.966988
+ROUND 516/800 accuracy=0.341195 test_loss=2.544545 cost=21.174784
+ROUND 517/800 accuracy=0.266814 test_loss=2.851700 cost=15.980067
+ROUND 518/800 accuracy=0.328924 test_loss=2.554838 cost=19.032534
+ROUND 519/800 accuracy=0.318430 test_loss=2.597216 cost=16.920529
+ROUND 520/800 accuracy=0.321216 test_loss=2.579196 cost=17.404888
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 521/800 accuracy=0.335111 test_loss=2.557058 cost=17.409997
+ROUND 522/800 accuracy=0.321831 test_loss=2.572108 cost=17.894947
+ROUND 523/800 accuracy=0.290519 test_loss=2.709419 cost=17.815894
+ROUND 524/800 accuracy=0.334359 test_loss=2.525266 cost=18.626033
+ROUND 525/800 accuracy=0.234767 test_loss=2.948980 cost=16.916793
+ROUND 526/800 accuracy=0.296877 test_loss=2.642585 cost=15.199224
+ROUND 527/800 accuracy=0.306705 test_loss=2.618667 cost=16.893714
+ROUND 528/800 accuracy=0.329419 test_loss=2.537100 cost=16.738600
+ROUND 529/800 accuracy=0.318207 test_loss=2.582905 cost=17.867154
+ROUND 530/800 accuracy=0.330513 test_loss=2.535802 cost=18.184284
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 531/800 accuracy=0.333162 test_loss=2.541734 cost=17.933696
+ROUND 532/800 accuracy=0.297800 test_loss=2.681648 cost=16.734654
+ROUND 533/800 accuracy=0.302945 test_loss=2.621529 cost=16.034933
+ROUND 534/800 accuracy=0.320088 test_loss=2.573429 cost=16.879940
+ROUND 535/800 accuracy=0.326668 test_loss=2.563348 cost=18.278763
+ROUND 536/800 accuracy=0.270591 test_loss=2.779027 cost=17.655026
+ROUND 537/800 accuracy=0.329898 test_loss=2.557668 cost=17.093968
+ROUND 538/800 accuracy=0.315097 test_loss=2.558534 cost=18.682595
+ROUND 539/800 accuracy=0.327539 test_loss=2.550466 cost=18.574176
+ROUND 540/800 accuracy=0.327932 test_loss=2.615218 cost=17.321712
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 541/800 accuracy=0.313712 test_loss=2.598481 cost=17.359868
+ROUND 542/800 accuracy=0.320344 test_loss=2.571787 cost=18.133912
+ROUND 543/800 accuracy=0.308089 test_loss=2.602934 cost=16.207583
+ROUND 544/800 accuracy=0.289631 test_loss=2.698958 cost=17.384594
+ROUND 545/800 accuracy=0.298843 test_loss=2.663230 cost=16.724229
+ROUND 546/800 accuracy=0.322497 test_loss=2.591309 cost=17.023913
+ROUND 547/800 accuracy=0.266284 test_loss=2.786376 cost=16.649649
+ROUND 548/800 accuracy=0.305782 test_loss=2.654523 cost=17.575230
+ROUND 549/800 accuracy=0.307508 test_loss=2.612211 cost=19.358737
+ROUND 550/800 accuracy=0.340443 test_loss=2.520501 cost=17.148583
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 551/800 accuracy=0.322600 test_loss=2.547735 cost=16.054474
+ROUND 552/800 accuracy=0.326736 test_loss=2.568758 cost=16.533335
+ROUND 553/800 accuracy=0.304158 test_loss=2.634863 cost=16.623054
+ROUND 554/800 accuracy=0.284965 test_loss=2.676839 cost=19.023933
+ROUND 555/800 accuracy=0.346853 test_loss=2.516033 cost=20.934133
+ROUND 556/800 accuracy=0.317490 test_loss=2.608057 cost=15.697403
+ROUND 557/800 accuracy=0.283802 test_loss=2.732568 cost=17.931084
+ROUND 558/800 accuracy=0.282640 test_loss=2.678867 cost=19.071188
+ROUND 559/800 accuracy=0.312225 test_loss=2.616664 cost=15.934123
+ROUND 560/800 accuracy=0.307542 test_loss=2.658015 cost=16.541192
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 561/800 accuracy=0.316327 test_loss=2.576960 cost=17.493787
+ROUND 562/800 accuracy=0.329556 test_loss=2.578144 cost=16.945322
+ROUND 563/800 accuracy=0.313439 test_loss=2.570252 cost=19.035317
+ROUND 564/800 accuracy=0.337316 test_loss=2.539530 cost=18.180287
+ROUND 565/800 accuracy=0.321745 test_loss=2.587133 cost=18.055870
+ROUND 566/800 accuracy=0.336888 test_loss=2.524053 cost=18.576727
+ROUND 567/800 accuracy=0.331778 test_loss=2.531913 cost=18.715868
+ROUND 568/800 accuracy=0.322344 test_loss=2.568907 cost=18.522090
+ROUND 569/800 accuracy=0.265669 test_loss=2.776406 cost=16.183600
+ROUND 570/800 accuracy=0.331317 test_loss=2.601530 cost=17.383912
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 571/800 accuracy=0.330513 test_loss=2.557265 cost=18.696502
+ROUND 572/800 accuracy=0.315883 test_loss=2.567770 cost=18.850808
+ROUND 573/800 accuracy=0.333795 test_loss=2.541212 cost=18.487612
+ROUND 574/800 accuracy=0.305953 test_loss=2.629631 cost=17.733590
+ROUND 575/800 accuracy=0.336735 test_loss=2.526340 cost=18.442208
+ROUND 576/800 accuracy=0.306346 test_loss=2.644663 cost=16.857286
+ROUND 577/800 accuracy=0.343639 test_loss=2.520167 cost=18.397169
+ROUND 578/800 accuracy=0.227230 test_loss=2.938266 cost=17.760494
+ROUND 579/800 accuracy=0.287494 test_loss=2.738209 cost=18.630481
+ROUND 580/800 accuracy=0.328582 test_loss=2.614546 cost=17.171156
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 581/800 accuracy=0.335111 test_loss=2.602961 cost=19.154742
+ROUND 582/800 accuracy=0.293767 test_loss=2.668574 cost=17.103130
+ROUND 583/800 accuracy=0.333863 test_loss=2.587239 cost=16.950272
+ROUND 584/800 accuracy=0.336444 test_loss=2.511083 cost=17.948901
+ROUND 585/800 accuracy=0.337606 test_loss=2.552517 cost=16.216545
+ROUND 586/800 accuracy=0.308209 test_loss=2.686578 cost=17.951131
+ROUND 587/800 accuracy=0.338939 test_loss=2.530911 cost=18.260091
+ROUND 588/800 accuracy=0.338768 test_loss=2.529261 cost=18.742005
+ROUND 589/800 accuracy=0.325899 test_loss=2.565534 cost=19.470960
+ROUND 590/800 accuracy=0.342477 test_loss=2.512418 cost=18.808962
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 591/800 accuracy=0.325129 test_loss=2.556852 cost=16.821517
+ROUND 592/800 accuracy=0.340153 test_loss=2.521961 cost=17.111471
+ROUND 593/800 accuracy=0.333949 test_loss=2.533996 cost=18.710169
+ROUND 594/800 accuracy=0.313542 test_loss=2.631456 cost=15.256679
+ROUND 595/800 accuracy=0.282931 test_loss=2.789592 cost=16.187052
+ROUND 596/800 accuracy=0.333795 test_loss=2.519585 cost=19.744148
+ROUND 597/800 accuracy=0.316721 test_loss=2.628272 cost=16.777552
+ROUND 598/800 accuracy=0.339315 test_loss=2.551808 cost=16.135426
+ROUND 599/800 accuracy=0.285597 test_loss=2.748069 cost=17.544981
+ROUND 600/800 accuracy=0.314670 test_loss=2.652779 cost=16.365877
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 601/800 accuracy=0.321147 test_loss=2.611480 cost=18.646102
+ROUND 602/800 accuracy=0.330257 test_loss=2.589906 cost=17.458536
+ROUND 603/800 accuracy=0.329488 test_loss=2.568466 cost=16.897985
+ROUND 604/800 accuracy=0.268489 test_loss=2.789968 cost=17.523983
+ROUND 605/800 accuracy=0.335128 test_loss=2.540044 cost=16.313358
+ROUND 606/800 accuracy=0.316550 test_loss=2.627065 cost=17.587606
+ROUND 607/800 accuracy=0.301868 test_loss=2.695881 cost=16.069710
+ROUND 608/800 accuracy=0.310619 test_loss=2.609465 cost=18.479268
+ROUND 609/800 accuracy=0.333316 test_loss=2.539891 cost=19.548848
+ROUND 610/800 accuracy=0.348254 test_loss=2.527643 cost=19.399469
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 611/800 accuracy=0.308961 test_loss=2.652808 cost=16.390949
+ROUND 612/800 accuracy=0.317712 test_loss=2.630214 cost=16.199396
+ROUND 613/800 accuracy=0.340956 test_loss=2.594692 cost=17.919787
+ROUND 614/800 accuracy=0.278555 test_loss=2.734917 cost=17.343281
+ROUND 615/800 accuracy=0.327625 test_loss=2.546201 cost=16.796563
+ROUND 616/800 accuracy=0.346101 test_loss=2.517604 cost=18.316533
+ROUND 617/800 accuracy=0.337145 test_loss=2.582174 cost=17.237593
+ROUND 618/800 accuracy=0.336735 test_loss=2.616769 cost=18.618283
+ROUND 619/800 accuracy=0.349827 test_loss=2.545814 cost=19.503797
+ROUND 620/800 accuracy=0.328890 test_loss=2.567137 cost=16.975998
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 621/800 accuracy=0.352373 test_loss=2.494351 cost=19.654406
+ROUND 622/800 accuracy=0.262165 test_loss=2.941390 cost=17.283092
+ROUND 623/800 accuracy=0.314345 test_loss=2.600772 cost=16.633237
+ROUND 624/800 accuracy=0.292861 test_loss=2.666148 cost=19.185073
+ROUND 625/800 accuracy=0.306397 test_loss=2.653022 cost=18.217354
+ROUND 626/800 accuracy=0.340341 test_loss=2.527264 cost=17.573789
+ROUND 627/800 accuracy=0.299185 test_loss=2.694658 cost=18.329497
+ROUND 628/800 accuracy=0.340426 test_loss=2.568750 cost=17.404863
+ROUND 629/800 accuracy=0.251448 test_loss=2.939777 cost=16.749981
+ROUND 630/800 accuracy=0.326121 test_loss=2.585850 cost=19.900922
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 631/800 accuracy=0.323865 test_loss=2.627636 cost=17.530462
+ROUND 632/800 accuracy=0.356561 test_loss=2.520728 cost=18.932241
+ROUND 633/800 accuracy=0.330872 test_loss=2.560763 cost=19.389210
+ROUND 634/800 accuracy=0.314926 test_loss=2.630425 cost=17.035600
+ROUND 635/800 accuracy=0.311303 test_loss=2.617514 cost=18.704531
+ROUND 636/800 accuracy=0.276487 test_loss=2.799082 cost=15.106998
+ROUND 637/800 accuracy=0.330753 test_loss=2.552841 cost=16.020968
+ROUND 638/800 accuracy=0.314311 test_loss=2.611537 cost=18.218255
+ROUND 639/800 accuracy=0.321455 test_loss=2.597527 cost=14.833399
+ROUND 640/800 accuracy=0.342631 test_loss=2.530971 cost=17.038668
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 641/800 accuracy=0.320105 test_loss=2.586446 cost=19.656954
+ROUND 642/800 accuracy=0.288964 test_loss=2.734567 cost=17.135150
+ROUND 643/800 accuracy=0.304158 test_loss=2.678625 cost=17.535443
+ROUND 644/800 accuracy=0.302535 test_loss=2.658214 cost=17.495656
+ROUND 645/800 accuracy=0.316139 test_loss=2.612766 cost=16.415206
+ROUND 646/800 accuracy=0.345417 test_loss=2.581803 cost=19.419838
+ROUND 647/800 accuracy=0.281649 test_loss=2.770880 cost=16.984206
+ROUND 648/800 accuracy=0.320156 test_loss=2.612997 cost=17.527533
+ROUND 649/800 accuracy=0.325540 test_loss=2.598872 cost=17.337637
+ROUND 650/800 accuracy=0.331915 test_loss=2.607775 cost=18.050217
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 651/800 accuracy=0.334752 test_loss=2.553561 cost=17.805753
+ROUND 652/800 accuracy=0.321250 test_loss=2.584974 cost=16.492157
+ROUND 653/800 accuracy=0.334906 test_loss=2.537800 cost=18.612560
+ROUND 654/800 accuracy=0.295168 test_loss=2.748192 cost=17.833433
+ROUND 655/800 accuracy=0.299253 test_loss=2.719046 cost=18.424854
+ROUND 656/800 accuracy=0.339794 test_loss=2.522420 cost=19.940266
+ROUND 657/800 accuracy=0.294382 test_loss=2.643510 cost=17.096977
+ROUND 658/800 accuracy=0.323540 test_loss=2.581115 cost=16.173128
+ROUND 659/800 accuracy=0.343434 test_loss=2.581955 cost=17.822974
+ROUND 660/800 accuracy=0.348989 test_loss=2.527050 cost=17.279218
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 661/800 accuracy=0.302278 test_loss=2.646678 cost=19.218954
+ROUND 662/800 accuracy=0.329710 test_loss=2.572459 cost=16.879756
+ROUND 663/800 accuracy=0.336102 test_loss=2.581415 cost=18.272456
+ROUND 664/800 accuracy=0.323660 test_loss=2.599887 cost=18.060738
+ROUND 665/800 accuracy=0.312174 test_loss=2.667052 cost=18.055541
+ROUND 666/800 accuracy=0.344340 test_loss=2.554246 cost=19.134479
+ROUND 667/800 accuracy=0.328035 test_loss=2.604067 cost=16.976540
+ROUND 668/800 accuracy=0.329693 test_loss=2.573688 cost=21.762011
+ROUND 669/800 accuracy=0.346648 test_loss=2.565876 cost=16.606336
+ROUND 670/800 accuracy=0.303851 test_loss=2.693362 cost=17.162359
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 671/800 accuracy=0.334188 test_loss=2.576818 cost=18.435660
+ROUND 672/800 accuracy=0.332479 test_loss=2.550419 cost=16.355856
+ROUND 673/800 accuracy=0.327779 test_loss=2.628719 cost=17.643387
+ROUND 674/800 accuracy=0.295852 test_loss=2.780302 cost=18.474873
+ROUND 675/800 accuracy=0.274214 test_loss=2.811888 cost=17.874902
+ROUND 676/800 accuracy=0.304910 test_loss=2.763798 cost=16.863640
+ROUND 677/800 accuracy=0.344443 test_loss=2.530311 cost=17.996968
+ROUND 678/800 accuracy=0.317558 test_loss=2.644829 cost=15.944825
+ROUND 679/800 accuracy=0.286896 test_loss=2.776564 cost=17.804107
+ROUND 680/800 accuracy=0.348767 test_loss=2.566236 cost=17.737635
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 681/800 accuracy=0.297031 test_loss=2.637874 cost=19.359463
+ROUND 682/800 accuracy=0.301646 test_loss=2.655748 cost=17.528554
+ROUND 683/800 accuracy=0.341606 test_loss=2.574879 cost=18.665613
+ROUND 684/800 accuracy=0.311234 test_loss=2.680891 cost=17.312620
+ROUND 685/800 accuracy=0.256302 test_loss=2.957777 cost=17.789907
+ROUND 686/800 accuracy=0.304859 test_loss=2.673860 cost=17.696508
+ROUND 687/800 accuracy=0.268813 test_loss=2.832357 cost=17.888893
+ROUND 688/800 accuracy=0.357244 test_loss=2.549534 cost=18.637282
+ROUND 689/800 accuracy=0.305697 test_loss=2.736168 cost=16.511631
+ROUND 690/800 accuracy=0.316977 test_loss=2.658475 cost=18.415688
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 691/800 accuracy=0.316464 test_loss=2.610522 cost=18.780969
+ROUND 692/800 accuracy=0.311439 test_loss=2.691339 cost=17.294562
+ROUND 693/800 accuracy=0.351946 test_loss=2.558877 cost=19.338542
+ROUND 694/800 accuracy=0.344836 test_loss=2.553074 cost=17.784948
+ROUND 695/800 accuracy=0.333180 test_loss=2.587872 cost=17.909515
+ROUND 696/800 accuracy=0.337692 test_loss=2.590887 cost=18.376612
+ROUND 697/800 accuracy=0.297766 test_loss=2.669360 cost=15.654535
+ROUND 698/800 accuracy=0.332308 test_loss=2.575890 cost=17.181917
+ROUND 699/800 accuracy=0.310516 test_loss=2.694633 cost=15.246914
+ROUND 700/800 accuracy=0.332445 test_loss=2.585369 cost=17.364629
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 701/800 accuracy=0.297476 test_loss=2.678705 cost=18.242544
+ROUND 702/800 accuracy=0.325591 test_loss=2.663783 cost=17.385145
+ROUND 703/800 accuracy=0.278778 test_loss=2.792074 cost=18.517561
+ROUND 704/800 accuracy=0.334137 test_loss=2.570076 cost=17.619824
+ROUND 705/800 accuracy=0.225965 test_loss=2.935304 cost=18.589490
+ROUND 706/800 accuracy=0.260592 test_loss=2.913820 cost=16.114310
+ROUND 707/800 accuracy=0.329949 test_loss=2.621357 cost=16.501203
+ROUND 708/800 accuracy=0.334820 test_loss=2.582601 cost=19.389746
+ROUND 709/800 accuracy=0.326719 test_loss=2.595537 cost=19.750879
+ROUND 710/800 accuracy=0.336888 test_loss=2.626540 cost=16.415805
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 711/800 accuracy=0.344015 test_loss=2.582285 cost=20.466293
+ROUND 712/800 accuracy=0.352920 test_loss=2.535711 cost=18.728543
+ROUND 713/800 accuracy=0.347519 test_loss=2.586906 cost=15.853302
+ROUND 714/800 accuracy=0.350305 test_loss=2.540591 cost=16.617781
+ROUND 715/800 accuracy=0.333538 test_loss=2.608989 cost=18.562206
+ROUND 716/800 accuracy=0.339384 test_loss=2.590079 cost=19.079999
+ROUND 717/800 accuracy=0.298997 test_loss=2.731485 cost=15.930352
+ROUND 718/800 accuracy=0.349604 test_loss=2.544456 cost=18.945779
+ROUND 719/800 accuracy=0.292468 test_loss=2.684131 cost=16.315778
+ROUND 720/800 accuracy=0.353997 test_loss=2.551140 cost=17.749363
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 721/800 accuracy=0.339743 test_loss=2.565350 cost=16.683389
+ROUND 722/800 accuracy=0.312413 test_loss=2.675585 cost=18.381288
+ROUND 723/800 accuracy=0.321814 test_loss=2.652776 cost=17.494947
+ROUND 724/800 accuracy=0.335606 test_loss=2.551130 cost=18.701594
+ROUND 725/800 accuracy=0.341264 test_loss=2.621907 cost=18.060772
+ROUND 726/800 accuracy=0.327813 test_loss=2.586302 cost=17.803114
+ROUND 727/800 accuracy=0.313097 test_loss=2.674213 cost=16.493649
+ROUND 728/800 accuracy=0.339982 test_loss=2.567701 cost=14.752173
+ROUND 729/800 accuracy=0.350442 test_loss=2.533556 cost=19.689726
+ROUND 730/800 accuracy=0.328633 test_loss=2.592732 cost=18.299125
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 731/800 accuracy=0.348784 test_loss=2.596169 cost=17.545382
+ROUND 732/800 accuracy=0.305252 test_loss=2.724205 cost=19.949540
+ROUND 733/800 accuracy=0.358304 test_loss=2.537007 cost=16.433749
+ROUND 734/800 accuracy=0.350955 test_loss=2.574750 cost=16.803368
+ROUND 735/800 accuracy=0.340443 test_loss=2.624182 cost=18.149010
+ROUND 736/800 accuracy=0.282281 test_loss=2.753547 cost=17.033906
+ROUND 737/800 accuracy=0.325659 test_loss=2.602509 cost=17.840656
+ROUND 738/800 accuracy=0.304603 test_loss=2.692956 cost=17.843133
+ROUND 739/800 accuracy=0.327129 test_loss=2.644993 cost=18.538261
+ROUND 740/800 accuracy=0.288862 test_loss=2.799146 cost=19.265084
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 741/800 accuracy=0.336000 test_loss=2.575472 cost=17.080973
+ROUND 742/800 accuracy=0.350801 test_loss=2.566859 cost=18.925812
+ROUND 743/800 accuracy=0.345605 test_loss=2.618858 cost=16.616762
+ROUND 744/800 accuracy=0.334290 test_loss=2.590538 cost=16.913986
+ROUND 745/800 accuracy=0.283905 test_loss=2.761915 cost=17.113710
+ROUND 746/800 accuracy=0.348340 test_loss=2.556822 cost=17.461788
+ROUND 747/800 accuracy=0.331077 test_loss=2.612059 cost=18.218660
+ROUND 748/800 accuracy=0.320703 test_loss=2.640746 cost=16.057438
+ROUND 749/800 accuracy=0.358406 test_loss=2.562651 cost=18.105438
+ROUND 750/800 accuracy=0.297424 test_loss=2.697165 cost=18.155019
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 751/800 accuracy=0.315456 test_loss=2.669124 cost=16.350012
+ROUND 752/800 accuracy=0.329710 test_loss=2.647015 cost=17.760132
+ROUND 753/800 accuracy=0.344648 test_loss=2.595482 cost=16.514285
+ROUND 754/800 accuracy=0.304620 test_loss=2.726873 cost=18.123081
+ROUND 755/800 accuracy=0.354749 test_loss=2.567868 cost=18.478157
+ROUND 756/800 accuracy=0.302244 test_loss=2.743353 cost=16.626189
+ROUND 757/800 accuracy=0.341452 test_loss=2.598887 cost=17.986861
+ROUND 758/800 accuracy=0.341999 test_loss=2.597863 cost=16.588797
+ROUND 759/800 accuracy=0.329351 test_loss=2.645819 cost=16.739284
+ROUND 760/800 accuracy=0.349656 test_loss=2.588490 cost=17.024447
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 761/800 accuracy=0.321882 test_loss=2.650716 cost=18.462677
+ROUND 762/800 accuracy=0.321814 test_loss=2.647490 cost=15.438069
+ROUND 763/800 accuracy=0.338495 test_loss=2.627252 cost=16.255678
+ROUND 764/800 accuracy=0.343947 test_loss=2.561539 cost=16.553306
+ROUND 765/800 accuracy=0.332974 test_loss=2.600396 cost=19.168102
+ROUND 766/800 accuracy=0.337914 test_loss=2.562303 cost=17.670090
+ROUND 767/800 accuracy=0.342699 test_loss=2.581342 cost=15.533342
+ROUND 768/800 accuracy=0.332804 test_loss=2.638143 cost=16.200544
+ROUND 769/800 accuracy=0.336222 test_loss=2.640161 cost=16.590542
+ROUND 770/800 accuracy=0.333504 test_loss=2.607887 cost=17.402053
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 771/800 accuracy=0.343622 test_loss=2.603647 cost=19.701896
+ROUND 772/800 accuracy=0.292587 test_loss=2.809870 cost=18.707603
+ROUND 773/800 accuracy=0.356014 test_loss=2.614146 cost=18.113359
+ROUND 774/800 accuracy=0.329898 test_loss=2.595261 cost=20.047229
+ROUND 775/800 accuracy=0.324736 test_loss=2.705149 cost=17.281643
+ROUND 776/800 accuracy=0.305081 test_loss=2.747294 cost=18.110463
+ROUND 777/800 accuracy=0.298911 test_loss=2.837096 cost=16.211326
+ROUND 778/800 accuracy=0.297339 test_loss=2.808894 cost=17.155447
+ROUND 779/800 accuracy=0.315063 test_loss=2.740651 cost=15.969779
+ROUND 780/800 accuracy=0.334273 test_loss=2.725126 cost=17.170266
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 781/800 accuracy=0.282316 test_loss=2.864117 cost=16.849485
+ROUND 782/800 accuracy=0.339777 test_loss=2.590343 cost=21.092929
+ROUND 783/800 accuracy=0.329710 test_loss=2.608292 cost=16.711685
+ROUND 784/800 accuracy=0.334342 test_loss=2.608192 cost=19.330504
+ROUND 785/800 accuracy=0.273889 test_loss=2.897181 cost=16.989770
+ROUND 786/800 accuracy=0.335692 test_loss=2.617219 cost=19.821217
+ROUND 787/800 accuracy=0.323694 test_loss=2.708683 cost=17.292068
+ROUND 788/800 accuracy=0.338409 test_loss=2.597409 cost=17.937250
+ROUND 789/800 accuracy=0.289904 test_loss=2.802056 cost=17.213787
+ROUND 790/800 accuracy=0.341999 test_loss=2.636271 cost=17.333115
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+ROUND 791/800 accuracy=0.339281 test_loss=2.652798 cost=19.000991
+ROUND 792/800 accuracy=0.306158 test_loss=2.770322 cost=18.083689
+ROUND 793/800 accuracy=0.316498 test_loss=2.694172 cost=18.564535
+ROUND 794/800 accuracy=0.314311 test_loss=2.714109 cost=16.417487
+ROUND 795/800 accuracy=0.337196 test_loss=2.626224 cost=16.804896
+ROUND 796/800 accuracy=0.304620 test_loss=2.825216 cost=16.746494
+ROUND 797/800 accuracy=0.303338 test_loss=2.811224 cost=16.391155
+ROUND 798/800 accuracy=0.326155 test_loss=2.638570 cost=16.731228
+ROUND 799/800 accuracy=0.337623 test_loss=2.651491 cost=17.608968
+ROUND 800/800 accuracy=0.263259 test_loss=2.925371 cost=18.096505
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+
+Best accuracy.
+0.35840639901553606
+
+Average time cost per round.
+25.814156777867687
+File path: ../results/Shakespeare_lstm_Adap-CTA_retrain_AdapCTA_lstm_warmup100_balanced_s1_0.h5
+
+Average time cost: 20948.17s.
+All done!

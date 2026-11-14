@@ -1,0 +1,65 @@
+{"job": {"dataset": "Cifar100", "model": "VGG11", "classes": 100, "clients": 100, "join_ratio": 0.1, "alpha": 0.5, "noise": 0.0, "target": 0.4, "data_root": "/data/safe_FL_20261021/cta_extension", "server": 14, "algorithm": "FedAvg", "id": "20261022_required_Cifar100_VGG11_d0.5_FedAvg_seed0_lr0p01", "log": "vgg11_cifar100/NonIID_0.5_N_100_jr_0.1/FedAvg_required_lr0p01_recover790_1792609338363880121.txt", "queue_phase": "image", "resume_state": "/root/safe_FL_20261021_lr0p01/state/checkpoints/archive/20261022_required_Cifar100_VGG11_d0.5_FedAvg_seed0_lr0p01_round790_1792609338363880121/20261022_required_Cifar100_VGG11_d0.5_FedAvg_seed0_lr0p01_latest.pt", "resume_curves": "/root/safe_FL_20261021_lr0p01/state/resume/20261022_required_Cifar100_VGG11_d0.5_FedAvg_seed0_lr0p01_round790_1792609338363880121.h5"}, "deployment_sha256": "75741cac6758d43f574fd8143c1b127f3d9c2256903053face5ab41d74afc8c6"}
+==================================================
+Algorithm: FedAvg
+Local batch size: 64
+Local epochs: 5
+Local learing rate: 0.01
+Local learing rate decay: False
+Total number of clients: 100
+Clients join in each round: 0.1
+Clients randomly join: False
+Client drop rate: 0.0
+Client select regarding time: False
+Running times: 1
+Dataset: Cifar100
+Number of classes: 100
+Backbone: VGG11
+Using device: cuda
+Auto break: False
+Global rounds: 800
+Cuda device id: 0
+DLG attack: False
+Total number of new clients: 0
+Fine tuning epoches on new clients: 0
+==================================================
+RUNTIME_PROVENANCE source_sha256=f6f5181924f60e672ca0bc878427fcb80894b0141b7e97402e6eaa0b13307368 data_sha256=e715190fdf35daffbc823432bda74f8376e3f24ca10b0edfbfe0cd12b4f1e348
+VGG11
+
+============= Running time: 0th =============
+Creating server and clients ...
+57.864288330078125 MB
+
+Join ratio / total clients: 0.1 / 100
+Finished creating server and clients.
+RESUMED from round 790; 10 rounds remain
+ROUND 791/800 accuracy=0.379198 test_loss=6.111633 cost=16.356020
+10.966120719909668
+ROUND 792/800 accuracy=0.377402 test_loss=6.132806 cost=16.636376
+5.860725402832031
+ROUND 793/800 accuracy=0.378134 test_loss=6.137517 cost=16.978927
+6.331094026565552
+ROUND 794/800 accuracy=0.374875 test_loss=6.128619 cost=17.361380
+6.403382778167725
+ROUND 795/800 accuracy=0.377336 test_loss=6.124902 cost=17.074374
+6.188553333282471
+ROUND 796/800 accuracy=0.375474 test_loss=6.123752 cost=17.530328
+6.474125385284424
+ROUND 797/800 accuracy=0.375740 test_loss=6.124177 cost=17.090335
+6.2138588428497314
+ROUND 798/800 accuracy=0.375740 test_loss=6.136012 cost=17.002868
+6.1250152587890625
+ROUND 799/800 accuracy=0.373745 test_loss=6.131470 cost=17.022819
+6.193319797515869
+ROUND 800/800 accuracy=0.376538 test_loss=6.123262 cost=17.432221
+File path: ../results/Cifar100_VGG11_FedAvg_20261022_required_Cifar100_VGG11_d0.5_FedAvg_seed0_lr0p01_0.h5
+6.619089126586914
+
+Best accuracy.
+0.38106005187204894
+
+Average time cost per round.
+6.737525177001953
+File path: ../results/Cifar100_VGG11_FedAvg_20261022_required_Cifar100_VGG11_d0.5_FedAvg_seed0_lr0p01_0.h5
+
+Average time cost: 75.13s.
+All done!

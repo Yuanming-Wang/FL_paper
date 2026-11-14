@@ -1,0 +1,715 @@
+{"job": {"dataset": "Shakespeare", "model": "lstm", "classes": 80, "clients": 100, "join_ratio": 0.1, "alpha": 0.2, "noise": 0.0, "target": 0.5, "data_root": "/data/safe_FL_20261021/dataset", "server": 9, "algorithm": "SCAFFOLD", "id": "20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9", "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/SCAFFOLD_relocated_from_server5_lr0p01_recover0_1792622644071496351_manual_20261022_184826.txt", "queue_phase": "language", "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9/checkpoint.pt", "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9/curves.h5", "manual_launch_tag": "20261022_184826", "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"}, "deployment_sha256": "ff8923ed37d0df4a735817398f10ba5b8bb1939f6053b710cb301eb9733df284"}
+==================================================
+Algorithm: SCAFFOLD
+Local batch size: 64
+Local epochs: 5
+Local learing rate: 0.01
+Local learing rate decay: False
+Total number of clients: 100
+Clients join in each round: 0.1
+Clients randomly join: False
+Client drop rate: 0.0
+Client select regarding time: False
+Running times: 1
+Dataset: Shakespeare
+Number of classes: 80
+Backbone: lstm
+Using device: cuda
+Auto break: False
+Global rounds: 800
+Cuda device id: 0
+DLG attack: False
+Total number of new clients: 0
+Fine tuning epoches on new clients: 0
+==================================================
+RUNTIME_PROVENANCE source_sha256=fc242f13e870ce77808d8e4c704768d2e814d84a8486309f809623abe36255fd data_sha256=de51dedb9850760c706e730468e9bb8fa6bcae565a670dd2acbf29e5f84eb54b
+lstm
+
+============= Running time: 0th =============
+Creating server and clients ...
+0.1265869140625 MB
+
+Join ratio / total clients: 0.1 / 100
+Finished creating server and clients.
+RESUMED from round 190; 610 rounds remain
+ROUND 191/800 accuracy=0.264780 test_loss=2.811413 cost=15.050078
+ROUND 192/800 accuracy=0.273274 test_loss=2.789415 cost=14.132778
+ROUND 193/800 accuracy=0.240937 test_loss=2.877198 cost=15.344527
+ROUND 194/800 accuracy=0.263823 test_loss=2.773010 cost=15.139683
+ROUND 195/800 accuracy=0.246577 test_loss=2.754389 cost=15.472204
+ROUND 196/800 accuracy=0.262011 test_loss=2.821694 cost=13.925274
+ROUND 197/800 accuracy=0.277222 test_loss=2.843317 cost=16.286233
+ROUND 198/800 accuracy=0.273189 test_loss=2.785447 cost=14.325715
+ROUND 199/800 accuracy=0.289135 test_loss=2.778570 cost=16.063062
+ROUND 200/800 accuracy=0.273052 test_loss=2.792929 cost=14.062970
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 201/800 accuracy=0.270146 test_loss=2.778098 cost=14.900370
+ROUND 202/800 accuracy=0.269873 test_loss=2.813250 cost=14.967132
+ROUND 203/800 accuracy=0.261481 test_loss=2.825142 cost=15.467228
+ROUND 204/800 accuracy=0.126476 test_loss=2.874336 cost=15.216594
+ROUND 205/800 accuracy=0.280401 test_loss=2.755721 cost=17.695058
+ROUND 206/800 accuracy=0.113965 test_loss=2.895367 cost=14.741447
+ROUND 207/800 accuracy=0.297459 test_loss=2.789134 cost=12.946532
+ROUND 208/800 accuracy=0.094584 test_loss=2.955514 cost=15.943693
+ROUND 209/800 accuracy=0.287580 test_loss=2.778663 cost=15.926550
+ROUND 210/800 accuracy=0.259208 test_loss=2.862448 cost=12.992894
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 211/800 accuracy=0.236716 test_loss=2.828079 cost=15.986999
+ROUND 212/800 accuracy=0.260968 test_loss=2.807287 cost=13.919693
+ROUND 213/800 accuracy=0.260729 test_loss=2.769482 cost=17.067428
+ROUND 214/800 accuracy=0.279119 test_loss=2.803799 cost=12.785776
+ROUND 215/800 accuracy=0.288776 test_loss=2.733057 cost=18.843837
+ROUND 216/800 accuracy=0.277855 test_loss=2.805443 cost=15.287486
+ROUND 217/800 accuracy=0.266831 test_loss=2.793419 cost=17.766737
+ROUND 218/800 accuracy=0.282008 test_loss=2.778110 cost=13.357148
+ROUND 219/800 accuracy=0.290178 test_loss=2.743862 cost=12.691201
+ROUND 220/800 accuracy=0.284640 test_loss=2.766143 cost=13.931083
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 221/800 accuracy=0.263669 test_loss=2.745711 cost=14.100777
+ROUND 222/800 accuracy=0.133689 test_loss=2.959313 cost=17.089298
+ROUND 223/800 accuracy=0.286041 test_loss=2.714522 cost=18.879186
+ROUND 224/800 accuracy=0.266079 test_loss=2.712039 cost=14.100689
+ROUND 225/800 accuracy=0.261088 test_loss=2.816999 cost=15.711262
+ROUND 226/800 accuracy=0.263378 test_loss=2.829997 cost=13.783546
+ROUND 227/800 accuracy=0.272232 test_loss=2.783918 cost=12.878664
+ROUND 228/800 accuracy=0.258541 test_loss=2.796544 cost=15.072444
+ROUND 229/800 accuracy=0.249039 test_loss=2.825401 cost=15.623667
+ROUND 230/800 accuracy=0.244236 test_loss=2.789205 cost=15.631677
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 231/800 accuracy=0.252867 test_loss=2.744465 cost=14.192788
+ROUND 232/800 accuracy=0.242441 test_loss=2.795741 cost=15.073377
+ROUND 233/800 accuracy=0.270505 test_loss=2.742031 cost=14.328538
+ROUND 234/800 accuracy=0.296245 test_loss=2.724759 cost=18.481024
+ROUND 235/800 accuracy=0.290895 test_loss=2.726615 cost=13.596413
+ROUND 236/800 accuracy=0.288161 test_loss=2.744098 cost=13.575738
+ROUND 237/800 accuracy=0.257191 test_loss=2.783125 cost=12.412806
+ROUND 238/800 accuracy=0.258234 test_loss=2.718095 cost=15.515709
+ROUND 239/800 accuracy=0.254969 test_loss=2.742414 cost=15.180196
+ROUND 240/800 accuracy=0.263515 test_loss=2.702648 cost=18.432164
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 241/800 accuracy=0.268830 test_loss=2.734033 cost=19.035290
+ROUND 242/800 accuracy=0.284179 test_loss=2.757617 cost=13.615561
+ROUND 243/800 accuracy=0.270488 test_loss=2.801916 cost=14.456764
+ROUND 244/800 accuracy=0.127690 test_loss=2.871353 cost=16.228896
+ROUND 245/800 accuracy=0.284025 test_loss=2.745154 cost=12.544642
+ROUND 246/800 accuracy=0.256166 test_loss=2.731781 cost=14.151798
+ROUND 247/800 accuracy=0.250902 test_loss=2.753893 cost=16.253314
+ROUND 248/800 accuracy=0.283751 test_loss=2.711682 cost=15.396592
+ROUND 249/800 accuracy=0.287118 test_loss=2.740428 cost=15.555004
+ROUND 250/800 accuracy=0.273975 test_loss=2.741142 cost=14.662000
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 251/800 accuracy=0.297715 test_loss=2.722504 cost=15.657127
+ROUND 252/800 accuracy=0.295801 test_loss=2.686732 cost=14.163623
+ROUND 253/800 accuracy=0.257618 test_loss=2.707066 cost=15.401810
+ROUND 254/800 accuracy=0.262660 test_loss=2.769896 cost=15.719548
+ROUND 255/800 accuracy=0.306927 test_loss=2.707573 cost=16.581438
+ROUND 256/800 accuracy=0.285700 test_loss=2.723172 cost=16.217467
+ROUND 257/800 accuracy=0.177289 test_loss=2.863569 cost=16.309150
+ROUND 258/800 accuracy=0.271821 test_loss=2.739784 cost=15.131726
+ROUND 259/800 accuracy=0.287409 test_loss=2.703847 cost=14.079470
+ROUND 260/800 accuracy=0.288691 test_loss=2.694888 cost=15.027062
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 261/800 accuracy=0.282504 test_loss=2.676432 cost=13.816389
+ROUND 262/800 accuracy=0.272898 test_loss=2.776175 cost=14.808826
+ROUND 263/800 accuracy=0.239297 test_loss=2.839536 cost=15.032794
+ROUND 264/800 accuracy=0.290536 test_loss=2.692372 cost=14.144234
+ROUND 265/800 accuracy=0.274095 test_loss=2.699484 cost=16.109422
+ROUND 266/800 accuracy=0.150455 test_loss=2.804628 cost=16.809584
+ROUND 267/800 accuracy=0.302740 test_loss=2.731997 cost=16.871418
+ROUND 268/800 accuracy=0.279325 test_loss=2.681364 cost=16.913488
+ROUND 269/800 accuracy=0.287682 test_loss=2.713527 cost=13.540507
+ROUND 270/800 accuracy=0.262455 test_loss=2.741311 cost=15.065319
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 271/800 accuracy=0.281649 test_loss=2.713018 cost=14.313143
+ROUND 272/800 accuracy=0.291955 test_loss=2.642717 cost=13.977983
+ROUND 273/800 accuracy=0.280709 test_loss=2.780094 cost=14.962817
+ROUND 274/800 accuracy=0.289477 test_loss=2.696424 cost=15.411367
+ROUND 275/800 accuracy=0.268574 test_loss=2.698738 cost=14.251811
+ROUND 276/800 accuracy=0.245398 test_loss=2.749277 cost=15.836147
+ROUND 277/800 accuracy=0.263686 test_loss=2.690413 cost=14.252671
+ROUND 278/800 accuracy=0.235639 test_loss=2.747890 cost=12.972475
+ROUND 279/800 accuracy=0.262626 test_loss=2.701337 cost=13.502944
+ROUND 280/800 accuracy=0.266950 test_loss=2.673392 cost=17.989636
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 281/800 accuracy=0.298672 test_loss=2.683961 cost=14.110900
+ROUND 282/800 accuracy=0.296074 test_loss=2.662096 cost=16.553910
+ROUND 283/800 accuracy=0.277769 test_loss=2.740995 cost=15.392385
+ROUND 284/800 accuracy=0.259652 test_loss=2.696296 cost=15.685601
+ROUND 285/800 accuracy=0.270574 test_loss=2.684681 cost=14.471916
+ROUND 286/800 accuracy=0.276898 test_loss=2.699999 cost=15.128985
+ROUND 287/800 accuracy=0.268779 test_loss=2.693945 cost=14.761978
+ROUND 288/800 accuracy=0.290776 test_loss=2.699310 cost=13.773684
+ROUND 289/800 accuracy=0.312448 test_loss=2.648656 cost=17.326574
+ROUND 290/800 accuracy=0.211557 test_loss=2.831501 cost=15.174130
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 291/800 accuracy=0.279137 test_loss=2.681018 cost=15.202637
+ROUND 292/800 accuracy=0.238767 test_loss=2.784120 cost=16.062530
+ROUND 293/800 accuracy=0.280350 test_loss=2.649783 cost=16.703147
+ROUND 294/800 accuracy=0.254747 test_loss=2.712514 cost=15.494551
+ROUND 295/800 accuracy=0.295852 test_loss=2.685184 cost=13.602871
+ROUND 296/800 accuracy=0.250594 test_loss=2.772479 cost=14.495639
+ROUND 297/800 accuracy=0.254696 test_loss=2.746161 cost=13.438186
+ROUND 298/800 accuracy=0.266523 test_loss=2.738351 cost=13.952184
+ROUND 299/800 accuracy=0.278453 test_loss=2.698845 cost=16.433996
+ROUND 300/800 accuracy=0.287631 test_loss=2.698198 cost=14.565457
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 301/800 accuracy=0.313866 test_loss=2.665109 cost=14.487183
+ROUND 302/800 accuracy=0.298757 test_loss=2.632551 cost=13.077604
+ROUND 303/800 accuracy=0.274197 test_loss=2.648789 cost=18.093244
+ROUND 304/800 accuracy=0.279632 test_loss=2.694876 cost=13.765069
+ROUND 305/800 accuracy=0.293579 test_loss=2.704518 cost=13.617600
+ROUND 306/800 accuracy=0.279547 test_loss=2.693357 cost=15.774781
+ROUND 307/800 accuracy=0.307542 test_loss=2.677504 cost=15.542844
+ROUND 308/800 accuracy=0.293186 test_loss=2.671478 cost=15.814467
+ROUND 309/800 accuracy=0.247295 test_loss=2.748225 cost=14.904786
+ROUND 310/800 accuracy=0.268420 test_loss=2.737767 cost=16.694391
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 311/800 accuracy=0.276334 test_loss=2.767516 cost=13.205802
+ROUND 312/800 accuracy=0.293664 test_loss=2.730480 cost=15.225432
+ROUND 313/800 accuracy=0.288622 test_loss=2.654577 cost=14.971721
+ROUND 314/800 accuracy=0.306619 test_loss=2.687115 cost=14.759735
+ROUND 315/800 accuracy=0.284435 test_loss=2.633046 cost=14.501377
+ROUND 316/800 accuracy=0.314054 test_loss=2.641443 cost=13.772998
+ROUND 317/800 accuracy=0.290160 test_loss=2.640606 cost=17.781545
+ROUND 318/800 accuracy=0.266369 test_loss=2.747146 cost=14.682033
+ROUND 319/800 accuracy=0.227914 test_loss=2.764875 cost=14.330275
+ROUND 320/800 accuracy=0.265207 test_loss=2.729249 cost=14.021368
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 321/800 accuracy=0.289750 test_loss=2.677251 cost=14.400202
+ROUND 322/800 accuracy=0.299732 test_loss=2.691331 cost=13.948238
+ROUND 323/800 accuracy=0.288434 test_loss=2.643280 cost=15.581861
+ROUND 324/800 accuracy=0.316550 test_loss=2.617771 cost=16.637278
+ROUND 325/800 accuracy=0.295014 test_loss=2.633693 cost=15.836196
+ROUND 326/800 accuracy=0.268147 test_loss=2.669113 cost=15.568644
+ROUND 327/800 accuracy=0.280282 test_loss=2.659358 cost=15.823455
+ROUND 328/800 accuracy=0.270420 test_loss=2.683673 cost=15.633950
+ROUND 329/800 accuracy=0.264267 test_loss=2.680771 cost=13.886707
+ROUND 330/800 accuracy=0.228734 test_loss=2.738267 cost=17.043232
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 331/800 accuracy=0.304210 test_loss=2.655553 cost=14.463698
+ROUND 332/800 accuracy=0.289631 test_loss=2.695206 cost=14.769556
+ROUND 333/800 accuracy=0.278043 test_loss=2.680264 cost=14.181135
+ROUND 334/800 accuracy=0.251842 test_loss=2.724221 cost=14.403128
+ROUND 335/800 accuracy=0.299048 test_loss=2.636724 cost=14.211184
+ROUND 336/800 accuracy=0.250919 test_loss=2.742255 cost=16.925430
+ROUND 337/800 accuracy=0.296313 test_loss=2.694224 cost=14.686721
+ROUND 338/800 accuracy=0.286520 test_loss=2.632072 cost=13.960303
+ROUND 339/800 accuracy=0.283016 test_loss=2.648770 cost=14.899727
+ROUND 340/800 accuracy=0.305030 test_loss=2.622449 cost=16.376314
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 341/800 accuracy=0.264951 test_loss=2.625022 cost=17.057226
+ROUND 342/800 accuracy=0.279085 test_loss=2.637862 cost=15.459259
+ROUND 343/800 accuracy=0.303099 test_loss=2.622699 cost=16.355610
+ROUND 344/800 accuracy=0.301851 test_loss=2.655548 cost=12.950628
+ROUND 345/800 accuracy=0.283136 test_loss=2.670353 cost=16.291125
+ROUND 346/800 accuracy=0.302159 test_loss=2.667324 cost=15.676716
+ROUND 347/800 accuracy=0.298381 test_loss=2.631732 cost=15.050205
+ROUND 348/800 accuracy=0.302859 test_loss=2.648572 cost=14.149060
+ROUND 349/800 accuracy=0.304808 test_loss=2.600681 cost=16.482580
+ROUND 350/800 accuracy=0.297339 test_loss=2.665513 cost=13.652029
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 351/800 accuracy=0.164351 test_loss=2.707426 cost=15.846279
+ROUND 352/800 accuracy=0.289870 test_loss=2.611144 cost=13.182486
+ROUND 353/800 accuracy=0.302535 test_loss=2.603846 cost=13.720123
+ROUND 354/800 accuracy=0.300039 test_loss=2.680945 cost=13.456953
+ROUND 355/800 accuracy=0.299800 test_loss=2.630830 cost=16.188511
+ROUND 356/800 accuracy=0.265634 test_loss=2.634721 cost=16.314075
+ROUND 357/800 accuracy=0.259464 test_loss=2.687133 cost=16.591868
+ROUND 358/800 accuracy=0.275718 test_loss=2.642184 cost=14.340437
+ROUND 359/800 accuracy=0.294912 test_loss=2.612411 cost=13.844371
+ROUND 360/800 accuracy=0.314225 test_loss=2.614314 cost=14.771716
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 361/800 accuracy=0.264387 test_loss=2.679334 cost=17.022849
+ROUND 362/800 accuracy=0.300723 test_loss=2.667372 cost=13.178000
+ROUND 363/800 accuracy=0.295356 test_loss=2.673218 cost=13.623835
+ROUND 364/800 accuracy=0.307440 test_loss=2.690545 cost=14.575456
+ROUND 365/800 accuracy=0.299663 test_loss=2.642635 cost=15.965782
+ROUND 366/800 accuracy=0.314311 test_loss=2.612982 cost=13.570349
+ROUND 367/800 accuracy=0.279034 test_loss=2.674707 cost=14.307280
+ROUND 368/800 accuracy=0.286007 test_loss=2.683962 cost=13.477222
+ROUND 369/800 accuracy=0.288161 test_loss=2.602419 cost=16.440961
+ROUND 370/800 accuracy=0.288400 test_loss=2.665430 cost=16.582630
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 371/800 accuracy=0.307064 test_loss=2.601795 cost=14.851333
+ROUND 372/800 accuracy=0.153976 test_loss=2.702674 cost=15.765945
+ROUND 373/800 accuracy=0.316396 test_loss=2.597597 cost=14.469891
+ROUND 374/800 accuracy=0.285734 test_loss=2.686788 cost=15.945009
+ROUND 375/800 accuracy=0.242561 test_loss=2.721354 cost=14.599979
+ROUND 376/800 accuracy=0.320754 test_loss=2.638401 cost=13.818048
+ROUND 377/800 accuracy=0.304039 test_loss=2.624572 cost=14.705509
+ROUND 378/800 accuracy=0.307491 test_loss=2.640459 cost=14.574944
+ROUND 379/800 accuracy=0.275975 test_loss=2.649327 cost=15.418334
+ROUND 380/800 accuracy=0.283597 test_loss=2.686806 cost=15.053984
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 381/800 accuracy=0.290895 test_loss=2.659929 cost=15.517232
+ROUND 382/800 accuracy=0.252747 test_loss=2.710127 cost=14.242005
+ROUND 383/800 accuracy=0.237365 test_loss=2.669584 cost=14.131715
+ROUND 384/800 accuracy=0.276385 test_loss=2.700424 cost=12.965187
+ROUND 385/800 accuracy=0.298655 test_loss=2.626362 cost=13.230695
+ROUND 386/800 accuracy=0.293801 test_loss=2.651531 cost=15.776300
+ROUND 387/800 accuracy=0.295886 test_loss=2.636955 cost=14.130755
+ROUND 388/800 accuracy=0.291237 test_loss=2.631571 cost=15.289718
+ROUND 389/800 accuracy=0.302706 test_loss=2.609345 cost=16.287510
+ROUND 390/800 accuracy=0.298757 test_loss=2.570623 cost=15.118475
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 391/800 accuracy=0.307850 test_loss=2.614783 cost=13.178760
+ROUND 392/800 accuracy=0.294707 test_loss=2.585120 cost=15.711218
+ROUND 393/800 accuracy=0.265344 test_loss=2.703559 cost=15.796759
+ROUND 394/800 accuracy=0.276624 test_loss=2.682927 cost=14.827590
+ROUND 395/800 accuracy=0.289220 test_loss=2.668925 cost=14.333470
+ROUND 396/800 accuracy=0.307115 test_loss=2.596409 cost=13.970444
+ROUND 397/800 accuracy=0.271138 test_loss=2.608710 cost=14.482283
+ROUND 398/800 accuracy=0.299321 test_loss=2.619166 cost=12.975923
+ROUND 399/800 accuracy=0.299304 test_loss=2.640894 cost=15.177033
+ROUND 400/800 accuracy=0.278248 test_loss=2.637835 cost=15.371593
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 401/800 accuracy=0.283649 test_loss=2.624669 cost=12.900552
+ROUND 402/800 accuracy=0.310516 test_loss=2.577142 cost=14.064487
+ROUND 403/800 accuracy=0.282845 test_loss=2.679347 cost=14.789388
+ROUND 404/800 accuracy=0.251705 test_loss=2.663454 cost=16.101220
+ROUND 405/800 accuracy=0.285358 test_loss=2.643945 cost=18.117695
+ROUND 406/800 accuracy=0.311097 test_loss=2.634172 cost=14.442840
+ROUND 407/800 accuracy=0.272232 test_loss=2.680527 cost=14.119194
+ROUND 408/800 accuracy=0.307201 test_loss=2.598651 cost=15.010034
+ROUND 409/800 accuracy=0.302398 test_loss=2.605705 cost=15.650313
+ROUND 410/800 accuracy=0.283426 test_loss=2.615136 cost=16.816444
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 411/800 accuracy=0.303987 test_loss=2.583028 cost=15.722456
+ROUND 412/800 accuracy=0.309713 test_loss=2.629601 cost=15.433101
+ROUND 413/800 accuracy=0.298877 test_loss=2.567424 cost=18.822861
+ROUND 414/800 accuracy=0.301492 test_loss=2.643085 cost=13.698535
+ROUND 415/800 accuracy=0.280589 test_loss=2.574585 cost=15.940430
+ROUND 416/800 accuracy=0.294638 test_loss=2.622014 cost=14.847532
+ROUND 417/800 accuracy=0.285546 test_loss=2.688488 cost=14.874431
+ROUND 418/800 accuracy=0.265686 test_loss=2.634125 cost=16.153494
+ROUND 419/800 accuracy=0.326787 test_loss=2.570316 cost=13.997818
+ROUND 420/800 accuracy=0.287853 test_loss=2.571852 cost=14.787331
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 421/800 accuracy=0.290314 test_loss=2.603604 cost=16.843607
+ROUND 422/800 accuracy=0.272522 test_loss=2.643764 cost=14.892620
+ROUND 423/800 accuracy=0.260028 test_loss=2.650774 cost=14.273240
+ROUND 424/800 accuracy=0.302295 test_loss=2.656239 cost=13.954615
+ROUND 425/800 accuracy=0.249124 test_loss=2.691414 cost=16.431158
+ROUND 426/800 accuracy=0.275206 test_loss=2.676382 cost=14.057441
+ROUND 427/800 accuracy=0.275599 test_loss=2.676859 cost=13.653339
+ROUND 428/800 accuracy=0.318686 test_loss=2.581911 cost=15.887603
+ROUND 429/800 accuracy=0.306722 test_loss=2.572337 cost=13.806303
+ROUND 430/800 accuracy=0.283341 test_loss=2.575332 cost=15.120575
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 431/800 accuracy=0.271172 test_loss=2.586661 cost=15.562402
+ROUND 432/800 accuracy=0.298450 test_loss=2.573860 cost=15.145562
+ROUND 433/800 accuracy=0.328599 test_loss=2.593293 cost=13.459479
+ROUND 434/800 accuracy=0.301287 test_loss=2.578909 cost=14.709016
+ROUND 435/800 accuracy=0.294348 test_loss=2.664259 cost=14.178151
+ROUND 436/800 accuracy=0.322309 test_loss=2.591575 cost=14.050601
+ROUND 437/800 accuracy=0.287904 test_loss=2.678864 cost=15.243013
+ROUND 438/800 accuracy=0.274248 test_loss=2.695260 cost=15.075443
+ROUND 439/800 accuracy=0.307850 test_loss=2.639305 cost=13.474886
+ROUND 440/800 accuracy=0.318430 test_loss=2.613538 cost=15.449979
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 441/800 accuracy=0.324668 test_loss=2.595080 cost=14.187083
+ROUND 442/800 accuracy=0.242288 test_loss=2.713497 cost=15.659165
+ROUND 443/800 accuracy=0.317438 test_loss=2.587425 cost=14.259380
+ROUND 444/800 accuracy=0.308961 test_loss=2.618186 cost=15.176508
+ROUND 445/800 accuracy=0.281000 test_loss=2.655084 cost=12.927044
+ROUND 446/800 accuracy=0.319284 test_loss=2.616194 cost=14.657099
+ROUND 447/800 accuracy=0.298569 test_loss=2.608956 cost=13.143512
+ROUND 448/800 accuracy=0.261584 test_loss=2.613374 cost=15.850367
+ROUND 449/800 accuracy=0.295237 test_loss=2.606641 cost=14.497404
+ROUND 450/800 accuracy=0.314447 test_loss=2.619894 cost=12.904699
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 451/800 accuracy=0.315883 test_loss=2.574048 cost=13.602646
+ROUND 452/800 accuracy=0.303936 test_loss=2.631633 cost=14.738548
+ROUND 453/800 accuracy=0.108752 test_loss=2.699155 cost=15.713968
+ROUND 454/800 accuracy=0.275428 test_loss=2.618173 cost=15.543855
+ROUND 455/800 accuracy=0.264609 test_loss=2.706678 cost=13.571155
+ROUND 456/800 accuracy=0.297527 test_loss=2.631257 cost=15.226822
+ROUND 457/800 accuracy=0.314311 test_loss=2.601071 cost=16.307518
+ROUND 458/800 accuracy=0.316156 test_loss=2.591567 cost=12.783563
+ROUND 459/800 accuracy=0.266403 test_loss=2.617342 cost=15.594080
+ROUND 460/800 accuracy=0.286247 test_loss=2.569254 cost=15.387646
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 461/800 accuracy=0.306910 test_loss=2.551997 cost=16.621626
+ROUND 462/800 accuracy=0.310961 test_loss=2.627944 cost=14.412194
+ROUND 463/800 accuracy=0.301817 test_loss=2.597656 cost=13.495202
+ROUND 464/800 accuracy=0.298945 test_loss=2.592803 cost=13.251799
+ROUND 465/800 accuracy=0.317609 test_loss=2.610678 cost=14.009565
+ROUND 466/800 accuracy=0.292861 test_loss=2.606334 cost=15.145427
+ROUND 467/800 accuracy=0.318652 test_loss=2.536602 cost=16.064020
+ROUND 468/800 accuracy=0.338632 test_loss=2.579700 cost=13.535228
+ROUND 469/800 accuracy=0.319250 test_loss=2.607129 cost=14.697457
+ROUND 470/800 accuracy=0.316943 test_loss=2.579554 cost=15.280770
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 471/800 accuracy=0.296279 test_loss=2.679575 cost=13.910732
+ROUND 472/800 accuracy=0.294314 test_loss=2.563702 cost=15.915234
+ROUND 473/800 accuracy=0.312362 test_loss=2.565101 cost=16.583111
+ROUND 474/800 accuracy=0.291118 test_loss=2.594793 cost=14.402536
+ROUND 475/800 accuracy=0.283273 test_loss=2.632083 cost=16.841993
+ROUND 476/800 accuracy=0.292246 test_loss=2.637714 cost=14.799430
+ROUND 477/800 accuracy=0.305184 test_loss=2.586064 cost=14.253870
+ROUND 478/800 accuracy=0.309662 test_loss=2.578315 cost=15.897812
+ROUND 479/800 accuracy=0.298980 test_loss=2.559304 cost=14.852141
+ROUND 480/800 accuracy=0.278658 test_loss=2.563424 cost=16.856126
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 481/800 accuracy=0.286127 test_loss=2.635042 cost=13.708125
+ROUND 482/800 accuracy=0.279666 test_loss=2.564306 cost=16.197765
+ROUND 483/800 accuracy=0.283785 test_loss=2.625306 cost=13.467427
+ROUND 484/800 accuracy=0.277410 test_loss=2.622675 cost=15.620070
+ROUND 485/800 accuracy=0.275838 test_loss=2.704660 cost=15.211613
+ROUND 486/800 accuracy=0.274607 test_loss=2.646268 cost=15.279943
+ROUND 487/800 accuracy=0.288896 test_loss=2.608630 cost=16.185506
+ROUND 488/800 accuracy=0.304193 test_loss=2.556944 cost=14.511889
+ROUND 489/800 accuracy=0.306722 test_loss=2.582880 cost=12.605791
+ROUND 490/800 accuracy=0.259396 test_loss=2.666776 cost=14.823796
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 491/800 accuracy=0.303389 test_loss=2.611373 cost=13.447464
+ROUND 492/800 accuracy=0.262216 test_loss=2.632231 cost=16.196193
+ROUND 493/800 accuracy=0.273377 test_loss=2.613729 cost=15.372282
+ROUND 494/800 accuracy=0.271548 test_loss=2.626974 cost=13.837908
+ROUND 495/800 accuracy=0.325471 test_loss=2.552127 cost=15.851764
+ROUND 496/800 accuracy=0.303611 test_loss=2.602871 cost=16.630602
+ROUND 497/800 accuracy=0.326531 test_loss=2.579475 cost=16.001236
+ROUND 498/800 accuracy=0.314413 test_loss=2.574830 cost=14.921901
+ROUND 499/800 accuracy=0.291801 test_loss=2.639354 cost=13.131159
+ROUND 500/800 accuracy=0.302432 test_loss=2.597269 cost=14.497480
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 501/800 accuracy=0.275308 test_loss=2.596531 cost=14.472593
+ROUND 502/800 accuracy=0.269463 test_loss=2.689801 cost=13.170465
+ROUND 503/800 accuracy=0.313388 test_loss=2.588286 cost=14.059784
+ROUND 504/800 accuracy=0.331317 test_loss=2.582128 cost=14.864915
+ROUND 505/800 accuracy=0.320720 test_loss=2.604949 cost=14.090506
+ROUND 506/800 accuracy=0.271941 test_loss=2.572968 cost=16.971316
+ROUND 507/800 accuracy=0.330958 test_loss=2.602079 cost=13.067736
+ROUND 508/800 accuracy=0.266301 test_loss=2.653650 cost=14.898809
+ROUND 509/800 accuracy=0.312294 test_loss=2.557944 cost=14.718999
+ROUND 510/800 accuracy=0.316396 test_loss=2.588841 cost=14.613952
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 511/800 accuracy=0.309183 test_loss=2.639257 cost=13.989781
+ROUND 512/800 accuracy=0.306431 test_loss=2.606090 cost=13.729175
+ROUND 513/800 accuracy=0.320327 test_loss=2.579488 cost=12.413720
+ROUND 514/800 accuracy=0.330206 test_loss=2.548474 cost=13.859591
+ROUND 515/800 accuracy=0.311217 test_loss=2.634838 cost=14.633725
+ROUND 516/800 accuracy=0.308021 test_loss=2.525859 cost=18.579357
+ROUND 517/800 accuracy=0.296621 test_loss=2.628098 cost=12.754822
+ROUND 518/800 accuracy=0.316105 test_loss=2.564754 cost=16.233548
+ROUND 519/800 accuracy=0.313148 test_loss=2.598419 cost=14.046170
+ROUND 520/800 accuracy=0.297920 test_loss=2.613735 cost=14.710673
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 521/800 accuracy=0.299356 test_loss=2.569528 cost=14.840377
+ROUND 522/800 accuracy=0.286195 test_loss=2.562695 cost=15.324131
+ROUND 523/800 accuracy=0.289887 test_loss=2.615050 cost=14.895046
+ROUND 524/800 accuracy=0.317900 test_loss=2.531202 cost=15.863452
+ROUND 525/800 accuracy=0.258764 test_loss=2.663807 cost=13.749659
+ROUND 526/800 accuracy=0.303150 test_loss=2.582031 cost=12.209328
+ROUND 527/800 accuracy=0.304517 test_loss=2.597902 cost=13.988420
+ROUND 528/800 accuracy=0.311337 test_loss=2.537105 cost=13.992256
+ROUND 529/800 accuracy=0.289733 test_loss=2.563143 cost=15.224725
+ROUND 530/800 accuracy=0.289186 test_loss=2.567740 cost=15.670382
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 531/800 accuracy=0.288092 test_loss=2.618305 cost=15.457225
+ROUND 532/800 accuracy=0.314652 test_loss=2.569244 cost=13.638962
+ROUND 533/800 accuracy=0.319917 test_loss=2.594055 cost=12.938044
+ROUND 534/800 accuracy=0.294348 test_loss=2.546844 cost=14.210165
+ROUND 535/800 accuracy=0.314174 test_loss=2.555531 cost=15.476530
+ROUND 536/800 accuracy=0.299185 test_loss=2.654221 cost=14.441916
+ROUND 537/800 accuracy=0.327163 test_loss=2.556134 cost=14.194143
+ROUND 538/800 accuracy=0.315712 test_loss=2.559425 cost=15.749270
+ROUND 539/800 accuracy=0.321010 test_loss=2.545545 cost=15.712294
+ROUND 540/800 accuracy=0.302842 test_loss=2.563453 cost=14.645443
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 541/800 accuracy=0.200431 test_loss=2.636685 cost=15.565514
+ROUND 542/800 accuracy=0.287306 test_loss=2.555935 cost=15.537117
+ROUND 543/800 accuracy=0.303560 test_loss=2.573726 cost=13.325704
+ROUND 544/800 accuracy=0.273582 test_loss=2.621842 cost=14.617910
+ROUND 545/800 accuracy=0.254286 test_loss=2.636683 cost=14.242630
+ROUND 546/800 accuracy=0.300689 test_loss=2.614383 cost=14.314827
+ROUND 547/800 accuracy=0.282110 test_loss=2.665821 cost=13.564211
+ROUND 548/800 accuracy=0.298945 test_loss=2.583254 cost=14.716425
+ROUND 549/800 accuracy=0.317131 test_loss=2.564887 cost=16.335341
+ROUND 550/800 accuracy=0.321455 test_loss=2.521033 cost=14.411297
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 551/800 accuracy=0.301578 test_loss=2.578272 cost=13.337526
+ROUND 552/800 accuracy=0.305543 test_loss=2.580991 cost=13.818096
+ROUND 553/800 accuracy=0.298057 test_loss=2.658535 cost=13.756899
+ROUND 554/800 accuracy=0.217984 test_loss=2.653690 cost=16.766573
+ROUND 555/800 accuracy=0.319028 test_loss=2.539181 cost=18.285210
+ROUND 556/800 accuracy=0.316447 test_loss=2.543054 cost=12.780657
+ROUND 557/800 accuracy=0.284896 test_loss=2.605066 cost=14.992974
+ROUND 558/800 accuracy=0.291545 test_loss=2.587554 cost=16.054970
+ROUND 559/800 accuracy=0.302449 test_loss=2.572433 cost=13.104714
+ROUND 560/800 accuracy=0.309559 test_loss=2.575496 cost=13.593853
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 561/800 accuracy=0.274573 test_loss=2.595082 cost=14.984158
+ROUND 562/800 accuracy=0.309440 test_loss=2.549218 cost=14.219316
+ROUND 563/800 accuracy=0.304551 test_loss=2.556952 cost=16.197021
+ROUND 564/800 accuracy=0.321797 test_loss=2.531754 cost=15.408306
+ROUND 565/800 accuracy=0.285101 test_loss=2.561094 cost=15.495138
+ROUND 566/800 accuracy=0.273394 test_loss=2.536138 cost=16.284501
+ROUND 567/800 accuracy=0.314088 test_loss=2.529264 cost=15.965593
+ROUND 568/800 accuracy=0.273189 test_loss=2.549565 cost=16.086467
+ROUND 569/800 accuracy=0.270198 test_loss=2.642201 cost=13.211136
+ROUND 570/800 accuracy=0.298587 test_loss=2.532766 cost=14.784041
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 571/800 accuracy=0.304945 test_loss=2.564562 cost=16.025018
+ROUND 572/800 accuracy=0.297783 test_loss=2.543704 cost=16.104634
+ROUND 573/800 accuracy=0.256285 test_loss=2.554770 cost=16.335535
+ROUND 574/800 accuracy=0.310568 test_loss=2.559323 cost=14.760271
+ROUND 575/800 accuracy=0.297920 test_loss=2.541055 cost=15.903182
+ROUND 576/800 accuracy=0.296570 test_loss=2.591998 cost=14.027878
+ROUND 577/800 accuracy=0.334290 test_loss=2.521978 cost=15.563487
+ROUND 578/800 accuracy=0.292519 test_loss=2.625304 cost=14.180432
+ROUND 579/800 accuracy=0.297629 test_loss=2.589280 cost=15.601957
+ROUND 580/800 accuracy=0.302740 test_loss=2.526584 cost=14.502406
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 581/800 accuracy=0.269822 test_loss=2.551725 cost=16.880461
+ROUND 582/800 accuracy=0.308653 test_loss=2.540991 cost=14.027093
+ROUND 583/800 accuracy=0.300774 test_loss=2.595434 cost=14.353990
+ROUND 584/800 accuracy=0.290519 test_loss=2.534461 cost=15.480975
+ROUND 585/800 accuracy=0.302039 test_loss=2.535036 cost=13.645045
+ROUND 586/800 accuracy=0.303765 test_loss=2.612623 cost=15.068398
+ROUND 587/800 accuracy=0.315798 test_loss=2.524627 cost=15.564337
+ROUND 588/800 accuracy=0.293357 test_loss=2.521816 cost=16.268952
+ROUND 589/800 accuracy=0.287870 test_loss=2.582919 cost=16.924072
+ROUND 590/800 accuracy=0.278060 test_loss=2.578163 cost=16.525965
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 591/800 accuracy=0.278863 test_loss=2.560621 cost=14.357009
+ROUND 592/800 accuracy=0.297459 test_loss=2.540803 cost=14.611243
+ROUND 593/800 accuracy=0.302381 test_loss=2.508540 cost=16.098675
+ROUND 594/800 accuracy=0.316532 test_loss=2.568832 cost=12.299598
+ROUND 595/800 accuracy=0.291220 test_loss=2.571649 cost=13.176988
+ROUND 596/800 accuracy=0.300039 test_loss=2.557583 cost=17.154531
+ROUND 597/800 accuracy=0.284110 test_loss=2.561743 cost=14.176484
+ROUND 598/800 accuracy=0.323831 test_loss=2.571179 cost=13.363103
+ROUND 599/800 accuracy=0.309764 test_loss=2.559108 cost=14.376137
+ROUND 600/800 accuracy=0.312037 test_loss=2.566982 cost=13.465026
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 601/800 accuracy=0.294690 test_loss=2.550611 cost=15.983505
+ROUND 602/800 accuracy=0.307765 test_loss=2.546247 cost=14.756288
+ROUND 603/800 accuracy=0.328565 test_loss=2.539246 cost=13.980043
+ROUND 604/800 accuracy=0.247945 test_loss=2.666119 cost=14.802250
+ROUND 605/800 accuracy=0.335863 test_loss=2.513529 cost=13.378837
+ROUND 606/800 accuracy=0.262695 test_loss=2.652318 cost=15.198984
+ROUND 607/800 accuracy=0.322890 test_loss=2.561395 cost=12.932315
+ROUND 608/800 accuracy=0.325830 test_loss=2.550497 cost=15.399984
+ROUND 609/800 accuracy=0.323352 test_loss=2.569232 cost=16.721319
+ROUND 610/800 accuracy=0.319882 test_loss=2.534645 cost=16.756015
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 611/800 accuracy=0.325693 test_loss=2.563193 cost=13.296452
+ROUND 612/800 accuracy=0.338290 test_loss=2.534830 cost=13.066444
+ROUND 613/800 accuracy=0.290195 test_loss=2.614288 cost=15.500230
+ROUND 614/800 accuracy=0.318549 test_loss=2.562468 cost=14.016171
+ROUND 615/800 accuracy=0.287238 test_loss=2.548988 cost=14.273261
+ROUND 616/800 accuracy=0.323967 test_loss=2.509520 cost=15.610695
+ROUND 617/800 accuracy=0.303389 test_loss=2.560230 cost=14.647977
+ROUND 618/800 accuracy=0.288058 test_loss=2.526399 cost=16.177874
+ROUND 619/800 accuracy=0.308705 test_loss=2.542741 cost=16.987844
+ROUND 620/800 accuracy=0.313747 test_loss=2.566209 cost=14.200256
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 621/800 accuracy=0.291494 test_loss=2.527686 cost=17.336029
+ROUND 622/800 accuracy=0.249141 test_loss=2.675955 cost=14.486157
+ROUND 623/800 accuracy=0.332445 test_loss=2.552476 cost=13.525068
+ROUND 624/800 accuracy=0.298159 test_loss=2.565410 cost=16.204919
+ROUND 625/800 accuracy=0.333248 test_loss=2.548750 cost=15.021677
+ROUND 626/800 accuracy=0.305628 test_loss=2.516907 cost=14.993744
+ROUND 627/800 accuracy=0.306295 test_loss=2.611568 cost=15.331225
+ROUND 628/800 accuracy=0.295339 test_loss=2.527587 cost=14.928563
+ROUND 629/800 accuracy=0.299903 test_loss=2.613227 cost=13.338269
+ROUND 630/800 accuracy=0.295852 test_loss=2.575924 cost=17.276439
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 631/800 accuracy=0.307508 test_loss=2.512664 cost=14.766855
+ROUND 632/800 accuracy=0.308876 test_loss=2.506800 cost=16.481920
+ROUND 633/800 accuracy=0.294673 test_loss=2.512758 cost=16.824034
+ROUND 634/800 accuracy=0.326463 test_loss=2.537486 cost=13.993062
+ROUND 635/800 accuracy=0.317285 test_loss=2.561665 cost=15.717540
+ROUND 636/800 accuracy=0.327266 test_loss=2.539324 cost=11.672042
+ROUND 637/800 accuracy=0.310602 test_loss=2.525199 cost=13.295304
+ROUND 638/800 accuracy=0.313764 test_loss=2.557720 cost=15.296553
+ROUND 639/800 accuracy=0.302911 test_loss=2.538625 cost=12.091669
+ROUND 640/800 accuracy=0.325335 test_loss=2.503598 cost=14.284462
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 641/800 accuracy=0.284777 test_loss=2.569655 cost=17.083062
+ROUND 642/800 accuracy=0.304449 test_loss=2.605115 cost=14.053131
+ROUND 643/800 accuracy=0.313781 test_loss=2.579367 cost=14.512047
+ROUND 644/800 accuracy=0.322224 test_loss=2.585593 cost=14.371592
+ROUND 645/800 accuracy=0.328924 test_loss=2.529228 cost=13.360191
+ROUND 646/800 accuracy=0.322309 test_loss=2.521043 cost=16.723742
+ROUND 647/800 accuracy=0.307713 test_loss=2.537109 cost=13.796390
+ROUND 648/800 accuracy=0.291032 test_loss=2.580831 cost=14.891599
+ROUND 649/800 accuracy=0.304244 test_loss=2.575698 cost=14.623424
+ROUND 650/800 accuracy=0.309833 test_loss=2.570790 cost=15.343867
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 651/800 accuracy=0.332257 test_loss=2.521816 cost=14.903535
+ROUND 652/800 accuracy=0.256969 test_loss=2.547205 cost=14.207793
+ROUND 653/800 accuracy=0.310687 test_loss=2.501249 cost=15.927574
+ROUND 654/800 accuracy=0.271736 test_loss=2.624568 cost=15.140584
+ROUND 655/800 accuracy=0.295271 test_loss=2.620397 cost=15.537506
+ROUND 656/800 accuracy=0.313781 test_loss=2.529022 cost=17.273226
+ROUND 657/800 accuracy=0.312909 test_loss=2.553880 cost=13.984535
+ROUND 658/800 accuracy=0.318566 test_loss=2.574853 cost=13.295693
+ROUND 659/800 accuracy=0.313029 test_loss=2.509220 cost=15.199858
+ROUND 660/800 accuracy=0.314858 test_loss=2.528078 cost=14.693362
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 661/800 accuracy=0.331265 test_loss=2.531191 cost=16.001913
+ROUND 662/800 accuracy=0.307491 test_loss=2.490012 cost=14.174773
+ROUND 663/800 accuracy=0.324873 test_loss=2.539359 cost=15.457575
+ROUND 664/800 accuracy=0.304483 test_loss=2.590373 cost=15.325332
+ROUND 665/800 accuracy=0.327950 test_loss=2.536696 cost=14.970616
+ROUND 666/800 accuracy=0.325027 test_loss=2.529927 cost=16.400440
+ROUND 667/800 accuracy=0.334735 test_loss=2.549346 cost=13.982370
+ROUND 668/800 accuracy=0.288981 test_loss=2.519212 cost=19.241956
+ROUND 669/800 accuracy=0.308346 test_loss=2.495644 cost=14.062183
+ROUND 670/800 accuracy=0.287819 test_loss=2.594431 cost=14.395505
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 671/800 accuracy=0.328428 test_loss=2.525627 cost=15.566087
+ROUND 672/800 accuracy=0.338187 test_loss=2.517207 cost=13.371600
+ROUND 673/800 accuracy=0.334718 test_loss=2.534849 cost=14.646825
+ROUND 674/800 accuracy=0.306790 test_loss=2.621387 cost=15.438317
+ROUND 675/800 accuracy=0.311285 test_loss=2.565959 cost=14.577018
+ROUND 676/800 accuracy=0.276248 test_loss=2.577388 cost=14.223091
+ROUND 677/800 accuracy=0.313969 test_loss=2.530671 cost=15.374536
+ROUND 678/800 accuracy=0.328531 test_loss=2.543362 cost=12.907927
+ROUND 679/800 accuracy=0.290331 test_loss=2.605302 cost=14.842582
+ROUND 680/800 accuracy=0.316635 test_loss=2.500983 cost=15.131781
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 681/800 accuracy=0.290519 test_loss=2.539185 cost=16.497409
+ROUND 682/800 accuracy=0.296894 test_loss=2.569872 cost=14.648897
+ROUND 683/800 accuracy=0.340341 test_loss=2.507687 cost=15.751089
+ROUND 684/800 accuracy=0.311679 test_loss=2.578951 cost=14.381005
+ROUND 685/800 accuracy=0.312208 test_loss=2.589704 cost=14.303676
+ROUND 686/800 accuracy=0.313815 test_loss=2.531324 cost=14.679777
+ROUND 687/800 accuracy=0.311918 test_loss=2.576560 cost=14.530677
+ROUND 688/800 accuracy=0.312448 test_loss=2.487757 cost=16.158076
+ROUND 689/800 accuracy=0.147003 test_loss=2.636650 cost=15.171395
+ROUND 690/800 accuracy=0.292023 test_loss=2.549214 cost=15.738051
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 691/800 accuracy=0.309918 test_loss=2.515778 cost=15.919258
+ROUND 692/800 accuracy=0.324412 test_loss=2.528171 cost=14.237667
+ROUND 693/800 accuracy=0.327608 test_loss=2.496959 cost=16.654752
+ROUND 694/800 accuracy=0.331094 test_loss=2.498017 cost=14.995192
+ROUND 695/800 accuracy=0.317404 test_loss=2.541109 cost=15.140097
+ROUND 696/800 accuracy=0.331265 test_loss=2.533951 cost=15.513705
+ROUND 697/800 accuracy=0.318515 test_loss=2.570510 cost=12.519874
+ROUND 698/800 accuracy=0.320925 test_loss=2.546461 cost=14.368575
+ROUND 699/800 accuracy=0.329180 test_loss=2.546538 cost=12.133104
+ROUND 700/800 accuracy=0.283495 test_loss=2.556316 cost=14.926955
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 701/800 accuracy=0.325830 test_loss=2.502735 cost=15.031826
+ROUND 702/800 accuracy=0.324497 test_loss=2.525933 cost=14.468912
+ROUND 703/800 accuracy=0.286161 test_loss=2.597122 cost=15.516555
+ROUND 704/800 accuracy=0.310397 test_loss=2.531383 cost=14.930052
+ROUND 705/800 accuracy=0.311046 test_loss=2.561958 cost=14.811510
+ROUND 706/800 accuracy=0.324429 test_loss=2.539383 cost=12.548775
+ROUND 707/800 accuracy=0.327180 test_loss=2.572455 cost=13.601720
+ROUND 708/800 accuracy=0.321506 test_loss=2.524234 cost=16.595717
+ROUND 709/800 accuracy=0.324719 test_loss=2.517372 cost=16.843704
+ROUND 710/800 accuracy=0.299339 test_loss=2.519258 cost=13.864131
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 711/800 accuracy=0.318395 test_loss=2.478002 cost=17.795322
+ROUND 712/800 accuracy=0.331419 test_loss=2.506123 cost=16.016382
+ROUND 713/800 accuracy=0.338700 test_loss=2.498332 cost=13.014322
+ROUND 714/800 accuracy=0.314516 test_loss=2.521324 cost=14.048503
+ROUND 715/800 accuracy=0.318293 test_loss=2.523000 cost=15.787490
+ROUND 716/800 accuracy=0.311508 test_loss=2.527280 cost=16.431589
+ROUND 717/800 accuracy=0.285238 test_loss=2.577215 cost=13.140766
+ROUND 718/800 accuracy=0.333453 test_loss=2.482998 cost=16.180121
+ROUND 719/800 accuracy=0.301868 test_loss=2.551357 cost=13.294604
+ROUND 720/800 accuracy=0.326582 test_loss=2.515503 cost=15.096337
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 721/800 accuracy=0.321301 test_loss=2.478796 cost=13.940633
+ROUND 722/800 accuracy=0.330069 test_loss=2.521304 cost=15.277563
+ROUND 723/800 accuracy=0.302723 test_loss=2.555348 cost=14.758687
+ROUND 724/800 accuracy=0.297886 test_loss=2.521377 cost=16.151629
+ROUND 725/800 accuracy=0.319814 test_loss=2.534085 cost=15.348097
+ROUND 726/800 accuracy=0.307730 test_loss=2.516322 cost=15.076766
+ROUND 727/800 accuracy=0.312687 test_loss=2.532980 cost=13.570579
+ROUND 728/800 accuracy=0.325950 test_loss=2.504526 cost=11.965322
+ROUND 729/800 accuracy=0.345349 test_loss=2.476849 cost=16.813487
+ROUND 730/800 accuracy=0.307953 test_loss=2.505306 cost=15.578759
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 731/800 accuracy=0.305816 test_loss=2.481298 cost=15.047888
+ROUND 732/800 accuracy=0.332564 test_loss=2.504189 cost=16.749248
+ROUND 733/800 accuracy=0.337914 test_loss=2.503029 cost=13.710478
+ROUND 734/800 accuracy=0.331624 test_loss=2.493941 cost=14.069501
+ROUND 735/800 accuracy=0.297612 test_loss=2.495860 cost=15.650149
+ROUND 736/800 accuracy=0.299390 test_loss=2.556758 cost=13.935649
+ROUND 737/800 accuracy=0.319865 test_loss=2.510355 cost=14.971424
+ROUND 738/800 accuracy=0.323130 test_loss=2.529981 cost=14.730691
+ROUND 739/800 accuracy=0.322446 test_loss=2.511350 cost=15.657920
+ROUND 740/800 accuracy=0.321814 test_loss=2.517900 cost=16.008391
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 741/800 accuracy=0.346066 test_loss=2.526909 cost=14.053133
+ROUND 742/800 accuracy=0.297083 test_loss=2.483434 cost=16.535823
+ROUND 743/800 accuracy=0.295305 test_loss=2.487291 cost=14.192590
+ROUND 744/800 accuracy=0.290451 test_loss=2.505408 cost=14.425208
+ROUND 745/800 accuracy=0.305833 test_loss=2.556004 cost=13.967256
+ROUND 746/800 accuracy=0.303184 test_loss=2.489208 cost=14.986171
+ROUND 747/800 accuracy=0.309576 test_loss=2.511492 cost=15.506499
+ROUND 748/800 accuracy=0.341571 test_loss=2.492288 cost=12.921581
+ROUND 749/800 accuracy=0.327044 test_loss=2.498478 cost=15.491893
+ROUND 750/800 accuracy=0.329163 test_loss=2.486829 cost=14.910461
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 751/800 accuracy=0.325249 test_loss=2.505698 cost=13.324906
+ROUND 752/800 accuracy=0.316344 test_loss=2.487694 cost=14.966615
+ROUND 753/800 accuracy=0.326087 test_loss=2.498055 cost=13.772726
+ROUND 754/800 accuracy=0.318977 test_loss=2.534415 cost=15.052342
+ROUND 755/800 accuracy=0.329983 test_loss=2.483867 cost=15.798639
+ROUND 756/800 accuracy=0.298911 test_loss=2.595080 cost=13.732346
+ROUND 757/800 accuracy=0.328240 test_loss=2.474895 cost=15.191806
+ROUND 758/800 accuracy=0.300791 test_loss=2.500435 cost=14.073699
+ROUND 759/800 accuracy=0.302312 test_loss=2.504298 cost=14.082498
+ROUND 760/800 accuracy=0.316567 test_loss=2.487308 cost=14.428164
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 761/800 accuracy=0.298621 test_loss=2.493716 cost=15.768119
+ROUND 762/800 accuracy=0.340478 test_loss=2.518932 cost=12.324260
+ROUND 763/800 accuracy=0.297817 test_loss=2.497543 cost=13.735281
+ROUND 764/800 accuracy=0.305953 test_loss=2.495154 cost=14.006077
+ROUND 765/800 accuracy=0.301680 test_loss=2.516196 cost=16.553874
+ROUND 766/800 accuracy=0.299065 test_loss=2.484669 cost=15.131406
+ROUND 767/800 accuracy=0.311303 test_loss=2.478026 cost=12.920140
+ROUND 768/800 accuracy=0.315558 test_loss=2.527305 cost=13.445825
+ROUND 769/800 accuracy=0.332017 test_loss=2.515207 cost=13.705416
+ROUND 770/800 accuracy=0.308756 test_loss=2.506265 cost=14.722364
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 771/800 accuracy=0.313507 test_loss=2.495186 cost=17.075875
+ROUND 772/800 accuracy=0.301851 test_loss=2.576432 cost=15.687796
+ROUND 773/800 accuracy=0.345400 test_loss=2.489563 cost=15.292325
+ROUND 774/800 accuracy=0.288964 test_loss=2.480016 cost=17.529396
+ROUND 775/800 accuracy=0.334786 test_loss=2.498847 cost=14.253974
+ROUND 776/800 accuracy=0.317729 test_loss=2.520916 cost=15.056816
+ROUND 777/800 accuracy=0.300125 test_loss=2.547733 cost=13.272020
+ROUND 778/800 accuracy=0.327249 test_loss=2.533141 cost=13.929176
+ROUND 779/800 accuracy=0.335111 test_loss=2.501165 cost=12.842125
+ROUND 780/800 accuracy=0.334701 test_loss=2.538128 cost=14.238821
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 781/800 accuracy=0.327129 test_loss=2.558773 cost=13.474178
+ROUND 782/800 accuracy=0.301834 test_loss=2.497338 cost=18.545187
+ROUND 783/800 accuracy=0.290827 test_loss=2.506916 cost=14.173342
+ROUND 784/800 accuracy=0.327881 test_loss=2.472980 cost=16.467938
+ROUND 785/800 accuracy=0.307406 test_loss=2.550386 cost=13.727436
+ROUND 786/800 accuracy=0.338136 test_loss=2.485971 cost=16.869605
+ROUND 787/800 accuracy=0.294963 test_loss=2.498577 cost=14.652203
+ROUND 788/800 accuracy=0.343212 test_loss=2.470442 cost=14.962051
+ROUND 789/800 accuracy=0.315097 test_loss=2.546054 cost=14.034689
+ROUND 790/800 accuracy=0.337572 test_loss=2.503726 cost=14.450210
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+ROUND 791/800 accuracy=0.294861 test_loss=2.560833 cost=16.518024
+ROUND 792/800 accuracy=0.329060 test_loss=2.520463 cost=14.927493
+ROUND 793/800 accuracy=0.331607 test_loss=2.496946 cost=15.486276
+ROUND 794/800 accuracy=0.334786 test_loss=2.509582 cost=13.285560
+ROUND 795/800 accuracy=0.324497 test_loss=2.488756 cost=14.004714
+ROUND 796/800 accuracy=0.333350 test_loss=2.558388 cost=13.532016
+ROUND 797/800 accuracy=0.320617 test_loss=2.508489 cost=13.291190
+ROUND 798/800 accuracy=0.339520 test_loss=2.512187 cost=13.670402
+ROUND 799/800 accuracy=0.340939 test_loss=2.522250 cost=14.648639
+ROUND 800/800 accuracy=0.258610 test_loss=2.564538 cost=15.215822
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+
+Best accuracy.
+0.346066417132407
+
+Average time cost per round.
+23.995074969432395
+File path: ../results/Shakespeare_lstm_SCAFFOLD_20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9_0.h5
+
+Average time cost: 14648.91s.
+All done!

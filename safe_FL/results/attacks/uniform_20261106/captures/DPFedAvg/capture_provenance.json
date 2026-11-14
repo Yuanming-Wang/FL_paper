@@ -1,0 +1,12 @@
+{
+  "algorithm": "DPFedAvg",
+  "input_sha256": "e0d67735770241a417b74038831881a054c82ef8d8f139bc3c5b91f80986e548",
+  "bundle_sha256": "c5c9b7d9f9129a36deeebb43812f1cc6a5acffde5b131ad4e2cae8f0b2265d99",
+  "round_completed": 800,
+  "batch_size": 64,
+  "local_epochs": 5,
+  "learning_rate": 0.01,
+  "num_batches": 4,
+  "identical_reference_pixels_and_labels": true,
+  "client_training_class": "clientdpavg"
+}

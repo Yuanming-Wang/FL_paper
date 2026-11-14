@@ -1,0 +1,17 @@
+/opt/conda/lib/python3.10/site-packages/torch/autograd/graph.py:768: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /workspace/framework/mcPytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:136.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+It: 0. Rec. loss: 0.9137.
+It: 500. Rec. loss: 0.5198.
+It: 1000. Rec. loss: 0.5175.
+It: 1500. Rec. loss: 0.5173.
+It: 2000. Rec. loss: 0.4651.
+It: 2500. Rec. loss: 0.4592.
+It: 3000. Rec. loss: 0.4538.
+It: 3500. Rec. loss: 0.4384.
+It: 4000. Rec. loss: 0.4368.
+It: 4500. Rec. loss: 0.4334.
+It: 4799. Rec. loss: 0.4330.
+Choosing optimal result ...
+Optimal result score: 0.4323
+Total time: 378.91440773010254.
+Geiping-style reconstruction saved to: /data/attack_benchmark_20261106/results/LDP-FL/geiping

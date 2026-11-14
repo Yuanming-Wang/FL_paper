@@ -1,0 +1,44 @@
+﻿\begin{table*}[t]
+\centering
+\caption{Comparison of final global-model accuracy after 800 communication rounds, excluding FedCEO from the formal comparison because the available run is a documented compatibility approximation rather than the official implementation. Values are percentages from the synchronized 800-round curves (learning rate $0.01$, seed $0$).}
+\label{tab:acc_updated}
+\setlength{\tabcolsep}{3.2pt}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllccccccccc}
+\hline
+\multirow{2}{*}{\textbf{Model}} & \multirow{2}{*}{\textbf{Dataset}} & \multirow{2}{*}{\textbf{Heterogeneity}} & \multicolumn{9}{c}{\textbf{Test Accuracy (\%)}} \\
+\cline{4-12}
+& & & \textbf{FedAvg} & \textbf{DPFedAvg} & \textbf{HEFedAvg} & \textbf{LDP-FL} & \textbf{SCAFFOLD} & \textbf{FedMut} & \textbf{FedPVR} & \textbf{Adap-CTA} & \textbf{AdapLDP-FL} \\
+\hline
+\multirow{4}{*}{ResNet-18} & \multirow{4}{*}{CIFAR-10} & $d = 0.2$ & 38.79 & 38.78 & 23.66 & 38.35 & \underline{59.93} & 41.45 & 46.72 & \textbf{65.82} & 33.21 \\
+ &  & $d = 0.5$ & 46.32 & 46.32 & 36.31 & 46.02 & \underline{53.47} & 46.41 & 50.32 & \textbf{59.03} & 43.93 \\
+ &  & $d = 0.8$ & 48.27 & 48.21 & 38.06 & 48.14 & \underline{53.35} & 49.16 & 51.17 & \textbf{58.11} & 47.42 \\
+ &  & IID & 56.84 & 56.66 & 44.74 & 57.03 & \textbf{59.79} & 57.07 & 57.89 & \underline{59.55} & 55.53 \\
+\cline{2-12}
+\multirow{4}{*}{ResNet-18} & \multirow{4}{*}{CIFAR-100} & $d = 0.2$ & 22.11 & 22.01 & 11.95 & 22.01 & \underline{25.22} & 22.57 & 22.60 & \textbf{26.39} & 21.44 \\
+ &  & $d = 0.5$ & 23.20 & 23.22 & 11.91 & 23.20 & \underline{25.44} & 23.24 & 22.99 & \textbf{27.78} & 22.40 \\
+ &  & $d = 0.8$ & 24.19 & 23.86 & 12.64 & 23.60 & \underline{27.17} & 24.63 & 24.70 & \textbf{27.24} & 23.64 \\
+ &  & IID & 24.45 & 24.61 & 13.56 & 24.95 & \underline{28.35} & 25.25 & 24.95 & \textbf{28.54} & 24.20 \\
+\hline
+\multirow{4}{*}{VGG-11} & \multirow{4}{*}{CIFAR-10} & $d = 0.2$ & 66.19 & 65.32 & 20.98 & 65.58 & \underline{79.94} & 66.48 & 66.96 & \textbf{86.74} & 58.56 \\
+ &  & $d = 0.5$ & 69.57 & 69.55 & 31.57 & 69.68 & \underline{75.19} & 70.62 & 70.06 & \textbf{83.01} & 66.85 \\
+ &  & $d = 0.8$ & 70.96 & 70.75 & 29.24 & 70.62 & \underline{75.63} & 71.60 & 71.37 & \textbf{81.23} & 68.54 \\
+ &  & IID & 77.02 & 76.69 & 39.51 & 76.55 & \underline{79.80} & 77.50 & 76.73 & \textbf{81.90} & 74.67 \\
+\cline{2-12}
+\multirow{4}{*}{VGG-11} & \multirow{4}{*}{CIFAR-100} & $d = 0.2$ & 36.15 & 35.65 & 4.58 & 35.61 & \underline{39.87} & 37.48 & 37.24 & \textbf{44.60} & 34.62 \\
+ &  & $d = 0.5$ & 37.65 & 37.63 & 4.29 & 37.41 & \underline{41.91} & 38.34 & 38.67 & \textbf{45.67} & 36.69 \\
+ &  & $d = 0.8$ & 38.62 & 38.48 & 5.07 & 38.16 & \underline{42.87} & 40.37 & 39.06 & \textbf{45.92} & 37.08 \\
+ &  & IID & 39.51 & 40.21 & 5.21 & 39.43 & \underline{43.45} & 40.91 & 39.68 & \textbf{46.27} & 38.25 \\
+\hline
+\multirow{1}{*}{LSTM} & \multirow{1}{*}{Shakespeare} & $d = 0.2$ & 22.45 & 22.78 & 23.25 & 24.27 & 25.86 & \underline{28.52} & 18.99 & 18.99 & \textbf{28.86} \\
+\multirow{1}{*}{Transformer} & \multirow{1}{*}{Shakespeare} & $d = 0.2$ & 36.43 & 36.08 & 35.65 & 36.09 & 38.80 & 36.57 & \textbf{40.76} & 39.53 & \underline{40.47} \\
+\hline
+\end{tabular}%
+}
+\vspace{1mm}
+\parbox{\textwidth}{\scriptsize\emph{Note:} bold and underlined entries are the best and second-best final-round values among the nine retained methods. FedCEO raw logs remain in \texttt{safe\_FL/logs} and are excluded from this formal table only.}
+\end{table*}
+
+
+

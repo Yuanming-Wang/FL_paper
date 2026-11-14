@@ -1,0 +1,23 @@
+{
+  "pid": 34336,
+  "command": [
+    "/opt/conda/bin/python",
+    "-u",
+    "/data/adapcta_hf_20261106/safe_FL/scripts/verify_no_defense.py",
+    "--bundle",
+    "/data/adapcta_hf_20261106/experiment/gradient_bundle.pt",
+    "--output-dir",
+    "/data/adapcta_hf_20261106/no_defense_validation/exact_ginas_two_30000",
+    "--attack",
+    "gi_nas",
+    "--samples",
+    "29",
+    "24",
+    "--search-size",
+    "646",
+    "--iterations",
+    "30000"
+  ],
+  "reuses_full_5000_search_winner": 645,
+  "diagnostic_only": true
+}

@@ -1,0 +1,14 @@
+{
+  "algorithm": "FedAvg",
+  "bundle_sha256": "a75d056f3424b23150c160e62a4601cd5d3cd7c6ebc0d82c8e51c3dc28f7f0f2",
+  "jobs": [
+    {
+      "attack": "geiping",
+      "started": 1793989467.7277348,
+      "finished": 1793989467.7284558,
+      "verified": true,
+      "metrics_sha256": "2c092986a35335aa28ebe9edce1ed0f297453b7356c1639123cedc5119e2cb49"
+    }
+  ],
+  "complete": false
+}

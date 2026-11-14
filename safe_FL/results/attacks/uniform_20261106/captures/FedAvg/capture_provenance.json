@@ -1,0 +1,12 @@
+{
+  "algorithm": "FedAvg",
+  "input_sha256": "9275388f42c7f9259b566df943d1b672b99b79d9e7814c1629b864ddaa062c33",
+  "bundle_sha256": "a75d056f3424b23150c160e62a4601cd5d3cd7c6ebc0d82c8e51c3dc28f7f0f2",
+  "round_completed": 800,
+  "batch_size": 64,
+  "local_epochs": 5,
+  "learning_rate": 0.01,
+  "num_batches": 4,
+  "identical_reference_pixels_and_labels": true,
+  "client_training_class": "clientAVG"
+}

@@ -1,0 +1,42 @@
+{
+  "algorithm": "Adap-CTA",
+  "bundle_sha256": "cb48d34a591aaa9484e681f243e708103743c36549b531d6b6b97ca0eac3e33e",
+  "jobs": [
+    {
+      "attack": "geiping",
+      "started": 1793996990.8932223,
+      "finished": 1793996990.8934047,
+      "verified": true,
+      "metrics_sha256": "e630206e0bad0d71c84cd4f7c65f4e44bf08d3d7fd457d391dfafd5140185f0e"
+    },
+    {
+      "attack": "gi_nas",
+      "started": 1793996990.8937495,
+      "command": [
+        "/opt/conda/bin/python",
+        "-u",
+        "/data/attack_benchmark_20261106/safe_FL/system/run_gi_nas.py",
+        "--bundle",
+        "/data/attack_benchmark_20261106/captures/Adap-CTA/gradient_bundle.pt",
+        "--device",
+        "cuda",
+        "--seed",
+        "0",
+        "--allow-observed-update",
+        "--batchnorm-mode",
+        "batch",
+        "--output-dir",
+        "/data/attack_benchmark_20261106/results/Adap-CTA/gi_nas",
+        "--search-size",
+        "5000",
+        "--iterations",
+        "30000",
+        "--lr",
+        "0.001",
+        "--report-every",
+        "1000"
+      ],
+      "pid": 20722
+    }
+  ]
+}

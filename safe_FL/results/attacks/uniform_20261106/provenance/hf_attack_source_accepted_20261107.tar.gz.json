@@ -1,0 +1,14 @@
+{
+  "accepted_control_sha256": "5687e81db50c2fe322cd50ff08229aa2f5210765a8e09c6223be95a2f0f1c827",
+  "archive_sha256": "56ce7b81fc171ced53ddcd7fb5307aeaf08a296ffe117437848661f7caf612a6",
+  "files": {
+    "safe_FL/system/flcore/attacks/hf_gradinv/attack.py": "1a9b1e2623127839556b6068a5a463e91c947f019e861b9df9142dea204cf786",
+    "safe_FL/system/run_hf_gradinv.py": "c43597b09312208cf60bfd11b9d1243a0d8ec8ef3b355c740f37ef3185e41798",
+    "safe_FL/system/check_hf_gradinv.py": "944bf85c3272e7f89bf6c3a5ea32f0a85f19c30dff436f940cb308bdeb3e62b5",
+    "safe_FL/scripts/verify_no_defense.py": "00b16e61b97a2d4b10451db246a2f5812056037dc1f7650ec637d60ff3c41340",
+    "safe_FL/scripts/run_privacy_benchmark.py": "7836f79ff810f6a38517b80d9843f62238c6aa13db29a7e976d8a9b891a68d00",
+    "tmp/attack_benchmark_20261106/staged_queue.py": "e967a1674cf804c418470ffac16167cd5a2c015027be5b3c695a8475d24941c4",
+    "tmp/attack_benchmark_20261106/hf_control_queue.py": "4bc3c6a2c77d9aabf8b314a8318db02dccdbd0e4cb5812dc0d146e84e6cbefb7"
+  },
+  "control_line_endings": "LF; byte-identical to the accepted copies on all four healthy C500 instances"
+}

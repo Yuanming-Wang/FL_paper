@@ -1,0 +1,641 @@
+{
+  "source_root": "safe_FL\\results\\attacks\\uniform_20261106",
+  "verification_sha256": "1b42999b7c715554f3139b95b24ab1098cd1175120ef877b3af19d1c36ddb742",
+  "note": "All 24 runs use a common upload-probe protocol. Every panel displays the same three references, with reconstructions following each saved greedy batch-MSE assignment.",
+  "display": "Unmodified PNG pixels, nearest-neighbor display; pairs follow saved MSE assignment.",
+  "checked_image_pairs": 1536,
+  "max_png_mse_difference": 6.935835404076052e-05,
+  "reference_indices_zero_based": [
+    29,
+    24,
+    41
+  ],
+  "metric_rows": [
+    {
+      "method": "FedAvg",
+      "attack": "geiping",
+      "mse_mean": 0.12426269054412842,
+      "psnr_db_mean": 9.17754302802912,
+      "ssim_mean": 0.15488302544690669,
+      "recognition_rate": 0.046875,
+      "classifier_confidence_mean": 0.9429181218147278
+    },
+    {
+      "method": "FedAvg",
+      "attack": "gi_nas",
+      "mse_mean": 0.06324728578329086,
+      "psnr_db_mean": 12.357487190156391,
+      "ssim_mean": 0.26048530952539295,
+      "recognition_rate": 0.078125,
+      "classifier_confidence_mean": 0.4672342538833618
+    },
+    {
+      "method": "FedAvg",
+      "attack": "hf_gradinv",
+      "mse_mean": 0.12269758433103561,
+      "psnr_db_mean": 9.216841701442043,
+      "ssim_mean": 0.15940168156521395,
+      "recognition_rate": 0.28125,
+      "classifier_confidence_mean": 0.2941063344478607
+    },
+    {
+      "method": "DPFedAvg",
+      "attack": "geiping",
+      "mse_mean": 0.12722910940647125,
+      "psnr_db_mean": 9.062566879492408,
+      "ssim_mean": 0.15749768068781123,
+      "recognition_rate": 0.0,
+      "classifier_confidence_mean": 0.9531918168067932
+    },
+    {
+      "method": "DPFedAvg",
+      "attack": "gi_nas",
+      "mse_mean": 0.06291753053665161,
+      "psnr_db_mean": 12.383700495371098,
+      "ssim_mean": 0.27046033064834774,
+      "recognition_rate": 0.3125,
+      "classifier_confidence_mean": 0.3816657066345215
+    },
+    {
+      "method": "DPFedAvg",
+      "attack": "hf_gradinv",
+      "mse_mean": 0.1248251423239708,
+      "psnr_db_mean": 9.134285701116713,
+      "ssim_mean": 0.15687909559346735,
+      "recognition_rate": 0.234375,
+      "classifier_confidence_mean": 0.28741177916526794
+    },
+    {
+      "method": "HEFedAvg",
+      "attack": "geiping",
+      "mse_mean": 0.12657003104686737,
+      "psnr_db_mean": 9.076137831099013,
+      "ssim_mean": 0.16016352188307792,
+      "recognition_rate": 0.03125,
+      "classifier_confidence_mean": 0.9974686503410339
+    },
+    {
+      "method": "HEFedAvg",
+      "attack": "gi_nas",
+      "mse_mean": 0.06646120548248291,
+      "psnr_db_mean": 12.146461227531951,
+      "ssim_mean": 0.25264363340102136,
+      "recognition_rate": 0.09375,
+      "classifier_confidence_mean": 0.4681605100631714
+    },
+    {
+      "method": "HEFedAvg",
+      "attack": "hf_gradinv",
+      "mse_mean": 0.12293952703475952,
+      "psnr_db_mean": 9.214513254241213,
+      "ssim_mean": 0.15891418885439634,
+      "recognition_rate": 0.234375,
+      "classifier_confidence_mean": 0.34482261538505554
+    },
+    {
+      "method": "LDP-FL",
+      "attack": "geiping",
+      "mse_mean": 0.12769871950149536,
+      "psnr_db_mean": 9.05452417052671,
+      "ssim_mean": 0.15249930205754936,
+      "recognition_rate": 0.015625,
+      "classifier_confidence_mean": 0.9038379192352295
+    },
+    {
+      "method": "LDP-FL",
+      "attack": "gi_nas",
+      "mse_mean": 0.061131227761507034,
+      "psnr_db_mean": 12.542246042314055,
+      "ssim_mean": 0.2777690280927345,
+      "recognition_rate": 0.0625,
+      "classifier_confidence_mean": 0.4005752205848694
+    },
+    {
+      "method": "LDP-FL",
+      "attack": "hf_gradinv",
+      "mse_mean": 0.12419822067022324,
+      "psnr_db_mean": 9.17323442112017,
+      "ssim_mean": 0.15689205040689558,
+      "recognition_rate": 0.171875,
+      "classifier_confidence_mean": 0.2782232165336609
+    },
+    {
+      "method": "AdapLDP-FL",
+      "attack": "geiping",
+      "mse_mean": 0.12597887217998505,
+      "psnr_db_mean": 9.116169528574298,
+      "ssim_mean": 0.15623804979259148,
+      "recognition_rate": 0.046875,
+      "classifier_confidence_mean": 0.7660527229309082
+    },
+    {
+      "method": "AdapLDP-FL",
+      "attack": "gi_nas",
+      "mse_mean": 0.059704024344682693,
+      "psnr_db_mean": 12.681058498821324,
+      "ssim_mean": 0.28789248736575246,
+      "recognition_rate": 0.296875,
+      "classifier_confidence_mean": 0.3385677933692932
+    },
+    {
+      "method": "AdapLDP-FL",
+      "attack": "hf_gradinv",
+      "mse_mean": 0.1209748387336731,
+      "psnr_db_mean": 9.291298649249404,
+      "ssim_mean": 0.1605622176430188,
+      "recognition_rate": 0.21875,
+      "classifier_confidence_mean": 0.2484743297100067
+    },
+    {
+      "method": "SCAFFOLD",
+      "attack": "geiping",
+      "mse_mean": 0.13676230609416962,
+      "psnr_db_mean": 8.732422663253503,
+      "ssim_mean": 0.15101958182640374,
+      "recognition_rate": 0.46875,
+      "classifier_confidence_mean": 0.9669917821884155
+    },
+    {
+      "method": "SCAFFOLD",
+      "attack": "gi_nas",
+      "mse_mean": 0.0763494074344635,
+      "psnr_db_mean": 11.455853243658641,
+      "ssim_mean": 0.22121733630774543,
+      "recognition_rate": 0.296875,
+      "classifier_confidence_mean": 0.9906278252601624
+    },
+    {
+      "method": "SCAFFOLD",
+      "attack": "hf_gradinv",
+      "mse_mean": 0.13616813719272614,
+      "psnr_db_mean": 8.750991028765034,
+      "ssim_mean": 0.14527501878910698,
+      "recognition_rate": 0.40625,
+      "classifier_confidence_mean": 0.8129252195358276
+    },
+    {
+      "method": "FedPVR",
+      "attack": "geiping",
+      "mse_mean": 0.12549208104610443,
+      "psnr_db_mean": 9.12323518063655,
+      "ssim_mean": 0.16181507759029046,
+      "recognition_rate": 0.25,
+      "classifier_confidence_mean": 0.5939860343933105
+    },
+    {
+      "method": "FedPVR",
+      "attack": "gi_nas",
+      "mse_mean": 0.06046317517757416,
+      "psnr_db_mean": 12.570936665662392,
+      "ssim_mean": 0.2809270001016557,
+      "recognition_rate": 0.234375,
+      "classifier_confidence_mean": 0.6055711507797241
+    },
+    {
+      "method": "FedPVR",
+      "attack": "hf_gradinv",
+      "mse_mean": 0.1284681111574173,
+      "psnr_db_mean": 9.017697352532743,
+      "ssim_mean": 0.15108080999925733,
+      "recognition_rate": 0.078125,
+      "classifier_confidence_mean": 0.8161792755126953
+    },
+    {
+      "method": "Adap-CTA",
+      "attack": "geiping",
+      "mse_mean": 0.13704518973827362,
+      "psnr_db_mean": 8.724443868761341,
+      "ssim_mean": 0.15165692183654755,
+      "recognition_rate": 0.46875,
+      "classifier_confidence_mean": 0.9487036466598511
+    },
+    {
+      "method": "Adap-CTA",
+      "attack": "gi_nas",
+      "mse_mean": 0.06616611778736115,
+      "psnr_db_mean": 12.10763700911651,
+      "ssim_mean": 0.2436287085292861,
+      "recognition_rate": 0.328125,
+      "classifier_confidence_mean": 0.9804387092590332
+    },
+    {
+      "method": "Adap-CTA",
+      "attack": "hf_gradinv",
+      "mse_mean": 0.14018936455249786,
+      "psnr_db_mean": 8.621083651397129,
+      "ssim_mean": 0.1498890575603582,
+      "recognition_rate": 0.125,
+      "classifier_confidence_mean": 0.8130569458007812
+    }
+  ],
+  "sources": [
+    {
+      "method": "FedAvg",
+      "attack": "geiping",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/FedAvg/geiping",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "29489b9d2c97ff6960427fcd0c203c69010b2892e17d58c90ac1f6d2f98ef3b4",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        1,
+        27,
+        12
+      ]
+    },
+    {
+      "method": "FedAvg",
+      "attack": "gi_nas",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/FedAvg/gi_nas",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "4c35eb21e871e5a8e10dbf82a17d4b9d5ffafcae42b08c8f9251abe52c386739",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        0,
+        42,
+        41
+      ]
+    },
+    {
+      "method": "FedAvg",
+      "attack": "hf_gradinv",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/FedAvg/hf_gradinv",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "76e87f7aceb43248d8f90d675244662c123d93717d75f57419d4926aee53a553",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        7,
+        48,
+        49
+      ]
+    },
+    {
+      "method": "DPFedAvg",
+      "attack": "geiping",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/DPFedAvg/geiping",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "e5a4d4fc859c1212af6bf6204e76db8ea5be98d34f6bb04bdc17b0a09c0b12bd",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        11,
+        34,
+        27
+      ]
+    },
+    {
+      "method": "DPFedAvg",
+      "attack": "gi_nas",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/DPFedAvg/gi_nas",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "7a6b56cb5f691bb019f09ec2c4d8777d062d90f8dfa301d72ab7573b09045565",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        14,
+        5,
+        48
+      ]
+    },
+    {
+      "method": "DPFedAvg",
+      "attack": "hf_gradinv",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/DPFedAvg/hf_gradinv",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "1604069525edc3097e47aacbb749142891d6697af585f57f9efe8533af438ae8",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        20,
+        23,
+        56
+      ]
+    },
+    {
+      "method": "HEFedAvg",
+      "attack": "geiping",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/HEFedAvg/geiping",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "500f6422ae46ef572bffca7778af74ad900042dae9efb9d9364197b5623aa91d",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        11,
+        0,
+        20
+      ]
+    },
+    {
+      "method": "HEFedAvg",
+      "attack": "gi_nas",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/HEFedAvg/gi_nas",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "be10abdc76c0d12cd77bde90ab52ec301d9f9cca3b0953da1489c262c88c32f8",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        1,
+        24,
+        42
+      ]
+    },
+    {
+      "method": "HEFedAvg",
+      "attack": "hf_gradinv",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/HEFedAvg/hf_gradinv",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "92f948f44be4a849c794524b681da9114b292fd90072e8e77561ebb92de5a556",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        0,
+        13,
+        53
+      ]
+    },
+    {
+      "method": "LDP-FL",
+      "attack": "geiping",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/LDP-FL/geiping",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "85dca0bba355fa9d6be01b5ab8cb074e5c7fdf2ce0acac12fd14419bae2b2311",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        57,
+        35,
+        62
+      ]
+    },
+    {
+      "method": "LDP-FL",
+      "attack": "gi_nas",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/LDP-FL/gi_nas",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "48e71a8984ba3c427019cad89843c48d27e60ab96c1dd4d2237e4d544c1f4f81",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        12,
+        48,
+        50
+      ]
+    },
+    {
+      "method": "LDP-FL",
+      "attack": "hf_gradinv",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/LDP-FL/hf_gradinv",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "5805b22fc4cc5ec041c552b4770e78ac167efed9e15f0da4296e20226d3372fb",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        11,
+        61,
+        10
+      ]
+    },
+    {
+      "method": "AdapLDP-FL",
+      "attack": "geiping",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/AdapLDP-FL/geiping",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "5deaca237ea571ffbc59ebeb4ae00597169cd4bcaa1ccc264f649dab0cf2c72a",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        59,
+        55,
+        26
+      ]
+    },
+    {
+      "method": "AdapLDP-FL",
+      "attack": "gi_nas",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/AdapLDP-FL/gi_nas",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "7f006c1aad7b9918d833ac059367caaabd0a23c41b21618f500fc28d2226b960",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        9,
+        3,
+        7
+      ]
+    },
+    {
+      "method": "AdapLDP-FL",
+      "attack": "hf_gradinv",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/AdapLDP-FL/hf_gradinv",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "cf0ca4e0980531459fdc84550704580094b3e52f315eef7035f9842b25b48bfb",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        20,
+        44,
+        19
+      ]
+    },
+    {
+      "method": "SCAFFOLD",
+      "attack": "geiping",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/SCAFFOLD/geiping",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "25375eecb58917033fdc2df4cc4746ea2a7f30f421ba9e21b071f86a39c26658",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        51,
+        4,
+        29
+      ]
+    },
+    {
+      "method": "SCAFFOLD",
+      "attack": "gi_nas",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/SCAFFOLD/gi_nas",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "ac33f4c9eb3e374d2c44944f5cb3e495aad2518b7060482a2b137607b1360a2a",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        20,
+        31,
+        59
+      ]
+    },
+    {
+      "method": "SCAFFOLD",
+      "attack": "hf_gradinv",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/SCAFFOLD/hf_gradinv",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "e47215082b01aeeafb7b25ce79fa23af27252381d685d30e9c5a8ef9ac396c95",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        4,
+        17,
+        26
+      ]
+    },
+    {
+      "method": "FedPVR",
+      "attack": "geiping",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/FedPVR/geiping",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "ec1526623984dc658096625514ee2e79b481e477edf6c71beb83b10f307d2c78",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        9,
+        48,
+        30
+      ]
+    },
+    {
+      "method": "FedPVR",
+      "attack": "gi_nas",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/FedPVR/gi_nas",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "f5c5d2d58780b12bf22b79ac4b608b2097cbaf3201e5324628d9e8688111c1e9",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        29,
+        53,
+        10
+      ]
+    },
+    {
+      "method": "FedPVR",
+      "attack": "hf_gradinv",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/FedPVR/hf_gradinv",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "89f0f49a8f1063ca800735176d4b7be3ce41e4c3c490734724e23e4c6da7f10c",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        4,
+        25,
+        24
+      ]
+    },
+    {
+      "method": "Adap-CTA",
+      "attack": "geiping",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/Adap-CTA/geiping",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "606b6001db5a60530042673d5d3add1d7691f0cd2e3c4d70afc370a78e3e6bfb",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        18,
+        41,
+        31
+      ]
+    },
+    {
+      "method": "Adap-CTA",
+      "attack": "gi_nas",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/Adap-CTA/gi_nas",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "a99085cfaf82b55509b02500a810d3650abc4976114e6d2336e3a7a2f53c9a57",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        1,
+        62,
+        28
+      ]
+    },
+    {
+      "method": "Adap-CTA",
+      "attack": "hf_gradinv",
+      "directory": "safe_FL/results/attacks/uniform_20261106/results/Adap-CTA/hf_gradinv",
+      "original_sha256": "87d61bd6b2fa892f20fa0661a5ee5972cf76c1609e3d7408d0da9dc505aff115",
+      "reconstruction_sha256": "c120f461f7b2aa8c91a98e199ebd101c9854641288658ad6613e99115dbc0e1b",
+      "reference_indices_zero_based": [
+        29,
+        24,
+        41
+      ],
+      "reconstruction_indices_zero_based": [
+        5,
+        31,
+        32
+      ]
+    }
+  ]
+}

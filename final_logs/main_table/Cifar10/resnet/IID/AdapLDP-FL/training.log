@@ -1,0 +1,65 @@
+{"job": {"dataset": "Cifar10", "model": "resnet", "classes": 10, "clients": 100, "join_ratio": 0.1, "alpha": 2.0, "noise": 0.0, "target": 0.6, "data_root": "/data/safe_FL_20261021/cta_extension", "server": 18, "algorithm": "AdapLDP-FL", "id": "20261022_partitionfix_Cifar10_resnet_IID_AdapLDP-FL_seed0_lr0p01", "queue_phase": "image", "log": "resnet_cifar10/IID_N_100_jr_0.1/AdapLDP-FL_partitionfix_lr0p01_recover790_1792609392152185191.txt", "resume_state": "/root/safe_FL_20261021_lr0p01/state/checkpoints/archive/20261022_partitionfix_Cifar10_resnet_IID_AdapLDP-FL_seed0_lr0p01_round790_1792609392152185191/20261022_partitionfix_Cifar10_resnet_IID_AdapLDP-FL_seed0_lr0p01_latest.pt", "resume_curves": "/root/safe_FL_20261021_lr0p01/state/resume/20261022_partitionfix_Cifar10_resnet_IID_AdapLDP-FL_seed0_lr0p01_round790_1792609392152185191.h5"}, "deployment_sha256": "75741cac6758d43f574fd8143c1b127f3d9c2256903053face5ab41d74afc8c6"}
+==================================================
+Algorithm: AdapLDP-FL
+Local batch size: 64
+Local epochs: 5
+Local learing rate: 0.01
+Local learing rate decay: False
+Total number of clients: 100
+Clients join in each round: 0.1
+Clients randomly join: False
+Client drop rate: 0.0
+Client select regarding time: False
+Running times: 1
+Dataset: Cifar10
+Number of classes: 10
+Backbone: resnet
+Using device: cuda
+Auto break: False
+Global rounds: 800
+Cuda device id: 0
+DLG attack: False
+Total number of new clients: 0
+Fine tuning epoches on new clients: 0
+==================================================
+RUNTIME_PROVENANCE source_sha256=f6f5181924f60e672ca0bc878427fcb80894b0141b7e97402e6eaa0b13307368 data_sha256=1e8e7d9f6bf12d518ebe5039c5566461a69a17100b6835840c38c5606c80667d
+resnet
+
+============= Running time: 0th =============
+Creating server and clients ...
+51.68000793457031 MB
+
+Join ratio / total clients: 0.1 / 100
+Finished creating server and clients.
+RESUMED from round 790; 10 rounds remain
+ROUND 791/800 accuracy=0.555467 test_loss=2.666128 cost=17.118131
+11.93949580192566
+ROUND 792/800 accuracy=0.554336 test_loss=2.665018 cost=17.304371
+5.875253677368164
+ROUND 793/800 accuracy=0.554270 test_loss=2.663558 cost=16.955169
+5.643259763717651
+ROUND 794/800 accuracy=0.554602 test_loss=2.664480 cost=17.039310
+5.901578903198242
+ROUND 795/800 accuracy=0.555068 test_loss=2.664087 cost=16.947188
+5.621571063995361
+ROUND 796/800 accuracy=0.555600 test_loss=2.664814 cost=17.291734
+5.786455154418945
+ROUND 797/800 accuracy=0.555334 test_loss=2.666587 cost=16.944528
+5.71833062171936
+ROUND 798/800 accuracy=0.557263 test_loss=2.666963 cost=16.925241
+5.720870494842529
+ROUND 799/800 accuracy=0.554868 test_loss=2.668185 cost=17.124117
+5.810293912887573
+ROUND 800/800 accuracy=0.555334 test_loss=2.669387 cost=16.682128
+File path: ../results/Cifar10_resnet_AdapLDP-FL_20261022_partitionfix_Cifar10_resnet_IID_AdapLDP-FL_seed0_lr0p01_0.h5
+5.7443859577178955
+
+Best accuracy.
+0.5595903165735568
+
+Average time cost per round.
+6.376146984100342
+File path: ../results/Cifar10_resnet_AdapLDP-FL_20261022_partitionfix_Cifar10_resnet_IID_AdapLDP-FL_seed0_lr0p01_0.h5
+
+Average time cost: 71.82s.
+All done!

@@ -1,0 +1,187 @@
+{
+  "diagnostic_only": true,
+  "observation": "exact_gradient_no_correction",
+  "attack": "gi_nas",
+  "samples": [
+    29,
+    24
+  ],
+  "batch_size": 2,
+  "config": {
+    "search_size": 5000,
+    "iterations": 3000,
+    "learning_rate": 0.001,
+    "tv_weight": 0.0,
+    "seed": 0,
+    "report_every": 100,
+    "learning_rate_decay": true,
+    "verbose": true,
+    "batchnorm_mode": "running"
+  },
+  "stats": {
+    "method": "GI-NAS",
+    "best_model_index": 645,
+    "best_search_metric": 0.3253675103187561,
+    "searched_candidates": 5000,
+    "failed_candidates": 240,
+    "iterations": 3000,
+    "batchnorm_mode": "running",
+    "loss_history": [
+      {
+        "iteration": 1,
+        "gradient_loss": 0.3253672122955322
+      },
+      {
+        "iteration": 100,
+        "gradient_loss": 0.18596041202545166
+      },
+      {
+        "iteration": 200,
+        "gradient_loss": 0.11746656894683838
+      },
+      {
+        "iteration": 300,
+        "gradient_loss": 0.11360865831375122
+      },
+      {
+        "iteration": 400,
+        "gradient_loss": 0.058941662311553955
+      },
+      {
+        "iteration": 500,
+        "gradient_loss": 0.06593340635299683
+      },
+      {
+        "iteration": 600,
+        "gradient_loss": 0.06173425912857056
+      },
+      {
+        "iteration": 700,
+        "gradient_loss": 0.0470239520072937
+      },
+      {
+        "iteration": 800,
+        "gradient_loss": 0.05382663011550903
+      },
+      {
+        "iteration": 900,
+        "gradient_loss": 0.03330826759338379
+      },
+      {
+        "iteration": 1000,
+        "gradient_loss": 0.03766685724258423
+      },
+      {
+        "iteration": 1100,
+        "gradient_loss": 0.035024940967559814
+      },
+      {
+        "iteration": 1200,
+        "gradient_loss": 0.025586187839508057
+      },
+      {
+        "iteration": 1300,
+        "gradient_loss": 0.028403818607330322
+      },
+      {
+        "iteration": 1400,
+        "gradient_loss": 0.02671605348587036
+      },
+      {
+        "iteration": 1500,
+        "gradient_loss": 0.022734522819519043
+      },
+      {
+        "iteration": 1600,
+        "gradient_loss": 0.02212148904800415
+      },
+      {
+        "iteration": 1700,
+        "gradient_loss": 0.02576613426208496
+      },
+      {
+        "iteration": 1800,
+        "gradient_loss": 0.02229398488998413
+      },
+      {
+        "iteration": 1900,
+        "gradient_loss": 0.02609264850616455
+      },
+      {
+        "iteration": 2000,
+        "gradient_loss": 0.02540111541748047
+      },
+      {
+        "iteration": 2100,
+        "gradient_loss": 0.025003373622894287
+      },
+      {
+        "iteration": 2200,
+        "gradient_loss": 0.026356220245361328
+      },
+      {
+        "iteration": 2300,
+        "gradient_loss": 0.02517414093017578
+      },
+      {
+        "iteration": 2400,
+        "gradient_loss": 0.02484053373336792
+      },
+      {
+        "iteration": 2500,
+        "gradient_loss": 0.024930119514465332
+      },
+      {
+        "iteration": 2600,
+        "gradient_loss": 0.02509784698486328
+      },
+      {
+        "iteration": 2700,
+        "gradient_loss": 0.026211440563201904
+      },
+      {
+        "iteration": 2800,
+        "gradient_loss": 0.025761783123016357
+      },
+      {
+        "iteration": 2900,
+        "gradient_loss": 0.025705337524414062
+      },
+      {
+        "iteration": 3000,
+        "gradient_loss": 0.025516748428344727
+      }
+    ],
+    "elapsed_seconds": 650.6547845220048
+  },
+  "metrics": {
+    "matching": "minimum batch MSE",
+    "reconstruction_assignment": [
+      0,
+      1
+    ],
+    "mse_per_image": [
+      0.0033292716834694147,
+      0.015369662083685398
+    ],
+    "mse_mean": 0.009349467232823372,
+    "psnr_db_per_image": [
+      24.776507630238136,
+      18.133356807633675
+    ],
+    "psnr_db_mean": 21.454932218935905,
+    "recognition_rate": 0.5,
+    "classifier_confidence_mean": 0.8310723900794983,
+    "ssim_per_image": [
+      0.9093537926673889,
+      0.5859046578407288
+    ],
+    "ssim_mean": 0.7476292252540588,
+    "fsim_mean": null,
+    "lpips_mean": null,
+    "perceptual_metric_backend": null,
+    "perceptual_metric_error": "ModuleNotFoundError: No module named 'piq'"
+  },
+  "bundle_sha256": "cd2f0a64913fcf8870c72302f9e0af8c0602ffeea4b178d7e28b49ea7d62227e",
+  "passed": false
+}

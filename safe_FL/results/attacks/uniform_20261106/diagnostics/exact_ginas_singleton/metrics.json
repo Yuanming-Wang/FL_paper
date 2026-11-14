@@ -1,0 +1,309 @@
+{
+  "diagnostic_only": true,
+  "observation": "exact_gradient_no_correction",
+  "attack": "gi_nas",
+  "samples": [
+    29,
+    29
+  ],
+  "batch_size": 2,
+  "config": {
+    "search_size": 32,
+    "iterations": 6000,
+    "learning_rate": 0.001,
+    "tv_weight": 0.0,
+    "seed": 0,
+    "report_every": 100,
+    "learning_rate_decay": true,
+    "verbose": true,
+    "batchnorm_mode": "running"
+  },
+  "stats": {
+    "method": "GI-NAS",
+    "best_model_index": 3,
+    "best_search_metric": 0.3126784563064575,
+    "searched_candidates": 32,
+    "failed_candidates": 0,
+    "iterations": 6000,
+    "batchnorm_mode": "running",
+    "loss_history": [
+      {
+        "iteration": 1,
+        "gradient_loss": 0.3126835227012634
+      },
+      {
+        "iteration": 100,
+        "gradient_loss": 0.0967477560043335
+      },
+      {
+        "iteration": 200,
+        "gradient_loss": 0.05467081069946289
+      },
+      {
+        "iteration": 300,
+        "gradient_loss": 0.07173174619674683
+      },
+      {
+        "iteration": 400,
+        "gradient_loss": 0.044624269008636475
+      },
+      {
+        "iteration": 500,
+        "gradient_loss": 0.04183560609817505
+      },
+      {
+        "iteration": 600,
+        "gradient_loss": 0.037436604499816895
+      },
+      {
+        "iteration": 700,
+        "gradient_loss": 0.04215461015701294
+      },
+      {
+        "iteration": 800,
+        "gradient_loss": 0.040165603160858154
+      },
+      {
+        "iteration": 900,
+        "gradient_loss": 0.03583604097366333
+      },
+      {
+        "iteration": 1000,
+        "gradient_loss": 0.04076641798019409
+      },
+      {
+        "iteration": 1100,
+        "gradient_loss": 0.04563486576080322
+      },
+      {
+        "iteration": 1200,
+        "gradient_loss": 0.05366092920303345
+      },
+      {
+        "iteration": 1300,
+        "gradient_loss": 0.041508376598358154
+      },
+      {
+        "iteration": 1400,
+        "gradient_loss": 0.051767945289611816
+      },
+      {
+        "iteration": 1500,
+        "gradient_loss": 0.03437525033950806
+      },
+      {
+        "iteration": 1600,
+        "gradient_loss": 0.03902542591094971
+      },
+      {
+        "iteration": 1700,
+        "gradient_loss": 0.04784965515136719
+      },
+      {
+        "iteration": 1800,
+        "gradient_loss": 0.03426182270050049
+      },
+      {
+        "iteration": 1900,
+        "gradient_loss": 0.030689001083374023
+      },
+      {
+        "iteration": 2000,
+        "gradient_loss": 0.02324199676513672
+      },
+      {
+        "iteration": 2100,
+        "gradient_loss": 0.0291287899017334
+      },
+      {
+        "iteration": 2200,
+        "gradient_loss": 0.03202444314956665
+      },
+      {
+        "iteration": 2300,
+        "gradient_loss": 0.028775453567504883
+      },
+      {
+        "iteration": 2400,
+        "gradient_loss": 0.02105158567428589
+      },
+      {
+        "iteration": 2500,
+        "gradient_loss": 0.01979672908782959
+      },
+      {
+        "iteration": 2600,
+        "gradient_loss": 0.02453380823135376
+      },
+      {
+        "iteration": 2700,
+        "gradient_loss": 0.020102202892303467
+      },
+      {
+        "iteration": 2800,
+        "gradient_loss": 0.018915116786956787
+      },
+      {
+        "iteration": 2900,
+        "gradient_loss": 0.019332706928253174
+      },
+      {
+        "iteration": 3000,
+        "gradient_loss": 0.01920098066329956
+      },
+      {
+        "iteration": 3100,
+        "gradient_loss": 0.01766347885131836
+      },
+      {
+        "iteration": 3200,
+        "gradient_loss": 0.02135026454925537
+      },
+      {
+        "iteration": 3300,
+        "gradient_loss": 0.020415127277374268
+      },
+      {
+        "iteration": 3400,
+        "gradient_loss": 0.02051764726638794
+      },
+      {
+        "iteration": 3500,
+        "gradient_loss": 0.017008185386657715
+      },
+      {
+        "iteration": 3600,
+        "gradient_loss": 0.021487832069396973
+      },
+      {
+        "iteration": 3700,
+        "gradient_loss": 0.019121766090393066
+      },
+      {
+        "iteration": 3800,
+        "gradient_loss": 0.01654118299484253
+      },
+      {
+        "iteration": 3900,
+        "gradient_loss": 0.01670968532562256
+      },
+      {
+        "iteration": 4000,
+        "gradient_loss": 0.015871942043304443
+      },
+      {
+        "iteration": 4100,
+        "gradient_loss": 0.015590369701385498
+      },
+      {
+        "iteration": 4200,
+        "gradient_loss": 0.018627405166625977
+      },
+      {
+        "iteration": 4300,
+        "gradient_loss": 0.018452465534210205
+      },
+      {
+        "iteration": 4400,
+        "gradient_loss": 0.018767952919006348
+      },
+      {
+        "iteration": 4500,
+        "gradient_loss": 0.01580333709716797
+      },
+      {
+        "iteration": 4600,
+        "gradient_loss": 0.01498502492904663
+      },
+      {
+        "iteration": 4700,
+        "gradient_loss": 0.014240801334381104
+      },
+      {
+        "iteration": 4800,
+        "gradient_loss": 0.01571434736251831
+      },
+      {
+        "iteration": 4900,
+        "gradient_loss": 0.013219237327575684
+      },
+      {
+        "iteration": 5000,
+        "gradient_loss": 0.013781964778900146
+      },
+      {
+        "iteration": 5100,
+        "gradient_loss": 0.013834238052368164
+      },
+      {
+        "iteration": 5200,
+        "gradient_loss": 0.01270073652267456
+      },
+      {
+        "iteration": 5300,
+        "gradient_loss": 0.012406349182128906
+      },
+      {
+        "iteration": 5400,
+        "gradient_loss": 0.014189064502716064
+      },
+      {
+        "iteration": 5500,
+        "gradient_loss": 0.012342751026153564
+      },
+      {
+        "iteration": 5600,
+        "gradient_loss": 0.012579202651977539
+      },
+      {
+        "iteration": 5700,
+        "gradient_loss": 0.012624263763427734
+      },
+      {
+        "iteration": 5800,
+        "gradient_loss": 0.0127028226852417
+      },
+      {
+        "iteration": 5900,
+        "gradient_loss": 0.012714743614196777
+      },
+      {
+        "iteration": 6000,
+        "gradient_loss": 0.012616515159606934
+      }
+    ],
+    "elapsed_seconds": 374.37622616101
+  },
+  "metrics": {
+    "matching": "minimum batch MSE",
+    "reconstruction_assignment": [
+      0,
+      1
+    ],
+    "mse_per_image": [
+      0.0026787519454956055,
+      0.03783928602933884
+    ],
+    "mse_mean": 0.020259017124772072,
+    "psnr_db_per_image": [
+      25.720675005352014,
+      14.22057066679433
+    ],
+    "psnr_db_mean": 19.970622836073172,
+    "recognition_rate": 0.0,
+    "classifier_confidence_mean": 0.43969643115997314,
+    "ssim_per_image": [
+      0.9294987320899963,
+      0.32549595832824707
+    ],
+    "ssim_mean": 0.6274973452091217,
+    "fsim_mean": null,
+    "lpips_mean": null,
+    "perceptual_metric_backend": null,
+    "perceptual_metric_error": "ModuleNotFoundError: No module named 'piq'"
+  },
+  "logical_private_images": 1,
+  "control_note": "repeated target image keeps generator BatchNorm valid while testing a singleton gradient",
+  "bundle_sha256": "cd2f0a64913fcf8870c72302f9e0af8c0602ffeea4b178d7e28b49ea7d62227e",
+  "passed": false
+}

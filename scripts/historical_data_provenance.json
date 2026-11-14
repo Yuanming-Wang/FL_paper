@@ -1,0 +1,53 @@
+{
+  "original_serialized_data_sha256": "f5c026bf7a8bd3807ecc1429ecc02ad13d3deb730b41597855d093cca4e8eb51",
+  "training_runs": [
+    {
+      "file": "Cifar10_resnet_AdapLDP-FL_20261022_partitionfix_Cifar10_resnet_d0.2_AdapLDP-FL_seed0_lr0p01_0.h5",
+      "algorithm": "AdapLDP-FL",
+      "old_data_sha256": "f5c026bf7a8bd3807ecc1429ecc02ad13d3deb730b41597855d093cca4e8eb51",
+      "matches_original_serialized_files": true
+    },
+    {
+      "file": "Cifar10_resnet_DPFedAvg_20261022_required_Cifar10_resnet_d0.2_DPFedAvg_seed0_lr0p01_0.h5",
+      "algorithm": "DPFedAvg",
+      "old_data_sha256": "f5c026bf7a8bd3807ecc1429ecc02ad13d3deb730b41597855d093cca4e8eb51",
+      "matches_original_serialized_files": true
+    },
+    {
+      "file": "Cifar10_resnet_FedAvg_20261022_required_Cifar10_resnet_d0.2_FedAvg_seed0_lr0p01_0.h5",
+      "algorithm": "FedAvg",
+      "old_data_sha256": "f5c026bf7a8bd3807ecc1429ecc02ad13d3deb730b41597855d093cca4e8eb51",
+      "matches_original_serialized_files": true
+    },
+    {
+      "file": "Cifar10_resnet_FedMut_20261022_required_Cifar10_resnet_d0.2_FedMut_seed0_lr0p01_0.h5",
+      "algorithm": "FedMut",
+      "old_data_sha256": "f5c026bf7a8bd3807ecc1429ecc02ad13d3deb730b41597855d093cca4e8eb51",
+      "matches_original_serialized_files": true
+    },
+    {
+      "file": "Cifar10_resnet_FedPVR_20261022_required_Cifar10_resnet_d0.2_FedPVR_seed0_lr0p01_0.h5",
+      "algorithm": "FedPVR",
+      "old_data_sha256": "f5c026bf7a8bd3807ecc1429ecc02ad13d3deb730b41597855d093cca4e8eb51",
+      "matches_original_serialized_files": true
+    },
+    {
+      "file": "Cifar10_resnet_HEFedAvg_20261022_required_Cifar10_resnet_d0.2_HEFedAvg_seed0_lr0p01_0.h5",
+      "algorithm": "HEFedAvg",
+      "old_data_sha256": "f5c026bf7a8bd3807ecc1429ecc02ad13d3deb730b41597855d093cca4e8eb51",
+      "matches_original_serialized_files": true
+    },
+    {
+      "file": "Cifar10_resnet_LDP-FL_20261022_required_Cifar10_resnet_d0.2_LDP-FL_seed0_lr0p01_0.h5",
+      "algorithm": "LDP-FL",
+      "old_data_sha256": "f5c026bf7a8bd3807ecc1429ecc02ad13d3deb730b41597855d093cca4e8eb51",
+      "matches_original_serialized_files": true
+    },
+    {
+      "file": "Cifar10_resnet_SCAFFOLD_20261022_required_Cifar10_resnet_d0.2_SCAFFOLD_seed0_lr0p01_0.h5",
+      "algorithm": "SCAFFOLD",
+      "old_data_sha256": "f5c026bf7a8bd3807ecc1429ecc02ad13d3deb730b41597855d093cca4e8eb51",
+      "matches_original_serialized_files": true
+    }
+  ]
+}

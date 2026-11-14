@@ -1,0 +1,55 @@
+/opt/conda/lib/python3.10/site-packages/torch/autograd/graph.py:768: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /workspace/framework/mcPytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:136.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+GI-NAS search 250/5000: best cosine loss 0.884007, failed 13
+GI-NAS search 500/5000: best cosine loss 0.884007, failed 15
+GI-NAS search 750/5000: best cosine loss 0.884007, failed 30
+GI-NAS search 1000/5000: best cosine loss 0.884007, failed 45
+GI-NAS search 1250/5000: best cosine loss 0.884007, failed 60
+GI-NAS search 1500/5000: best cosine loss 0.884007, failed 75
+GI-NAS search 1750/5000: best cosine loss 0.884007, failed 88
+GI-NAS search 2000/5000: best cosine loss 0.884007, failed 90
+GI-NAS search 2250/5000: best cosine loss 0.883462, failed 105
+GI-NAS search 2500/5000: best cosine loss 0.881778, failed 120
+GI-NAS search 2750/5000: best cosine loss 0.881778, failed 135
+GI-NAS search 3000/5000: best cosine loss 0.881778, failed 150
+GI-NAS search 3250/5000: best cosine loss 0.881778, failed 163
+GI-NAS search 3500/5000: best cosine loss 0.881778, failed 165
+GI-NAS search 3750/5000: best cosine loss 0.881778, failed 180
+GI-NAS search 4000/5000: best cosine loss 0.881778, failed 195
+GI-NAS search 4250/5000: best cosine loss 0.881778, failed 210
+GI-NAS search 4500/5000: best cosine loss 0.881209, failed 225
+GI-NAS search 4750/5000: best cosine loss 0.881209, failed 238
+GI-NAS searched 5000 candidates; selected 4305, cosine loss 0.881209
+GI-NAS iteration 1/30000: loss 0.881180
+GI-NAS iteration 1000/30000: loss 0.614661
+GI-NAS iteration 2000/30000: loss 0.582914
+GI-NAS iteration 3000/30000: loss 0.573274
+GI-NAS iteration 4000/30000: loss 0.558436
+GI-NAS iteration 5000/30000: loss 0.554054
+GI-NAS iteration 6000/30000: loss 0.551755
+GI-NAS iteration 7000/30000: loss 0.546363
+GI-NAS iteration 8000/30000: loss 0.542296
+GI-NAS iteration 9000/30000: loss 0.545386
+GI-NAS iteration 10000/30000: loss 0.539983
+GI-NAS iteration 11000/30000: loss 0.538765
+GI-NAS iteration 12000/30000: loss 0.494251
+GI-NAS iteration 13000/30000: loss 0.493988
+GI-NAS iteration 14000/30000: loss 0.490228
+GI-NAS iteration 15000/30000: loss 0.490161
+GI-NAS iteration 16000/30000: loss 0.490947
+GI-NAS iteration 17000/30000: loss 0.490786
+GI-NAS iteration 18000/30000: loss 0.490392
+GI-NAS iteration 19000/30000: loss 0.476263
+GI-NAS iteration 20000/30000: loss 0.477121
+GI-NAS iteration 21000/30000: loss 0.476859
+GI-NAS iteration 22000/30000: loss 0.476025
+GI-NAS iteration 23000/30000: loss 0.474875
+GI-NAS iteration 24000/30000: loss 0.474161
+GI-NAS iteration 25000/30000: loss 0.474175
+GI-NAS iteration 26000/30000: loss 0.472786
+GI-NAS iteration 27000/30000: loss 0.471485
+GI-NAS iteration 28000/30000: loss 0.470991
+GI-NAS iteration 29000/30000: loss 0.471845
+GI-NAS iteration 30000/30000: loss 0.470743
+GI-NAS reconstruction saved to: /data/attack_benchmark_20261106/results/HEFedAvg/gi_nas
+MSE=0.066461, PSNR=12.146 dB, SSIM=0.2526, recognition=0.094

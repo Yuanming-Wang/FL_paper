@@ -1,0 +1,52 @@
+{
+  "diagnostic_only": true,
+  "observation": "exact_single_sample_gradient_no_correction",
+  "sample": 29,
+  "batch_size": 1,
+  "config": {
+    "optim": "adam",
+    "lr": 0.1,
+    "signed": false,
+    "boxed": true,
+    "restarts": 1,
+    "max_iterations": 4800,
+    "batchnorm_mode": "running",
+    "lr_decay": true,
+    "cost_fn": "sim",
+    "indices": "def",
+    "weights": "equal",
+    "init": "randn",
+    "filter": "none",
+    "scoring_choice": "loss"
+  },
+  "stats": {
+    "batchnorm_mode": "running",
+    "opt": 0.009678423404693604
+  },
+  "metrics": {
+    "matching": "minimum batch MSE",
+    "reconstruction_assignment": [
+      0
+    ],
+    "mse_per_image": [
+      0.0008413411560468376
+    ],
+    "mse_mean": 0.0008413411560468376,
+    "psnr_db_per_image": [
+      30.750278660982225
+    ],
+    "psnr_db_mean": 30.750278660982225,
+    "recognition_rate": 0.0,
+    "classifier_confidence_mean": 0.7362152934074402,
+    "ssim_per_image": [
+      0.9778311252593994
+    ],
+    "ssim_mean": 0.9778311252593994,
+    "fsim_mean": null,
+    "lpips_mean": null,
+    "perceptual_metric_backend": null,
+    "perceptual_metric_error": "ModuleNotFoundError: No module named 'piq'"
+  },
+  "bundle_sha256": "cd2f0a64913fcf8870c72302f9e0af8c0602ffeea4b178d7e28b49ea7d62227e",
+  "passed": true
+}

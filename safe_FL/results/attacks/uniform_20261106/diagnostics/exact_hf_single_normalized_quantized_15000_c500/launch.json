@@ -1,0 +1,24 @@
+{
+  "pid": 13162,
+  "command": [
+    "/opt/conda/bin/python",
+    "-u",
+    "/data/attack_benchmark_20261106/safe_FL/scripts/verify_no_defense.py",
+    "--bundle",
+    "/data/attack_benchmark_20261106/captures/Adap-CTA/gradient_bundle.pt",
+    "--output-dir",
+    "/data/attack_benchmark_20261106/diagnostics/exact_hf_single_normalized_quantized_15000_c500",
+    "--attack",
+    "hf_gradinv",
+    "--sample",
+    "29",
+    "--iterations",
+    "15000",
+    "--hf-lr-decay",
+    "--hf-input-parameterization",
+    "normalized",
+    "--hf-quantized"
+  ],
+  "source_sha256": "1a9b1e2623127839556b6068a5a463e91c947f019e861b9df9142dea204cf786",
+  "started": 1793990162.8046346
+}

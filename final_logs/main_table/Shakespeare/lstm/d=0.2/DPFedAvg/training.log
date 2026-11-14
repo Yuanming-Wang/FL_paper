@@ -1,0 +1,132 @@
+{"job": {"dataset": "Shakespeare", "model": "lstm", "classes": 80, "clients": 100, "join_ratio": 0.1, "alpha": 0.2, "noise": 0.0, "target": 0.5, "data_root": "/data/safe_FL_20261021/dataset", "server": 1, "algorithm": "DPFedAvg", "id": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_resume720", "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_resume720_to800_server1_lr0p01.txt", "queue_phase": "language", "resume_state": "/root/safe_FL_20261021_lr0p01/state/checkpoints/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_latest.pt", "resume_curves": "/root/safe_FL_20261021_lr0p01/results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_0.h5", "lstm_force_packed": true, "execution_backend_note": "Packed training from round250 after MACA dense persistent backward illegal address; dense inference from round260 after CPU/GPU equivalence check; model/data/protocol unchanged. Not bitwise equivalent across backends.", "manual_launch_tag": "20261023_resume720", "manual_launch_reason": "Worker stopped after round 720; paired checkpoint/curves verified and C500 idle.", "migrated_from": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660", "migration_checkpoint_round": 720, "retry_of": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520", "manual_retry_log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_packed_retry_from_round520_server1_lr0p01_retry2.txt", "previous_log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_packed_retry_from_round520_server1_lr0p01.txt", "resume_pair_verified": true}, "deployment_sha256": null}
+==================================================
+Algorithm: DPFedAvg
+Local batch size: 64
+Local epochs: 5
+Local learing rate: 0.01
+Local learing rate decay: False
+Total number of clients: 100
+Clients join in each round: 0.1
+Clients randomly join: False
+Client drop rate: 0.0
+Client select regarding time: False
+Running times: 1
+Dataset: Shakespeare
+Number of classes: 80
+Backbone: lstm
+Using device: cuda
+Auto break: False
+Global rounds: 800
+Cuda device id: 0
+DLG attack: False
+Total number of new clients: 0
+Fine tuning epoches on new clients: 0
+==================================================
+RUNTIME_PROVENANCE source_sha256=fc242f13e870ce77808d8e4c704768d2e814d84a8486309f809623abe36255fd data_sha256=de51dedb9850760c706e730468e9bb8fa6bcae565a670dd2acbf29e5f84eb54b
+lstm
+
+============= Running time: 0th =============
+Creating server and clients ...
+0.1265869140625 MB
+
+Join ratio / total clients: 0.1 / 100
+Finished creating server and clients.
+RESUMED from round 720; 80 rounds remain
+ROUND 721/800 accuracy=0.309217 test_loss=2.502949 cost=19.482675
+ROUND 722/800 accuracy=0.318242 test_loss=2.551642 cost=20.817041
+ROUND 723/800 accuracy=0.303287 test_loss=2.606599 cost=20.174252
+ROUND 724/800 accuracy=0.286981 test_loss=2.558458 cost=21.681878
+ROUND 725/800 accuracy=0.314635 test_loss=2.582153 cost=20.821090
+ROUND 726/800 accuracy=0.276641 test_loss=2.558099 cost=20.808864
+ROUND 727/800 accuracy=0.305679 test_loss=2.565810 cost=19.061860
+ROUND 728/800 accuracy=0.295168 test_loss=2.557836 cost=17.694343
+ROUND 729/800 accuracy=0.309183 test_loss=2.494733 cost=22.596346
+ROUND 730/800 accuracy=0.290571 test_loss=2.547952 cost=21.173784
+File path: ../results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_resume720_0.h5
+ROUND 731/800 accuracy=0.292810 test_loss=2.507664 cost=20.599159
+ROUND 732/800 accuracy=0.325112 test_loss=2.518185 cost=22.244972
+ROUND 733/800 accuracy=0.333197 test_loss=2.512672 cost=19.178856
+ROUND 734/800 accuracy=0.329693 test_loss=2.538716 cost=19.510019
+ROUND 735/800 accuracy=0.282845 test_loss=2.536813 cost=21.219024
+ROUND 736/800 accuracy=0.287802 test_loss=2.612217 cost=19.472735
+ROUND 737/800 accuracy=0.297886 test_loss=2.538987 cost=20.612425
+ROUND 738/800 accuracy=0.302466 test_loss=2.578518 cost=20.358531
+ROUND 739/800 accuracy=0.309986 test_loss=2.557765 cost=21.203722
+ROUND 740/800 accuracy=0.305355 test_loss=2.554426 cost=21.594186
+File path: ../results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_resume720_0.h5
+ROUND 741/800 accuracy=0.330992 test_loss=2.581193 cost=19.625085
+ROUND 742/800 accuracy=0.284144 test_loss=2.513217 cost=22.086410
+ROUND 743/800 accuracy=0.276573 test_loss=2.528574 cost=19.801117
+ROUND 744/800 accuracy=0.277855 test_loss=2.571213 cost=19.972377
+ROUND 745/800 accuracy=0.265737 test_loss=2.652166 cost=19.789425
+ROUND 746/800 accuracy=0.289306 test_loss=2.519277 cost=20.546159
+ROUND 747/800 accuracy=0.306790 test_loss=2.542661 cost=20.955563
+ROUND 748/800 accuracy=0.303423 test_loss=2.539814 cost=18.724267
+ROUND 749/800 accuracy=0.299851 test_loss=2.530058 cost=21.185023
+ROUND 750/800 accuracy=0.319387 test_loss=2.513815 cost=20.429429
+File path: ../results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_resume720_0.h5
+ROUND 751/800 accuracy=0.309559 test_loss=2.544034 cost=18.903011
+ROUND 752/800 accuracy=0.312157 test_loss=2.509312 cost=20.429695
+ROUND 753/800 accuracy=0.303492 test_loss=2.523581 cost=19.419880
+ROUND 754/800 accuracy=0.286930 test_loss=2.581726 cost=20.794011
+ROUND 755/800 accuracy=0.328514 test_loss=2.508054 cost=21.234544
+ROUND 756/800 accuracy=0.276419 test_loss=2.685359 cost=19.378474
+ROUND 757/800 accuracy=0.314687 test_loss=2.513821 cost=20.748546
+ROUND 758/800 accuracy=0.291630 test_loss=2.535661 cost=19.586515
+ROUND 759/800 accuracy=0.275787 test_loss=2.555082 cost=19.768962
+ROUND 760/800 accuracy=0.305235 test_loss=2.520142 cost=19.962686
+File path: ../results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_resume720_0.h5
+ROUND 761/800 accuracy=0.308858 test_loss=2.532641 cost=21.086948
+ROUND 762/800 accuracy=0.334837 test_loss=2.551631 cost=17.801867
+ROUND 763/800 accuracy=0.295066 test_loss=2.535840 cost=19.184004
+ROUND 764/800 accuracy=0.307645 test_loss=2.528208 cost=19.410362
+ROUND 765/800 accuracy=0.293904 test_loss=2.543383 cost=22.052846
+ROUND 766/800 accuracy=0.292673 test_loss=2.511885 cost=20.616533
+ROUND 767/800 accuracy=0.308175 test_loss=2.499990 cost=18.372623
+ROUND 768/800 accuracy=0.302740 test_loss=2.571394 cost=18.995216
+ROUND 769/800 accuracy=0.328872 test_loss=2.548510 cost=19.158070
+ROUND 770/800 accuracy=0.292348 test_loss=2.557659 cost=20.307647
+File path: ../results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_resume720_0.h5
+ROUND 771/800 accuracy=0.303270 test_loss=2.537142 cost=22.599458
+ROUND 772/800 accuracy=0.264387 test_loss=2.648768 cost=21.483645
+ROUND 773/800 accuracy=0.313490 test_loss=2.538355 cost=21.032627
+ROUND 774/800 accuracy=0.284845 test_loss=2.500518 cost=22.991792
+ROUND 775/800 accuracy=0.323301 test_loss=2.557822 cost=19.790033
+ROUND 776/800 accuracy=0.291118 test_loss=2.562807 cost=20.744134
+ROUND 777/800 accuracy=0.266301 test_loss=2.621496 cost=19.031464
+ROUND 778/800 accuracy=0.320822 test_loss=2.571770 cost=19.414645
+ROUND 779/800 accuracy=0.305167 test_loss=2.552254 cost=18.562772
+ROUND 780/800 accuracy=0.337606 test_loss=2.563123 cost=19.630972
+File path: ../results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_resume720_0.h5
+ROUND 781/800 accuracy=0.307423 test_loss=2.620954 cost=19.092447
+ROUND 782/800 accuracy=0.293493 test_loss=2.530615 cost=24.049798
+ROUND 783/800 accuracy=0.278265 test_loss=2.549315 cost=19.720169
+ROUND 784/800 accuracy=0.312037 test_loss=2.498962 cost=22.047581
+ROUND 785/800 accuracy=0.274283 test_loss=2.615078 cost=19.479873
+ROUND 786/800 accuracy=0.339144 test_loss=2.500550 cost=22.280727
+ROUND 787/800 accuracy=0.292246 test_loss=2.537826 cost=20.100584
+ROUND 788/800 accuracy=0.302808 test_loss=2.492328 cost=20.787297
+ROUND 789/800 accuracy=0.277872 test_loss=2.609054 cost=19.828145
+ROUND 790/800 accuracy=0.332479 test_loss=2.561247 cost=19.922348
+File path: ../results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_resume720_0.h5
+ROUND 791/800 accuracy=0.203251 test_loss=2.642618 cost=22.855328
+ROUND 792/800 accuracy=0.313217 test_loss=2.555559 cost=20.507136
+ROUND 793/800 accuracy=0.317045 test_loss=2.534129 cost=21.053100
+ROUND 794/800 accuracy=0.326599 test_loss=2.549151 cost=18.788634
+ROUND 795/800 accuracy=0.319711 test_loss=2.512227 cost=19.473775
+ROUND 796/800 accuracy=0.304261 test_loss=2.645546 cost=19.244117
+ROUND 797/800 accuracy=0.296074 test_loss=2.569402 cost=18.957828
+ROUND 798/800 accuracy=0.298689 test_loss=2.570877 cost=19.499921
+ROUND 799/800 accuracy=0.330718 test_loss=2.556709 cost=20.172052
+ROUND 800/800 accuracy=0.227777 test_loss=2.628084 cost=20.945356
+File path: ../results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_resume720_0.h5
+
+Best accuracy.
+0.33934950178605
+
+Average time cost per round.
+94.27778040170669
+File path: ../results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_resume720_0.h5
+
+Average time cost: 7578.28s.
+All done!

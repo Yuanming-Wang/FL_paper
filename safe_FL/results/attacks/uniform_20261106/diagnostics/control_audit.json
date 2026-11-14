@@ -1,0 +1,480 @@
+[
+  {
+    "run": "exact_ginas_one_candidate",
+    "attack": "gi_nas",
+    "samples": [
+      29
+    ],
+    "passed": true,
+    "config": {
+      "search_size": 32,
+      "iterations": 6000,
+      "learning_rate": 0.001,
+      "tv_weight": 0.0,
+      "seed": 0,
+      "report_every": 100,
+      "learning_rate_decay": true,
+      "verbose": true,
+      "batchnorm_mode": "running"
+    },
+    "mse": 0.0022280269768089056,
+    "psnr": 26.520795550565136,
+    "ssim": 0.9393431544303894,
+    "report_sha256": "b8227bb1ef0d1a750802a9b79aa746894cd6170a3b4acf8494f1420ca016800c"
+  },
+  {
+    "run": "exact_ginas_singleton",
+    "attack": "gi_nas",
+    "samples": [
+      29,
+      29
+    ],
+    "passed": false,
+    "config": {
+      "search_size": 32,
+      "iterations": 6000,
+      "learning_rate": 0.001,
+      "tv_weight": 0.0,
+      "seed": 0,
+      "report_every": 100,
+      "learning_rate_decay": true,
+      "verbose": true,
+      "batchnorm_mode": "running"
+    },
+    "mse": 0.020259017124772072,
+    "psnr": 19.970622836073172,
+    "ssim": 0.6274973452091217,
+    "report_sha256": "6ea79600485908f7881b904f0a9fec8844a30833596c91645a0275c5c6688be2"
+  },
+  {
+    "run": "exact_ginas_two",
+    "attack": "gi_nas",
+    "samples": [
+      29,
+      24
+    ],
+    "passed": false,
+    "config": {
+      "search_size": 5000,
+      "iterations": 3000,
+      "learning_rate": 0.001,
+      "tv_weight": 0.0,
+      "seed": 0,
+      "report_every": 100,
+      "learning_rate_decay": true,
+      "verbose": true,
+      "batchnorm_mode": "running"
+    },
+    "mse": 0.009349467232823372,
+    "psnr": 21.454932218935905,
+    "ssim": 0.7476292252540588,
+    "report_sha256": "3e2b210c96966d4626bca6a2dc3d39e378793ca97cb9290cd55a878e69eb140f"
+  },
+  {
+    "run": "exact_ginas_two_30000",
+    "attack": "gi_nas",
+    "samples": [
+      29,
+      24
+    ],
+    "passed": false,
+    "config": {
+      "search_size": 646,
+      "iterations": 30000,
+      "learning_rate": 0.001,
+      "tv_weight": 0.0,
+      "seed": 0,
+      "report_every": 100,
+      "learning_rate_decay": true,
+      "verbose": true,
+      "batchnorm_mode": "running"
+    },
+    "mse": 0.009044214151799679,
+    "psnr": 24.00493382521266,
+    "ssim": 0.7769774198532104,
+    "report_sha256": "f98d85616d383fd63fa8663c8b60d7423ffad8c18d8b2ce72089bb5eefc32af1"
+  },
+  {
+    "run": "exact_ginas_two_6000",
+    "attack": "gi_nas",
+    "samples": [
+      29,
+      24
+    ],
+    "passed": false,
+    "config": {
+      "search_size": 646,
+      "iterations": 6000,
+      "learning_rate": 0.001,
+      "tv_weight": 0.0,
+      "seed": 0,
+      "report_every": 100,
+      "learning_rate_decay": true,
+      "verbose": true,
+      "batchnorm_mode": "running"
+    },
+    "mse": 0.006316468119621277,
+    "psnr": 23.25045639955958,
+    "ssim": 0.7837529480457306,
+    "report_sha256": "9a952429677fba8b112c6692dd5873f295f4a956a3bfd04fd2dc04f694015b3a"
+  },
+  {
+    "run": "exact_hf_single_cuda",
+    "attack": "hf_gradinv",
+    "samples": [
+      29
+    ],
+    "passed": false,
+    "config": {
+      "iterations": 3000,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "seed": 0,
+      "report_every": 100,
+      "batchnorm_mode": "running"
+    },
+    "mse": 0.10717695951461792,
+    "psnr": 9.698985675457529,
+    "ssim": 0.24764275550842285,
+    "report_sha256": "8ec4627db4c309212274fa1d9ddd3012c8a1665e35e2ed2098e2ceee72ae45d3"
+  },
+  {
+    "run": "exact_hf_single_normalized_decay",
+    "attack": "hf_gradinv",
+    "samples": [
+      29
+    ],
+    "passed": false,
+    "config": {
+      "iterations": 3000,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "seed": 0,
+      "report_every": 100,
+      "batchnorm_mode": "running",
+      "learning_rate_decay": true,
+      "input_parameterization": "normalized"
+    },
+    "mse": 0.028020957484841347,
+    "psnr": 15.525170288190346,
+    "ssim": 0.610902726650238,
+    "report_sha256": "a119079a5cf8d78de65b214f7a06cef3a7c8d295fa9ebf6f59fb03b4ca333924"
+  },
+  {
+    "run": "exact_hf_single_normalized_decay_15000",
+    "attack": "hf_gradinv",
+    "samples": [
+      29
+    ],
+    "passed": false,
+    "config": {
+      "iterations": 15000,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "seed": 0,
+      "report_every": 100,
+      "batchnorm_mode": "running",
+      "learning_rate_decay": true,
+      "input_parameterization": "normalized",
+      "quantized_gradients": false
+    },
+    "mse": 0.010425206273794174,
+    "psnr": 19.819153432909616,
+    "ssim": 0.8065261840820312,
+    "report_sha256": "d488b494e41ed964488bbbac21a02a32aa2b71f5d4a50966d00c2e9bbf9ef163"
+  },
+  {
+    "run": "exact_hf_single_normalized_quantized",
+    "attack": "hf_gradinv",
+    "samples": [
+      29
+    ],
+    "passed": false,
+    "config": {
+      "iterations": 3000,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "seed": 0,
+      "report_every": 100,
+      "batchnorm_mode": "running",
+      "learning_rate_decay": true,
+      "input_parameterization": "normalized",
+      "quantized_gradients": true
+    },
+    "mse": 0.03704841807484627,
+    "psnr": 14.312303311673078,
+    "ssim": 0.530927836894989,
+    "report_sha256": "e9844722c33b72b25d887c287a5bda01900053401ab82623cd106fb45f1297aa"
+  },
+  {
+    "run": "exact_hf_single_normalized_quantized_15000",
+    "attack": "hf_gradinv",
+    "samples": [
+      29
+    ],
+    "passed": true,
+    "config": {
+      "iterations": 15000,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "seed": 0,
+      "report_every": 100,
+      "batchnorm_mode": "running",
+      "learning_rate_decay": true,
+      "input_parameterization": "normalized",
+      "quantized_gradients": true
+    },
+    "mse": 0.007739663124084473,
+    "psnr": 21.11277941970227,
+    "ssim": 0.8483986854553223,
+    "report_sha256": "0f76a480b0bead70744534a8056a859403519b08d8d6f4fe4535e8f0f89a67c6"
+  },
+  {
+    "run": "exact_hf_single_normalized_quantized_30000_c500",
+    "attack": "hf_gradinv",
+    "samples": [
+      29
+    ],
+    "passed": true,
+    "config": {
+      "iterations": 30000,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "seed": 0,
+      "report_every": 100,
+      "batchnorm_mode": "running",
+      "learning_rate_decay": true,
+      "input_parameterization": "normalized",
+      "quantized_gradients": true
+    },
+    "mse": 0.002378078643232584,
+    "psnr": 26.237737873299423,
+    "ssim": 0.9549000859260559,
+    "report_sha256": "b959dab63a016cd43bfc0c22b98bf7b6285b3d1d9ab333e5833691b61373d7ee"
+  },
+  {
+    "run": "exact_hf_single_persistent_15000",
+    "attack": "hf_gradinv",
+    "samples": [
+      29
+    ],
+    "passed": false,
+    "config": {
+      "iterations": 15000,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "seed": 0,
+      "report_every": 100,
+      "batchnorm_mode": "running"
+    },
+    "mse": 0.012902673333883286,
+    "psnr": 18.893202979279664,
+    "ssim": 0.8131617903709412,
+    "report_sha256": "7c4d09354eb204afaa709b280e48cfdd47211d06e963c672b3fee188b0f4c61f"
+  },
+  {
+    "run": "exact_hf_single_persistent_schedule",
+    "attack": "hf_gradinv",
+    "samples": [
+      29
+    ],
+    "passed": false,
+    "config": {
+      "iterations": 3000,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "seed": 0,
+      "report_every": 100,
+      "batchnorm_mode": "running"
+    },
+    "mse": 0.03937164694070816,
+    "psnr": 14.04816418018977,
+    "ssim": 0.5660303831100464,
+    "report_sha256": "92f6defd49ccd20425c0399de67076466d36190a3174a09aa75f7106ce8c0950"
+  },
+  {
+    "run": "exact_hf_single_schedule_decay",
+    "attack": "hf_gradinv",
+    "samples": [
+      29
+    ],
+    "passed": false,
+    "config": {
+      "iterations": 3000,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "seed": 0,
+      "report_every": 100,
+      "batchnorm_mode": "running",
+      "learning_rate_decay": true
+    },
+    "mse": 0.08173021674156189,
+    "psnr": 10.876173493677587,
+    "ssim": 0.30647948384284973,
+    "report_sha256": "355a48615162a5ed12de4dfb8cbfffa75dd435dd413012d22df7bd3cf810fdc1"
+  },
+  {
+    "run": "exact_hf_single_schedule_decay_15000",
+    "attack": "hf_gradinv",
+    "samples": [
+      29
+    ],
+    "passed": false,
+    "config": {
+      "iterations": 15000,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "seed": 0,
+      "report_every": 100,
+      "batchnorm_mode": "running",
+      "learning_rate_decay": true
+    },
+    "mse": 0.024775760248303413,
+    "psnr": 16.05973010240172,
+    "ssim": 0.6391999125480652,
+    "report_sha256": "db84ef2c519a985de467a487f71148158f149baad1dcc62f5349b41ff9960ac4"
+  },
+  {
+    "run": "exact_hf_single_validated_profile_c500",
+    "attack": "hf_gradinv",
+    "samples": [
+      29
+    ],
+    "passed": false,
+    "config": {
+      "iterations": 15000,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "seed": 0,
+      "report_every": 100,
+      "batchnorm_mode": "running",
+      "learning_rate_decay": true,
+      "input_parameterization": "normalized",
+      "quantized_gradients": true
+    },
+    "mse": 0.011617214418947697,
+    "psnr": 19.348979947948294,
+    "ssim": 0.7988010048866272,
+    "report_sha256": "d030061275af75987ae68a7e4e71610b9d6b465cfb0b5a67d5bd2df1d364e57c"
+  },
+  {
+    "run": "exact_single",
+    "attack": null,
+    "samples": null,
+    "passed": true,
+    "config": {
+      "optim": "adam",
+      "lr": 0.1,
+      "signed": false,
+      "boxed": true,
+      "restarts": 1,
+      "max_iterations": 4800,
+      "batchnorm_mode": "running",
+      "lr_decay": true,
+      "cost_fn": "sim",
+      "indices": "def",
+      "weights": "equal",
+      "init": "randn",
+      "filter": "none",
+      "scoring_choice": "loss"
+    },
+    "mse": 0.0008413411560468376,
+    "psnr": 30.750278660982225,
+    "ssim": 0.9778311252593994,
+    "report_sha256": "321682fd8041b07ac79ade20a987a65b6b98e73d8a0faa55a829baf39464c51d"
+  },
+  {
+    "run": "hf_cli_upload_smoke",
+    "attack": "hf_gradinv_style_adapter",
+    "samples": null,
+    "passed": null,
+    "config": {
+      "iterations": 4,
+      "stages": 4,
+      "learning_rate": 0.1,
+      "restarts": 1,
+      "tv_weight": 0.0001,
+      "gradient_dropout": 0.1,
+      "signed_gradients": false,
+      "learning_rate_decay": true,
+      "input_parameterization": "normalized",
+      "quantized_gradients": true,
+      "batchnorm_mode": "batch",
+      "auxiliary_data": null
+    },
+    "mse": 0.1776025891304016,
+    "psnr": 7.551928811398683,
+    "ssim": 0.12526275095297024,
+    "report_sha256": "f32336a39d38bf640983823892b6a093e318207567ee8dd6cd421fff298d46da"
+  },
+  {
+    "run": "matched_upload_geiping",
+    "attack": "Geiping-style gradient inversion",
+    "samples": null,
+    "passed": null,
+    "config": {
+      "signed": true,
+      "boxed": true,
+      "cost_fn": "sim",
+      "indices": "def",
+      "weights": "equal",
+      "lr": 0.1,
+      "optim": "sgd",
+      "restarts": 1,
+      "max_iterations": 800,
+      "init": "randn",
+      "filter": "none",
+      "lr_decay": true,
+      "scoring_choice": "loss",
+      "batchnorm_mode": "batch"
+    },
+    "mse": 0.15015524625778198,
+    "psnr": 8.289443818033817,
+    "ssim": 0.14538275473751128,
+    "report_sha256": "febe382520f20b226815a1ebe4cc6e8181ad3ca8cb18ca17159534f99ab3c77b"
+  }
+]
