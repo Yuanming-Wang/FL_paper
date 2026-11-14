@@ -264,6 +264,8 @@ FL_paper/
         └── verification.json
 ```
 
+Published training artifact paths and checksums are indexed in [`results/training/summary.csv`](results/training/summary.csv). Machine-specific path labels in archived metadata are represented by `*_path_sha256` digests.
+
 Control-state recovery records are grouped by method under [`results/attacks/recovery`](results/attacks/recovery): `SCAFFOLD/` and `FedPVR/`. Each contains `curves.h5`, `round_metrics.jsonl`, `training.log`, and `setup.log`.
 
 The promotional graphic can be regenerated from the recorded training results and proof audit with `python scripts/plot_promo.py`.

@@ -33,8 +33,9 @@
     "2026-10-22: moved the two remaining queued main-table LDP-FL jobs to idle, resource-checked servers14/22; partitions staged and verified before launch.",
     "2026-10-22: finalized spare-GPU placements after verifying the d0.8 LDP job had already started on server2; Cifar100/VGG IID LDP goes to server22, Cifar10/VGG d0.2 FedPVR goes to server14, active server18 LSTM is preserved.",
     "2026-10-23: resumed Shakespeare/LSTM DPFedAvg from the matching 720-round checkpoint and H5 on server1; preserve prior partial logs and curves.",
-    "2026-11-01: Adap-CTA/Shakespeare/LSTM repaired run only; decision_l=6, balanced control, 100-round warmup, 800 rounds, seed=0, lr=0.01; remote goal retrain_AdapCTA_lstm_warmup100_balanced_s1; partial artifacts sync to logs/retrain_server1.",
-    "2026-11-01: repaired HEFedAvg CIFAR-10/100 ResNet/VGG11 matrix completed on server2/3 (16/16, 800 rounds each); old low curves backed up under final_logs/*/HEFedAvg/curves.old_bad_20261101.h5, formal curves and accuracy figures refreshed."
+    "2026-11-01: Adap-CTA/Shakespeare/LSTM repaired run only; decision_l=6, balanced control, 100-round warmup, 800 rounds, seed=0, lr=0.01; remote goal retrain_AdapCTA_lstm_warmup100_balanced_s1; partial artifacts sync to results/training/main_table/Shakespeare/lstm/d=0.2/Adap-CTA.",
+    "2026-11-01: repaired HEFedAvg CIFAR-10/100 ResNet/VGG11 matrix completed on server2/3 (16/16, 800 rounds each); old low curves backed up under final_logs/*/HEFedAvg/curves.old_bad_20261101.h5, formal curves and accuracy figures refreshed.",
+    "Public release: machine-specific archived path labels are omitted; corresponding *_path_sha256 fields retain their digests. Use results/training/summary.csv for the published artifact paths."
   ],
   "jobs": [
     {
@@ -3408,10 +3409,11 @@
       "server": 21,
       "algorithm": "FedMut",
       "id": "20261022_required_Shakespeare_lstm_d0.2_FedMut_seed0_lr0p01_relocated21",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/FedMut_relocated_from_server6_lr0p01_recover0_1792615947151792454_recover470_1792620914545239250.txt",
+      "log": null,
       "queue_phase": "language",
       "resume_state": "/root/safe_FL_20261021_lr0p01/state/checkpoints/archive/20261022_required_Shakespeare_lstm_d0.2_FedMut_seed0_lr0p01_relocated21_round470_1792620914545239250/20261022_required_Shakespeare_lstm_d0.2_FedMut_seed0_lr0p01_relocated21_latest.pt",
-      "resume_curves": "/root/safe_FL_20261021_lr0p01/state/resume/20261022_required_Shakespeare_lstm_d0.2_FedMut_seed0_lr0p01_relocated21_round470_1792620914545239250.h5"
+      "resume_curves": "/root/safe_FL_20261021_lr0p01/state/resume/20261022_required_Shakespeare_lstm_d0.2_FedMut_seed0_lr0p01_relocated21_round470_1792620914545239250.h5",
+      "log_path_sha256": "b7f6aaf85bb3349f91fffa980b2c2d0c5ba39877785e901c7e192b2095cacca0"
     },
     {
       "id": "20261021_cta_Shakespeare_lstm_d0.2_seed0_controlv2_lr0p01_relocated25",
@@ -3426,11 +3428,12 @@
       "noise": 0.0,
       "target": 0.5,
       "data_root": "/data/safe_FL_20261021/dataset",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/Adap-CTA_relocated_from_server4_lr0p01_recover0_1792619959722421105.txt",
+      "log": null,
       "supersedes_id": "20261021_cta_Shakespeare_lstm_d0.2_seed0",
       "implementation_revision": "consistent_controls_v2",
       "resume_state": "/data/safe_FL_20261021/relocations/20261021_cta_Shakespeare_lstm_d0.2_seed0_controlv2_lr0p01_relocated25/checkpoint.pt",
-      "resume_curves": "/data/safe_FL_20261021/relocations/20261021_cta_Shakespeare_lstm_d0.2_seed0_controlv2_lr0p01_relocated25/curves.h5"
+      "resume_curves": "/data/safe_FL_20261021/relocations/20261021_cta_Shakespeare_lstm_d0.2_seed0_controlv2_lr0p01_relocated25/curves.h5",
+      "log_path_sha256": "878968312d9e2eddfe2bc4722ad482b7936c21d035633a587b3f648d98979578"
     },
     {
       "dataset": "Shakespeare",
@@ -3445,12 +3448,13 @@
       "server": 11,
       "algorithm": "FedPVR",
       "id": "20261022_required_Shakespeare_lstm_d0.2_FedPVR_seed0_lr0p01_relocated11",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/FedPVR_relocated_from_server7_lr0p01_recover0_1792620035719674835_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "language",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_FedPVR_seed0_lr0p01_relocated11/checkpoint.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_FedPVR_seed0_lr0p01_relocated11/curves.h5",
       "manual_launch_tag": "20261022_184826",
-      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"
+      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
+      "log_path_sha256": "8701b91139dfedee10f735f45bfa3c7121f670c55c0d28e41fef278e19054662"
     },
     {
       "dataset": "Shakespeare",
@@ -3485,12 +3489,13 @@
       "server": 12,
       "algorithm": "FedAvg",
       "id": "20261022_required_Shakespeare_lstm_d0.2_FedAvg_seed0_lr0p01_relocated12",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/FedAvg_relocated_from_server1_lr0p01_recover0_1792622614266464431_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "language",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_FedAvg_seed0_lr0p01_relocated12/checkpoint.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_FedAvg_seed0_lr0p01_relocated12/curves.h5",
       "manual_launch_tag": "20261022_184826",
-      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"
+      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
+      "log_path_sha256": "3dd04382ee2cfbf3c2c7866e1b6045b52ebe48334318a5767938de05f8d39275"
     },
     {
       "dataset": "Shakespeare",
@@ -3505,12 +3510,13 @@
       "server": 23,
       "algorithm": "HEFedAvg",
       "id": "20261022_required_Shakespeare_lstm_d0.2_HEFedAvg_seed0_lr0p01_relocated23",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/HEFedAvg_relocated_from_server3_lr0p01_recover0_1792622629119887871_recover750_1792634227154024716_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "language",
       "resume_state": "/root/safe_FL_20261021_lr0p01/state/checkpoints/archive/20261022_required_Shakespeare_lstm_d0.2_HEFedAvg_seed0_lr0p01_relocated23_round750_1792634227154024716/20261022_required_Shakespeare_lstm_d0.2_HEFedAvg_seed0_lr0p01_relocated23_latest.pt",
       "resume_curves": "/root/safe_FL_20261021_lr0p01/state/resume/20261022_required_Shakespeare_lstm_d0.2_HEFedAvg_seed0_lr0p01_relocated23_round750_1792634227154024716.h5",
       "manual_launch_tag": "20261022_184826",
-      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"
+      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
+      "log_path_sha256": "0d3d257139e472b17d03e30b128969dcbec1e8584efa827dbd22b0d57671fd5b"
     },
     {
       "dataset": "Shakespeare",
@@ -3525,12 +3531,13 @@
       "server": 9,
       "algorithm": "SCAFFOLD",
       "id": "20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/SCAFFOLD_relocated_from_server5_lr0p01_recover0_1792622644071496351_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "language",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9/checkpoint.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_SCAFFOLD_seed0_lr0p01_relocated9/curves.h5",
       "manual_launch_tag": "20261022_184826",
-      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"
+      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
+      "log_path_sha256": "a8666b3452e71538b53cea328c922ad3eec29e1dc265bb9cbbe0c5bf904445aa"
     },
     {
       "dataset": "Shakespeare",
@@ -3545,13 +3552,14 @@
       "server": 26,
       "algorithm": "DPFedAvg",
       "id": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_relocated_from_server2_lr0p01_recover0_1792622724722957287_recover250_1792627402821225143_recover250_1792628005822767424_recover250_1792629186250733664_recover250_1792630361818807107_recover260_1792631547835981684.txt",
+      "log": null,
       "queue_phase": "language",
       "resume_state": "/root/safe_FL_20261021_lr0p01/state/checkpoints/archive/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_round260_1792631547835981684/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_latest.pt",
       "resume_curves": "/root/safe_FL_20261021_lr0p01/state/resume/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_round260_1792631547835981684.h5",
       "lstm_force_packed": true,
       "execution_backend_note": "Packed training from round250 after MACA dense persistent backward illegal address; dense inference from round260 after CPU/GPU equivalence check; model/data/protocol unchanged. Not bitwise equivalent across backends.",
-      "main_table_exclude_reason": "System-disk I/O blocked; verified checkpoint resumes on server18; artifacts retained"
+      "main_table_exclude_reason": "System-disk I/O blocked; verified checkpoint resumes on server18; artifacts retained",
+      "log_path_sha256": "aee9c64af20bd82f55df321131ccb0319af066b65e279464c33ab93c0366e7c5"
     },
     {
       "dataset": "Cifar100",
@@ -3566,11 +3574,12 @@
       "server": 13,
       "algorithm": "DPFedAvg",
       "id": "20261022_required_Cifar100_VGG11_d0.5_DPFedAvg_seed0_lr0p01_relocated13",
-      "log": "vgg11_cifar100/NonIID_0.5_N_100_jr_0.1/DPFedAvg_relocated_from_server6_lr0p01_recover0_1792625390775462694.txt",
+      "log": null,
       "queue_phase": "image",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.5_DPFedAvg_seed0_lr0p01_relocated13/checkpoint_archived.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.5_DPFedAvg_seed0_lr0p01_relocated13/curves.h5",
-      "main_table_exclude_reason": "System-disk I/O blocked; verified checkpoint resumes on server13; artifacts retained"
+      "main_table_exclude_reason": "System-disk I/O blocked; verified checkpoint resumes on server13; artifacts retained",
+      "log_path_sha256": "cf6a5af39bd34250467efd23f4c918f0e8ec704f9342a5c2171d9a658d94c656"
     },
     {
       "dataset": "Cifar10",
@@ -3585,12 +3594,13 @@
       "server": 22,
       "algorithm": "HEFedAvg",
       "id": "20261022_required_Cifar10_VGG11_d0.2_HEFedAvg_seed0_lr0p01_relocated22",
-      "log": "vgg11_cifar10/NonIID_0.2_N_100_jr_0.1/HEFedAvg_relocated_from_server4_lr0p01_recover0_1792626671220723323_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "image",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Cifar10_VGG11_d0.2_HEFedAvg_seed0_lr0p01_relocated22/checkpoint_99eac665701f.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Cifar10_VGG11_d0.2_HEFedAvg_seed0_lr0p01_relocated22/curves.h5",
       "manual_launch_tag": "20261022_184826",
-      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"
+      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
+      "log_path_sha256": "aba723b45b7cffb5ef927cdd3626e0f95d7ddcb15de5b3c4fea963bc612a8dda"
     },
     {
       "dataset": "Cifar100",
@@ -3605,12 +3615,13 @@
       "server": 14,
       "algorithm": "FedMut",
       "id": "20261022_required_Cifar100_VGG11_IID_FedMut_seed0_lr0p01_relocated14",
-      "log": "vgg11_cifar100/IID_N_100_jr_0.1/FedMut_relocated_from_server7_lr0p01_recover0_1792626760581382719_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "image",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_IID_FedMut_seed0_lr0p01_relocated14/checkpoint_984dd53ef1e6.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_IID_FedMut_seed0_lr0p01_relocated14/curves.h5",
       "manual_launch_tag": "20261022_184826",
-      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"
+      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
+      "log_path_sha256": "dd7cef3bed468fc0236acfe329bf5351de2f372ff301442382419c9719c63cdd"
     },
     {
       "dataset": "Cifar100",
@@ -3625,12 +3636,13 @@
       "server": 19,
       "algorithm": "FedPVR",
       "id": "20261022_required_Cifar100_VGG11_d0.8_FedPVR_seed0_lr0p01_relocated19",
-      "log": "vgg11_cifar100/NonIID_0.8_N_100_jr_0.1/FedPVR_relocated_from_server2_lr0p01_recover0_1792626977250860264_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "image",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.8_FedPVR_seed0_lr0p01_relocated19/checkpoint_cc2dda6cee0c.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.8_FedPVR_seed0_lr0p01_relocated19/curves.h5",
       "manual_launch_tag": "20261022_184826",
-      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"
+      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
+      "log_path_sha256": "779121b6d03e1d835288983c0d0169b939aaa513de49bcf7b1bf6c928e96200e"
     },
     {
       "dataset": "Cifar100",
@@ -3645,10 +3657,11 @@
       "server": 19,
       "algorithm": "SCAFFOLD",
       "id": "20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680",
-      "log": "vgg11_cifar100/IID_N_100_jr_0.1/SCAFFOLD_relocated_from_server8_lr0p01_recover0_1792627942445578015.txt",
+      "log": null,
       "queue_phase": "image",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680/checkpoint_2446d34f8b83.pt",
-      "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680/curves.h5"
+      "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_IID_SCAFFOLD_seed0_lr0p01_relocated19_latest680/curves.h5",
+      "log_path_sha256": "dbd4d2288a8e195acfa8892d618d630bee2b6b0a2a2e34f4cd61b9b0188f15a9"
     },
     {
       "dataset": "Cifar100",
@@ -3663,12 +3676,13 @@
       "server": 10,
       "algorithm": "FedMut",
       "id": "20261022_required_Cifar100_VGG11_d0.8_FedMut_seed0_lr0p01_relocated10",
-      "log": "vgg11_cifar100/NonIID_0.8_N_100_jr_0.1/FedMut_relocated_from_server3_lr0p01_recover0_1792628685599397049_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "image",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.8_FedMut_seed0_lr0p01_relocated10/checkpoint_b11295aed72a.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.8_FedMut_seed0_lr0p01_relocated10/curves.h5",
       "manual_launch_tag": "20261022_184826",
-      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"
+      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
+      "log_path_sha256": "cb0e4026b5feb4351807355896a56e8800fb37d88a24132e4f51b43d3515b932"
     },
     {
       "dataset": "Cifar100",
@@ -3683,12 +3697,13 @@
       "server": 13,
       "algorithm": "SCAFFOLD",
       "id": "20261022_required_Cifar100_VGG11_d0.5_SCAFFOLD_seed0_lr0p01_relocated13",
-      "log": "vgg11_cifar100/NonIID_0.5_N_100_jr_0.1/SCAFFOLD_relocated_from_server5_lr0p01_recover0_1792628849691727465_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "image",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.5_SCAFFOLD_seed0_lr0p01_relocated13/checkpoint_c6d00ae69bff.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.5_SCAFFOLD_seed0_lr0p01_relocated13/curves.h5",
       "manual_launch_tag": "20261022_184826",
-      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"
+      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
+      "log_path_sha256": "f62633b752f6d9f2a4a5e021204ac64fcb733606ebaab06235d079bf15852b14"
     },
     {
       "dataset": "Cifar100",
@@ -3703,12 +3718,13 @@
       "server": 10,
       "algorithm": "SCAFFOLD",
       "id": "20261022_required_Cifar100_VGG11_d0.8_SCAFFOLD_seed0_lr0p01_relocated10",
-      "log": "vgg11_cifar100/NonIID_0.8_N_100_jr_0.1/SCAFFOLD_relocated_from_server1_lr0p01_recover0_1792629019614662777_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "image",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.8_SCAFFOLD_seed0_lr0p01_relocated10/checkpoint_f91b3c0239da.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.8_SCAFFOLD_seed0_lr0p01_relocated10/curves.h5",
       "manual_launch_tag": "20261022_184826",
-      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"
+      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
+      "log_path_sha256": "9d161ca1404800d8daa7b43dc4529952d4dafe7a6d8367904c73fbeb4de5b7ed"
     },
     {
       "dataset": "Cifar100",
@@ -3723,12 +3739,13 @@
       "server": 13,
       "algorithm": "DPFedAvg",
       "id": "20261022_required_Cifar100_VGG11_d0.5_DPFedAvg_seed0_lr0p01_relocated13_relocated13_latest680",
-      "log": "vgg11_cifar100/NonIID_0.5_N_100_jr_0.1/DPFedAvg_relocated_from_server13_lr0p01_recover0_1792630468145445379_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "image",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.5_DPFedAvg_seed0_lr0p01_relocated13_relocated13_latest680/checkpoint_e01832b94301.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Cifar100_VGG11_d0.5_DPFedAvg_seed0_lr0p01_relocated13_relocated13_latest680/curves.h5",
       "manual_launch_tag": "20261022_184826",
-      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint"
+      "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
+      "log_path_sha256": "d19e816050ecc3bb8a48a3138faaa11e9490860547c694a65c747c91786822b0"
     },
     {
       "dataset": "Cifar100",
@@ -3802,7 +3819,7 @@
       "server": 18,
       "algorithm": "DPFedAvg",
       "id": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_relocated_from_server26_lr0p01_recover0_1792632895502681970_manual_20261022_184826.txt",
+      "log": null,
       "queue_phase": "language",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun/checkpoint_4286b43124a5.pt",
       "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun/curves.h5",
@@ -3810,7 +3827,8 @@
       "execution_backend_note": "Packed training from round250 after MACA dense persistent backward illegal address; dense inference from round260 after CPU/GPU equivalence check; model/data/protocol unchanged. Not bitwise equivalent across backends.",
       "manual_launch_tag": "20261022_184826",
       "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
-      "main_table_exclude_reason": "Execution moved to server1 from verified round520 checkpoint; original log, H5, and round523 metrics retained. Replacement: 20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520"
+      "main_table_exclude_reason": "Execution moved to server1 from verified round520 checkpoint; original log, H5, and round523 metrics retained. Replacement: 20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520",
+      "log_path_sha256": "2e1ffe7048c4a9dd0e835d9ecd81931d097649afb585b6e04135a35421859696"
     },
     {
       "dataset": "Cifar100",
@@ -4213,13 +4231,14 @@
       "server": 19,
       "algorithm": "LDP-FL",
       "id": "20261022_required_Shakespeare_Transformer_d0.2_LDP-FL_seed0_lr0p01_relocated19",
-      "log": "transformer_shakespeare/NonIID_0.2_N_100_jr_0.1/LDP-FL_relocated_from_server26_lr0p01_recover0_1792691646462626034_recover0_1792691714657392988_recover0_1792691963505126523.txt",
+      "log": null,
       "queue_phase": "ldp",
       "implementation_revision": "ldp_compatible_client_update_v1",
       "partition_verified_on_server": 26,
       "assigned_at": "2026-10-22T21:15:00+08:00",
       "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_Transformer_d0.2_LDP-FL_seed0_lr0p01_relocated19/checkpoint.pt",
-      "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_Transformer_d0.2_LDP-FL_seed0_lr0p01_relocated19/curves.h5"
+      "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_Transformer_d0.2_LDP-FL_seed0_lr0p01_relocated19/curves.h5",
+      "log_path_sha256": "ee27537ec060833fafc1287ce987e1bba15156ba8e1352f071d38b041de520b2"
     },
     {
       "dataset": "Shakespeare",
@@ -4234,17 +4253,20 @@
       "server": 1,
       "algorithm": "DPFedAvg",
       "id": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_resume_from_server18_round520_server1_lr0p01.txt",
+      "log": null,
       "queue_phase": "language",
-      "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520/checkpoint.pt",
-      "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520/curves.h5",
+      "resume_state": null,
+      "resume_curves": null,
       "lstm_force_packed": true,
       "execution_backend_note": "Packed training from round250 after MACA dense persistent backward illegal address; dense inference from round260 after CPU/GPU equivalence check; model/data/protocol unchanged. Not bitwise equivalent across backends.",
       "manual_launch_tag": "20261022_184826",
       "manual_launch_reason": "remote GPU idle; checkpoint resume where paired state existed; fresh run where no paired checkpoint",
       "migrated_from": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun",
       "migration_checkpoint_round": 520,
-      "main_table_exclude_reason": "Packed retry from the original verified round520 checkpoint; partial rounds 521-526 and their logs/metrics retained separately"
+      "main_table_exclude_reason": "Packed retry from the original verified round520 checkpoint; partial rounds 521-526 and their logs/metrics retained separately",
+      "log_path_sha256": "f94fb604e65549890907dc73f02bd57e1ba036f9cd64cbe5fd02484369c1853d",
+      "resume_state_path_sha256": "27de7da91b38c95b8917d0d665d1add80ef2f77ce9165c97e7f75c40342dc672",
+      "resume_curves_path_sha256": "18a7cb51f39c8062e975540958b19c17477bf3172b1be288571db0f0dd780e5b"
     },
     {
       "dataset": "Shakespeare",
@@ -4259,10 +4281,10 @@
       "server": 1,
       "algorithm": "DPFedAvg",
       "id": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_packed_retry_from_round520_server1_lr0p01_retry2.txt",
+      "log": null,
       "queue_phase": "language",
-      "resume_state": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520/checkpoint.pt",
-      "resume_curves": "/data/safe_FL_20261021/relocations/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520/curves.h5",
+      "resume_state": null,
+      "resume_curves": null,
       "lstm_force_packed": true,
       "execution_backend_note": "Packed training from round250 after MACA dense persistent backward illegal address; dense inference from round260 after CPU/GPU equivalence check; model/data/protocol unchanged. Not bitwise equivalent across backends.",
       "manual_launch_tag": "20261022_184826",
@@ -4270,9 +4292,14 @@
       "migrated_from": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun",
       "migration_checkpoint_round": 520,
       "retry_of": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520",
-      "manual_retry_log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_packed_retry_from_round520_server1_lr0p01_retry2.txt",
-      "previous_log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_packed_retry_from_round520_server1_lr0p01.txt",
-      "main_table_exclude_reason": "Superseded after the worker stopped at round 666; matching round-660 checkpoint and curves retained."
+      "manual_retry_log": null,
+      "previous_log": null,
+      "main_table_exclude_reason": "Superseded after the worker stopped at round 666; matching round-660 checkpoint and curves retained.",
+      "log_path_sha256": "282396c0f40c4fc44d83dd35f15a4bf53d71e434392fa40e65d066d72aeb96f9",
+      "resume_state_path_sha256": "27de7da91b38c95b8917d0d665d1add80ef2f77ce9165c97e7f75c40342dc672",
+      "resume_curves_path_sha256": "18a7cb51f39c8062e975540958b19c17477bf3172b1be288571db0f0dd780e5b",
+      "manual_retry_log_path_sha256": "282396c0f40c4fc44d83dd35f15a4bf53d71e434392fa40e65d066d72aeb96f9",
+      "previous_log_path_sha256": "17fc6118b060485b5a4615088456b0dc345656a2b7ce9161831b57909f79f201"
     },
     {
       "id": "20261023_retrain_AdapCTA_20261023_105704_Cifar10_resnet_d0p2_seed0_lr0p01",
@@ -4593,10 +4620,10 @@
       "server": 1,
       "algorithm": "DPFedAvg",
       "id": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_resume660_to800_server1_lr0p01.txt",
+      "log": null,
       "queue_phase": "language",
-      "resume_state": "/root/safe_FL_20261021_lr0p01/state/checkpoints/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_latest.pt",
-      "resume_curves": "/root/safe_FL_20261021_lr0p01/results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_0.h5",
+      "resume_state": null,
+      "resume_curves": null,
       "lstm_force_packed": true,
       "execution_backend_note": "Packed training from round250 after MACA dense persistent backward illegal address; dense inference from round260 after CPU/GPU equivalence check; model/data/protocol unchanged. Not bitwise equivalent across backends.",
       "manual_launch_tag": "20261022_184826",
@@ -4604,10 +4631,15 @@
       "migrated_from": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520",
       "migration_checkpoint_round": 660,
       "retry_of": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520",
-      "manual_retry_log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_packed_retry_from_round520_server1_lr0p01_retry2.txt",
-      "previous_log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_packed_retry_from_round520_server1_lr0p01.txt",
+      "manual_retry_log": null,
+      "previous_log": null,
       "resume_pair_verified": true,
-      "main_table_exclude_reason": "Stopped at round 720; partial curves and checkpoint retained. Continued from the verified pair in the resume720 job."
+      "main_table_exclude_reason": "Stopped at round 720; partial curves and checkpoint retained. Continued from the verified pair in the resume720 job.",
+      "log_path_sha256": "220adc978a9d5b7872fd85ee056047ac23a6adcfbb4215c4eea3f99830199a81",
+      "resume_state_path_sha256": "152887094208cb90f65f2bbe9544cd1c13aa9e26019e6cefe12de89473b159d0",
+      "resume_curves_path_sha256": "b4298e075a08144abc9cc2a7369e10d121dd43d0e70accf76a14c45647a16255",
+      "manual_retry_log_path_sha256": "282396c0f40c4fc44d83dd35f15a4bf53d71e434392fa40e65d066d72aeb96f9",
+      "previous_log_path_sha256": "17fc6118b060485b5a4615088456b0dc345656a2b7ce9161831b57909f79f201"
     },
     {
       "dataset": "Shakespeare",
@@ -4622,10 +4654,10 @@
       "server": 1,
       "algorithm": "DPFedAvg",
       "id": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_resume720",
-      "log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_resume720_to800_server1_lr0p01.txt",
+      "log": null,
       "queue_phase": "language",
-      "resume_state": "/root/safe_FL_20261021_lr0p01/state/checkpoints/20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_latest.pt",
-      "resume_curves": "/root/safe_FL_20261021_lr0p01/results/Shakespeare_lstm_DPFedAvg_20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660_0.h5",
+      "resume_state": null,
+      "resume_curves": null,
       "lstm_force_packed": true,
       "execution_backend_note": "Packed training from round250 after MACA dense persistent backward illegal address; dense inference from round260 after CPU/GPU equivalence check; model/data/protocol unchanged. Not bitwise equivalent across backends.",
       "manual_launch_tag": "20261023_resume720",
@@ -4633,9 +4665,14 @@
       "migrated_from": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520_packed_retry520_resume660",
       "migration_checkpoint_round": 720,
       "retry_of": "20261022_required_Shakespeare_lstm_d0.2_DPFedAvg_seed0_lr0p01_relocated26_relocated18_packed_corun_fast_server1_round520",
-      "manual_retry_log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_packed_retry_from_round520_server1_lr0p01_retry2.txt",
-      "previous_log": "lstm_shakespeare/NonIID_0.2_N_100_jr_0.1/DPFedAvg_packed_retry_from_round520_server1_lr0p01.txt",
-      "resume_pair_verified": true
+      "manual_retry_log": null,
+      "previous_log": null,
+      "resume_pair_verified": true,
+      "log_path_sha256": "dd546838f5f9280bb52bfc91a3fadbe4a9c42276759b203a967621f1d359ddf7",
+      "resume_state_path_sha256": "654f35260ac303fa51f5f3ff0b37ddb8eb9dd1b368e5a3642d74080bbe85b113",
+      "resume_curves_path_sha256": "a0dbbc302c641e06a973ae9be48a18dd01e48f125c70f9480b12845cfc08831d",
+      "manual_retry_log_path_sha256": "282396c0f40c4fc44d83dd35f15a4bf53d71e434392fa40e65d066d72aeb96f9",
+      "previous_log_path_sha256": "17fc6118b060485b5a4615088456b0dc345656a2b7ce9161831b57909f79f201"
     }
   ]
 }

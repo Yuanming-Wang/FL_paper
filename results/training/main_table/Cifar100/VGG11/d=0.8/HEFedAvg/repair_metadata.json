@@ -1,8 +1,10 @@
 {
-  "source": "safe_FL\\logs\\hefedavg_fix_server3\\Cifar100_VGG11_HEFedAvg_retrain_HEFedAvgfix_Cifar100_VGG11_d08_s3_0.h5",
+  "source": null,
   "protocol": "800 rounds; seed=0; N=100; jr=0.1; batch=64; local_epochs=5; lr=0.01",
   "rounds_completed": 800,
   "best_accuracy": 0.39575854274697514,
   "final_accuracy": 0.3897088153171121,
-  "old_backup": "curves.old_bad_20261101.h5"
+  "old_backup": "curves.old_bad_20261101.h5",
+  "source_path_sha256": "543052d3150e4218822c6583883d5b9df2a65beb4f7cc1ab115fa0462e45f64b",
+  "published_curves": "results/training/main_table/Cifar100/VGG11/d=0.8/HEFedAvg/curves.h5"
 }
