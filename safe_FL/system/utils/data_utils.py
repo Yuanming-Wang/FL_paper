@@ -22,7 +22,7 @@ import torch
 data_root = os.environ.get(
     "FL_DATA_ROOT", os.path.abspath(os.path.join(os.path.dirname(__file__), "../../dataset"))
 )
-safe_proof_root = None  # kept for backward-compatible imports; FL_DATA_ROOT controls data.
+results_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../results/training"))
 
 def read_data(args, dataset, idx, is_train=True):
 

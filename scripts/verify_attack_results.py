@@ -20,8 +20,8 @@ def main():
     parser.add_argument('--allow-incomplete', action='store_true')
     args = parser.parse_args()
     torch.set_num_threads(2)
-    base = ROOT / 'safe_FL/results/attacks/uniform_20261106'
-    common = torch.load(ROOT / 'tmp/attack_benchmark_20261106/common/reference.pt',
+    base = ROOT / 'results/attacks'
+    common = torch.load(base / 'common/reference.pt',
                         map_location='cpu', weights_only=False)
     methods = ['FedAvg', 'DPFedAvg', 'HEFedAvg', 'LDP-FL', 'AdapLDP-FL', 'SCAFFOLD', 'FedPVR', 'Adap-CTA']
     attacks = ['geiping', 'gi_nas', 'hf_gradinv']
@@ -54,7 +54,7 @@ def main():
                 assert len(source['sc']) == len(source['client']['cc']) == 62
             del source
         for attack in attacks:
-            folder = base / 'results' / method / attack
+            folder = base / 'reconstructions' / method / attack
             report_file = folder / 'metrics.json'
             if not report_file.exists() or bundle is None:
                 pending.append(method + '/' + attack)

@@ -25,6 +25,10 @@ def main():
                         default=['geiping', 'gi_nas', 'hf_gradinv'])
     parser.add_argument('--device', default='0')
     args = parser.parse_args()
+    for name in ("captures", "output_root", "geiping_control", "ginas_control", "hf_control"):
+        path = getattr(args, name)
+        if path is not None:
+            setattr(args, name, path.resolve())
     controls = [args.geiping_control, args.ginas_control]
     if 'hf_gradinv' in args.attacks:
         controls.append(args.hf_control or args.ginas_control.with_name('hf_gradinv.json'))

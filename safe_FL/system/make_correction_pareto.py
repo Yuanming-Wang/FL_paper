@@ -1,9 +1,15 @@
+import argparse
 from pathlib import Path
 import re
 import h5py
 import matplotlib.pyplot as plt
 
-root = Path('/data/safe_FL/system/results')
+parser = argparse.ArgumentParser(description="Plot Adap-CTA correction-level sweeps")
+training = Path(__file__).resolve().parents[2] / "results/training"
+parser.add_argument("--input-dir", type=Path, default=training / "runs")
+parser.add_argument("--output-dir", type=Path, default=training / "figures/pareto")
+args = parser.parse_args()
+root = args.input_dir
 rows = []
 for path in sorted(root.glob('Cifar10_resnet_Adap-CTA_C10_resnet_Adap-CTA_sweep_l*_final_0.h5')):
     match = re.search(r'_sweep_l(\d+)_final_0\.h5$', path.name)
@@ -17,7 +23,7 @@ for path in sorted(root.glob('Cifar10_resnet_Adap-CTA_C10_resnet_Adap-CTA_sweep_
 if not rows:
     raise SystemExit('no sweep result files found')
 rows.sort()
-out = Path('/data/safe_FL/queue_logs/final_queue7')
+out = args.output_dir
 out.mkdir(parents=True, exist_ok=True)
 (out / 'pareto.csv').write_text('decision_l,accuracy,privacy_cost,total_cost\n' + ''.join(
     f'{level},{accuracy:.8f},{privacy:.8f},{total:.8f}\n'

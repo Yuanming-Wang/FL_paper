@@ -22,6 +22,8 @@ def main():
     parser.add_argument('--output-dir', type=Path, required=True)
     parser.add_argument('--methods', nargs='+')
     args = parser.parse_args()
+    for name in ("inputs", "rng_state", "reference_bundle", "data_root", "output_dir"):
+        setattr(args, name, getattr(args, name).resolve())
     system = Path(__file__).resolve().parents[1] / 'system'
     sys.path.insert(0, str(system))
     os.environ['FL_DATA_ROOT'] = str(args.data_root.resolve())

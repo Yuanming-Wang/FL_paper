@@ -23,7 +23,7 @@ import os
 from torch.utils.data import DataLoader
 from sklearn.preprocessing import label_binarize
 from sklearn import metrics
-from utils.data_utils import read_client_data
+from utils.data_utils import read_client_data, results_root
 import random
 from sympy import symbols, Eq, solve, sqrt
 from flcore.privacy_cost import privacy_cost
@@ -263,7 +263,7 @@ class Client(object):
         return torch.load(os.path.join(item_path, "client_" + str(self.id) + "_" + item_name + ".pt"))
 
     def save_local_acc(self, data):
-        result_path = "../results/Clients_history_acc/"
+        result_path = os.path.join(results_root, "client_history") + os.sep
 
         if not os.path.exists(result_path):
             os.makedirs(result_path)

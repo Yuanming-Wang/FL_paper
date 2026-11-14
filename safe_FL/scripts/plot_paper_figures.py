@@ -1,4 +1,4 @@
-"""Recreate manuscript-style figures using only complete final_logs results."""
+"""Recreate manuscript-style figures using only complete training results."""
 import argparse
 import hashlib
 import json
@@ -8,7 +8,7 @@ from pathlib import Path
 import h5py
 import numpy as np
 
-from plot_final_results import COLORS, METHODS, load_curve
+from plot_training_results import COLORS, METHODS, load_curve
 
 PLOT_METHODS = tuple(method for method in METHODS if method != "FedCEO")
 
@@ -85,7 +85,8 @@ def load_results(root):
                 "noise_multiplier", "baseline_implementation", "control_protocol")}
         results[(dataset, model, distribution, method)] = {
             "x": x, "accuracy": accuracy, "costs": costs, "target": target,
-            "path": path, "sha256": digest(path), "metadata": meta}
+            "path": path, "source_path": path.relative_to(root).as_posix(),
+            "sha256": digest(path), "metadata": meta}
     expected_groups = [(d, m, s) for d in ("Cifar10", "Cifar100")
                        for m in ("resnet", "VGG11") for s in DISTRIBUTIONS]
     expected_groups += [("Shakespeare", m, "d=0.2") for m in ("lstm", "Transformer")]
@@ -108,7 +109,7 @@ def save(fig, output, name, group_keys, results, entries, original_figure):
     for extension in ("png", "pdf"):
         fig.savefig(output / f"{name}.{extension}", dpi=400, bbox_inches="tight")
     plt.close(fig)
-    sources = sorted({results[(*key, method)]["path"].as_posix()
+    sources = sorted({results[(*key, method)]["source_path"]
                       for key in group_keys for method in PLOT_METHODS})
     entries.append({"name": name, "original_figure": original_figure,
                     "pdf": name + ".pdf", "png": name + ".png", "sources": sources})
@@ -201,8 +202,8 @@ def cost_figure(results, output, entries, to_target):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     workspace = Path(__file__).resolve().parents[2]
-    parser.add_argument("--data-dir", type=Path, default=workspace / "final_logs")
-    parser.add_argument("--output-dir", type=Path, default=workspace / "final_figures")
+    parser.add_argument("--data-dir", type=Path, default=workspace / "results/training")
+    parser.add_argument("--output-dir", type=Path, default=workspace / "results/training/figures/paper")
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     self_check()
@@ -212,8 +213,8 @@ def main():
     if args.check:
         return
     output = args.output_dir.resolve()
-    if output == source or source in output.parents:
-        raise ValueError("Output must be separate from final_logs")
+    if output == source or output == source / "main_table" or source / "main_table" in output.parents:
+        raise ValueError("Output must not replace the training curves")
     output.mkdir(parents=True, exist_ok=True)
     plt.rcParams.update({"font.family": "serif", "font.serif": ["Times New Roman", "DejaVu Serif"],
                          "mathtext.fontset": "stix", "font.size": 11, "axes.labelsize": 11,
@@ -240,13 +241,13 @@ def main():
                     "Fig03_learning_curves_combined", results, output, entries)
     target_costs = cost_figure(results, output, entries, True)
     full_costs = cost_figure(results, output, entries, False)
-    manifest = {"input": str(source),
+    manifest = {"input": source.relative_to(workspace).as_posix() if source.is_relative_to(workspace) else source.as_posix(),
                 "curve_protocol": "raw sources; one seed; 1-800 displayed rounds",
                 "display_smoothing": "15-round centered moving average with transparent raw curve",
                 "lr": 0.01, "partial_reruns_used": False, "figures": entries,
                 "cost_component_order": ["energy", "privacy", "model_accuracy_loss"],
                 "costs_to_target": target_costs, "costs_over_800_rounds": full_costs,
-                "sources": [{"key": list(key), "path": str(v["path"]), "sha256": v["sha256"],
+                "sources": [{"key": list(key), "path": v["source_path"], "sha256": v["sha256"],
                              "metadata": v["metadata"]} for key, v in results.items()
                              if key[3] in PLOT_METHODS]}
     for value in results.values():

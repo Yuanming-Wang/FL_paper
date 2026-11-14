@@ -340,7 +340,7 @@ if __name__ == "__main__":
                         help="Target Global Accuracy ")
     parser.add_argument('-eg', "--eval_gap", type=int, default=5,
                         help="Rounds gap for evaluation")
-    parser.add_argument('-sfn', "--save_folder_name", type=str, default='items')
+    parser.add_argument('-sfn', "--save_folder_name", type=str, default=str(Path(__file__).resolve().parents[2] / "results/training/items"))
     parser.add_argument('-ab', "--auto_break", type=bool, default=False)
     parser.add_argument('-dlg', "--dlg_eval", type=bool, default=False)
     parser.add_argument('-dlgg', "--dlg_gap", type=int, default=100)

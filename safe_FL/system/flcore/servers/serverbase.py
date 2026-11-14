@@ -24,7 +24,7 @@ import copy
 import time
 import random
 import json
-from utils.data_utils import read_client_data
+from utils.data_utils import read_client_data, results_root
 from utils.dlg import DLG
 from scipy.optimize import curve_fit
 
@@ -51,7 +51,7 @@ class Server(object):
         self.time_select = args.time_select
         self.goal = args.goal
         self.model_path = os.path.join(
-            "models", self.dataset, args.model_name,
+            results_root, "models", self.dataset, args.model_name,
             f"{self.algorithm}_{self.goal}_{times}_server.pt",
         )
         self.time_threthold = args.time_threthold
@@ -235,7 +235,7 @@ class Server(object):
 
     def save_results(self):
         algo = self.dataset + "_" + self.args.model_name + "_" + self.algorithm
-        result_path = "../results/"
+        result_path = os.path.join(results_root, "runs") + os.sep
         if not os.path.exists(result_path):
             os.makedirs(result_path)
 
@@ -500,14 +500,14 @@ class Server(object):
         if self.convergence_round is None and accuracy >= self.target_acc:
             self.convergence_round = round_index
         print(f'ROUND {round_index + 1}/{self.global_rounds} accuracy={accuracy:.6f} test_loss={test_loss:.6f} cost={total:.6f}', flush=True)
-        os.makedirs('../state/metrics', exist_ok=True)
-        with open(f'../state/metrics/{self.goal}.jsonl', 'a', encoding='utf-8') as stream:
+        os.makedirs(os.path.join(results_root, 'metrics'), exist_ok=True)
+        with open(os.path.join(results_root, 'metrics', f'{self.goal}.jsonl'), 'a', encoding='utf-8') as stream:
             stream.write(json.dumps(dict(round=round_index+1, accuracy=accuracy, test_loss=test_loss,
                 total_cost=total, privacy_cost=privacy, energy_cost=energy, model_cost=model_cost)) + '\n')
         if len(self.rs_test_acc) % 10 == 0:
             self.save_results()
-            os.makedirs('../state/checkpoints', exist_ok=True)
-            path = f'../state/checkpoints/{self.goal}_latest.pt'
+            os.makedirs(os.path.join(results_root, 'checkpoints'), exist_ok=True)
+            path = os.path.join(results_root, 'checkpoints', f'{self.goal}_latest.pt')
             state = dict(round_completed=round_index+1,
                 global_model={k: v.detach().cpu() for k, v in self.global_model.state_dict().items()},
                 numpy_rng=np.random.get_state(), python_rng=random.getstate(), torch_rng=torch.get_rng_state(),
@@ -644,7 +644,7 @@ class Server(object):
 
     def save_instant_result(self, data, data_name):
         algo = self.args.model_name + "_" + self.dataset + "_" + self.algorithm + "_" + str(data_name) + "_"
-        result_path = "../results/instant_result/"+self.dataset+"/"+self.args.model_name+"/"
+        result_path = os.path.join(results_root, "client_selection", self.dataset, self.args.model_name) + os.sep
 
         if not os.path.exists(result_path):
             os.makedirs(result_path)

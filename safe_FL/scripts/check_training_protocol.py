@@ -30,6 +30,7 @@ control_server.args=SimpleNamespace(model=torch.nn.Linear(1,1,bias=False),target
 control_server.global_model=control_server.args.model
 control_server.num_clients=4
 control_server.dataset='control_check'
+control_server.algorithm='SCAFFOLD'
 control_server.clients=[]
 control_server.train_slow_clients=control_server.send_slow_clients=[False]*4
 def control_client(args,id,**kwargs):
