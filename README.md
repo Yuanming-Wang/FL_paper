@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <a href="assets/adapcta_promo.png">High-resolution graphic</a> · <a href="assets/adapcta_promo.svg">Vector graphic</a>
+  <a href="assets/adapcta_promo.png">Download promotional graphic (PNG)</a>
 </p>
 
 **Adap-CTA** is an adaptive correction term addition strategy for federated learning. It makes correction coverage a client decision and optimizes the cumulative trade-off among model accuracy loss, privacy risk, and energy cost. This repository provides the method implementation, training artifacts, gradient inversion experiments, and a reproducible Lean formalization.
@@ -44,10 +44,10 @@ Accuracy figures refer to the recorded final round, with 800 communication round
 Adap-CTA adapts how much of the local model receives a control correction. Clients select correction coverage through the cost-based decision rule, train with the selected correction, and return their updates for aggregation. The multi-stage cost formulation connects the learning decision to accuracy, privacy risk, and energy expenditure.
 
 <p align="center">
-  <img src="assets/adapcta_overview.svg" alt="Adap-CTA overview: the server broadcasts the global model and control, cost-aware decisions select client-specific correction coverage, and client updates return for aggregation." width="100%">
+  <img src="assets/adapcta_overview.png" alt="Adap-CTA overview: the server broadcasts the global model and control, cost-aware decisions select client-specific correction coverage, and client updates return for aggregation." width="100%">
 </p>
 
-**One adaptive federated round.** The server coordinates the global state; correction coverage balances model-loss, privacy, and energy costs; each client applies the selected control correction before returning its update. Teal blocks indicate corrected parameter blocks. The [vector figure](assets/adapcta_overview.svg) can be regenerated with `python scripts/plot_method_overview.py`.
+**One adaptive federated round.** The server coordinates the global state; correction coverage balances model-loss, privacy, and energy costs; each client applies the selected control correction before returning its update. Highlighted blocks indicate corrected parameter blocks. [Download the method overview (PNG)](assets/adapcta_overview.png).
 
 For the standard correction step, a client's gradient has the form
 
@@ -239,7 +239,7 @@ cd ..
 FL_paper/
 ├── README.md
 ├── requirements.txt
-├── assets/                       # Method overview in SVG and PNG
+├── assets/                       # Promotional and method overview graphics
 ├── formal/                       # Lean source, pinned Lake project, and proof audit
 ├── safe_FL/
 │   ├── system/                   # Federated training and attack implementations
@@ -267,8 +267,6 @@ FL_paper/
 Published training artifact paths and checksums are indexed in [`results/training/summary.csv`](results/training/summary.csv). Machine-specific path labels in archived metadata are represented by `*_path_sha256` digests.
 
 Control-state recovery records are grouped by method under [`results/attacks/recovery`](results/attacks/recovery): `SCAFFOLD/` and `FedPVR/`. Each contains `curves.h5`, `round_metrics.jsonl`, `training.log`, and `setup.log`.
-
-The promotional graphic can be regenerated from the recorded training results and proof audit with `python scripts/plot_promo.py`.
 
 ## Acknowledgements
 
