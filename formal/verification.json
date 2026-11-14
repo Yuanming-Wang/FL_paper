@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-14T06:57:55.414466+00:00",
+  "source": "AdapCTA_Formal.lean",
+  "source_sha256": "26325bb884b508fe12ea273f56f20ebe85d0e914ef20f78c645c5441b108d418",
+  "dependency_revisions": {
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+  },
+  "lean": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "return_code": 0,
+  "theorem_count": 43,
+  "audited_theorem_count": 43,
+  "all_theorems_audited": true,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "warning_count": 11,
+  "scope": "Analytic game threshold and equilibria; control and projection identities; Lyapunov closure from the stated one-round hypotheses; finite-round and tolerance bounds; correction coverage and reconstruction identities.",
+  "log_sha256": "376660bad61773a1932d235bdd00490037a0d6d0fc49477378a1908e4f6bb10c",
+  "project_sha256": {
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lakefile.toml": "65d079b718b330831db893ffd7ae3bc1832ecfa4a1a9fc97c509c2b4530e29b0",
+    "lake-manifest.json": "0874246c2dcc0d56fa979b4beec04877991bd06f2e0ac876cfa56eb0dfdba4e2"
+  }
+}

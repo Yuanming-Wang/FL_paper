@@ -1,0 +1,65 @@
+AdapCTA_Formal.lean:55:97: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AdapCTA_Formal.lean:56:42: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AdapCTA_Formal.lean:56:56: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AdapCTA_Formal.lean:139:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AdapCTA_Formal.lean:139:61: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AdapCTA_Formal.lean:435:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AdapCTA_Formal.lean:447:88: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AdapCTA_Formal.lean:464:40: warning: unused variable `hs`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+AdapCTA_Formal.lean:597:38: warning: unused variable `hF`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+AdapCTA_Formal.lean:630:23: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AdapCTA_Formal.lean:764:38: warning: unused variable `hW`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'AdapCTAFormal.h_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.q_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.h_nonpos_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.h_strictAnti_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.q_endpoint_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.sectionCost_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.endpoint_threshold_strict_decrease' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.manuscript_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.mean_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.mean_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.mean_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.control_offset_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.control_residual_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.projected_control_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.centered_controls_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.full_correction_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.exact_potential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.finite_exact_potential_has_NE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.unique_NE_of_strict_dominance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.strict_path_length_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.nested_masks_reduce_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.stage_equilibria_give_tail_equilibria' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.manuscript_unique_NE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.local_trace_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.actual_control_refresh' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.projected_refresh_from_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.control_offset_all_rounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.local_drift_absorption' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.control_refresh_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.smooth_descent_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.convex_refresh_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.nonconvex_lyapunov' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.convex_lyapunov' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.telescoping' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.nonconvex_tolerance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.coverage_energy_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.full_correction_residual_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.initial_energy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.convex_finite_round_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.nonconvex_finite_round_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.convex_tolerance_exact_initialization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.reconstruction_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdapCTAFormal.reconstruction_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
