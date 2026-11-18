@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "checked_at": "2026-11-14T06:57:55.414466+00:00",
+  "checked_at": "2026-11-18T11:05:16.222750+00:00",
   "source": "AdapCTA_Formal.lean",
-  "source_sha256": "26325bb884b508fe12ea273f56f20ebe85d0e914ef20f78c645c5441b108d418",
+  "source_sha256": "802f75ef00da9ac69347c87a311861b063cfb20c0a44fb638513108b6c004dbb",
   "dependency_revisions": {
     "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -25,7 +25,7 @@
     "propext"
   ],
   "warning_count": 11,
-  "scope": "Analytic game threshold and equilibria; control and projection identities; Lyapunov closure from the stated one-round hypotheses; finite-round and tolerance bounds; correction coverage and reconstruction identities.",
+  "scope": "Analytic game threshold and equilibria; control and projection identities; Lyapunov closure from the stated one-round hypotheses; finite-round and tolerance bounds; correction coverage and single-sample gradient-ratio estimator identities.",
   "log_sha256": "376660bad61773a1932d235bdd00490037a0d6d0fc49477378a1908e4f6bb10c",
   "project_sha256": {
     "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",

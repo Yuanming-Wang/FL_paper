@@ -231,7 +231,7 @@ python verify.py
 cd ..
 ```
 
-`verify.py` checks the Lean version, all nine locked dependency revisions, successful compilation, coverage of all theorem audits, and the allowed axiom set. It rejects proof placeholders and custom axiom dependencies, and writes source/configuration hashes alongside the result. The original supplied proof source is preserved byte for byte.
+`verify.py` checks the Lean version, all nine locked dependency revisions, successful compilation, coverage of all theorem audits, and the allowed axiom set. It rejects proof placeholders and custom axiom dependencies, and writes source/configuration hashes alongside the result. The Appendix E identities concern the direct gradient-ratio estimator in a single-sample model. Their statements do not quantify over other estimators.
 
 ## Repository layout
 

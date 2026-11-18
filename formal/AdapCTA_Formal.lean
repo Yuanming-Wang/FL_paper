@@ -13,7 +13,7 @@ import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.Push
 
 /-!
-Adap-CTA: formal companion to Appendix.tex, 2026-11-09.
+Adap-CTA formal companion to the manuscript appendices.
 Toolchain: Lean 4.19.0; mathlib v4.19.0.
 Check from a mathlib project with the imported modules built:
   lake env lean AdapCTA_Formal.lean
@@ -791,7 +791,13 @@ theorem convex_tolerance_exact_initialization
     nlinarith
   exact ⟨heta, hcap, by linarith⟩
 
-/-- The direct gradient-ratio reconstruction error, coordinate by coordinate. -/
+/-! ### Appendix E: a single-sample gradient-ratio example
+
+Here `hchain` is the gradient relation for a scalar preactivation. The two
+identities describe the fixed ratio estimator. The performance of a learned
+decoder on a client update is a separate empirical question. -/
+
+/-- Coordinate error of the direct gradient-ratio estimator after correction. -/
 theorem reconstruction_error (z gw gb dw db : ℝ)
     (hchain : gw = gb*z) (hden : gb+db ≠ 0) :
     (gw+dw)/(gb+db)-z = (dw-z*db)/(gb+db) := by
@@ -799,7 +805,12 @@ theorem reconstruction_error (z gw gb dw db : ℝ)
   field_simp
   ring
 
-/-- Sum of coordinate squares is the Euclidean reconstruction-error energy. -/
+-- Matching corrections leave this estimator exact, even for a nonzero bias correction.
+example (z gw gb db : ℝ) (hchain : gw = gb*z) (hden : gb+db ≠ 0) :
+    (gw+z*db)/(gb+db)-z = 0 := by
+  simpa using reconstruction_error z gw gb (z*db) db hchain hden
+
+/-- Squared Euclidean error of the same ratio estimator over finitely many coordinates. -/
 theorem reconstruction_energy {ι : Type*} [Fintype ι]
     (z gw dw : ι → ℝ) (gb db : ℝ)
     (hchain : ∀ j, gw j = gb*z j) (hden : gb+db ≠ 0) :

@@ -51,7 +51,7 @@ def main():
         report["passed"] = True
         report["scope"] = ("Analytic game threshold and equilibria; control and projection identities; "
                            "Lyapunov closure from the stated one-round hypotheses; finite-round and "
-                           "tolerance bounds; correction coverage and reconstruction identities.")
+                           "tolerance bounds; correction coverage and single-sample gradient-ratio estimator identities.")
     except (AssertionError, OSError, subprocess.SubprocessError) as error:
         report["error"] = str(error)
         output += "\nVerification error: " + str(error) + "\n"
